@@ -5,8 +5,8 @@
 @layer base {
   @font-face {
     font-family: "Chromate";
-    src: url("Chromate-Regular.woff2") format("woff2"),
-      url("Chromate-Regular.woff") format("woff");
+    src: url("fonts/Chromate-Regular.woff") format("woff2"),
+      url("fonts/Chromate-Regular.woff2") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
