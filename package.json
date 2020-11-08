@@ -23,7 +23,6 @@
     "remark-html": "11.0.2"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^3.0.0",
     "postcss-flexbugs-fixes": "4.2.1",
     "postcss-preset-env": "^6.7.0",
     "tailwindcss": "^1.4.6"

@@ -4,7 +4,7 @@ import Logo from "./../public/logo.svg";
 export default function Intro() {
   return (
     <>
-      <nav class="flex items-center justify-between flex-wrap p-6">
+      <nav class="container m-auto mt-12 flex items-center justify-between flex-wrap p-6">
         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
           <div class="text-sm lg:flex-grow">
             <Link href="/">
