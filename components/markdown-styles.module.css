@@ -1,11 +1,8 @@
 .markdown {
-  @apply text-lg leading-relaxed;
+  @apply text-lg font-light text-gray-900 leading-relaxed;
 }
 
-.markdown p {
-  @apply font-light text-gray-900 text-lg;
-}
-
+.markdown p,
 .markdown ul,
 .markdown ol,
 .markdown blockquote {
@@ -13,11 +10,11 @@
 }
 
 .markdown h2 {
-  @apply font-bold text-3xl tracking-tight mt-12 mb-4 leading-snug;
+  @apply font-bold text-2xl tracking-tight mt-12 mb-4 leading-snug;
 }
 
 .markdown h3 {
-  @apply font-bold text-2xl tracking-tight mt-8 mb-4 leading-snug;
+  @apply font-bold text-xl tracking-tight mt-8 mb-4 leading-snug;
 }
 
 .markdown a {
