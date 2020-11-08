@@ -2,7 +2,10 @@
   @apply text-lg leading-relaxed;
 }
 
-.markdown p,
+.markdown p {
+  @apply font-light text-gray-900 text-lg;
+}
+
 .markdown ul,
 .markdown ol,
 .markdown blockquote {
@@ -10,13 +13,17 @@
 }
 
 .markdown h2 {
-  @apply text-3xl mt-12 mb-4 leading-snug;
+  @apply font-bold text-3xl tracking-tight mt-12 mb-4 leading-snug;
 }
 
 .markdown h3 {
-  @apply text-2xl mt-8 mb-4 leading-snug;
+  @apply font-bold text-2xl tracking-tight mt-8 mb-4 leading-snug;
 }
 
 .markdown a {
-  @apply .text-blue-600;
+  @apply text-blue-600;
+}
+
+.markdown a:hover {
+  @apply underline;
 }
