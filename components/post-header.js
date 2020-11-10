@@ -16,7 +16,6 @@ export default function PostHeader({ title, coverImage, date, excerpt }) {
         <div>
           <PostExcerpt>{excerpt}</PostExcerpt>
         </div>
-        <div></div>
         <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
         <div className="mb-6 text-base md:text-xl lg:text-2xl ml-6 text-gray-700 font-medium">
           <Date dateString={date} />
