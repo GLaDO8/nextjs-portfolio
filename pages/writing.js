@@ -1,22 +1,17 @@
-import Container from "@/components/container";
 import MoreStories from "@/components/more-stories";
-import Intro from "@/components/intro";
-import Layout from "@/components/layout";
+import PageLayout from "@/components/page-layout";
 import { getAllPostsForHome } from "@/lib/api";
 import Head from "next/head";
 
 export default function Index({ allPosts }) {
   return (
     <>
-      <Layout>
+      <PageLayout>
         <Head>
           <title>Writing</title>
         </Head>
-        <Container>
-          <Intro />
-          {<MoreStories posts={allPosts} />}
-        </Container>
-      </Layout>
+        <MoreStories posts={allPosts} />
+      </PageLayout>
     </>
   );
 }

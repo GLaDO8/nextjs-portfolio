@@ -1,19 +1,14 @@
-import Intro from "@/components/intro";
-import Layout from "@/components/layout";
-import Container from "@/components/container";
+import PageLayout from "@/components/page-layout";
 import Head from "next/head";
 
 export default function Index() {
   return (
     <>
-      <Layout>
+      <PageLayout>
         <Head>
           <title>Projects</title>
         </Head>
-        <Container>
-          <Intro />
-        </Container>
-      </Layout>
+      </PageLayout>
     </>
   );
 }

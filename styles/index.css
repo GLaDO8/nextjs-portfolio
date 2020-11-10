@@ -14,9 +14,12 @@
 }
 
 .menu-btn-lg {
-  @apply inline-block transition duration-300 ease-in-out text-xl px-4 py-2 m-2 leading-none rounded-full;
+  @apply inline-block transition duration-300 ease-in-out text-xl px-4 py-2 m-2 leading-none;
+}
+.menu-btn-lg-active {
+  @apply bg-black text-white rounded-full;
 }
 
 .menu-btn-lg:hover {
-  @apply bg-black text-white;
+  @apply underline;
 }
