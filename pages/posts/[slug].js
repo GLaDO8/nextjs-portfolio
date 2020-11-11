@@ -31,6 +31,7 @@ export default function Post({ post, morePosts, preview }) {
                 property="og:image"
                 content={post.metadata.cover_image.imgix_url}
               />
+              <meta property="og:description" content={post.metadata.excerpt} />
             </Head>
             <PostHeader
               title={post.title}
