@@ -78,3 +78,22 @@
 .menu-btn-lg:hover {
   @apply text-black;
 }
+
+.social-icons {
+  @apply h-6 m-6;
+}
+
+.home-page-title {
+  @apply text-black font-medium m-8;
+}
+
+@screen md {
+  .social-icons {
+    @apply h-6;
+  }
+}
+@screen lg {
+  .social-icons {
+    @apply h-8 mx-12;
+  }
+}

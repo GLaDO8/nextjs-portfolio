@@ -4,7 +4,7 @@ import Logo from './../public/newlogo.svg'
 import Head from 'next/head'
 import Buttonlist from '@/components/buttonlist'
 import MoreStories from '@/components/more-stories'
-import { getAllPostsForHome, getAllProjectsWithSlug } from '@/lib/api'
+import { getAllPostsForHome, getAllProjectsForHome } from '@/lib/api'
 export default function Index({ allPosts, allWork }) {
   return (
     <>
@@ -36,14 +36,42 @@ export default function Index({ allPosts, allWork }) {
             Scroll down to view my work.
           </div>
         </div>
-        <div>Work</div>
-        {/* <MoreStories posts={allWork} /> */}
-        <div>Writings</div>
+
+        <div className="home-page-title">SELECTED WORK</div>
+        <MoreStories posts={allWork} />
+        <div className="home-page-title">MY WRITINGS</div>
         <MoreStories posts={allPosts} />
-        <div>
+
+        <div className="flex flex-col mb-24">
           <div className="text-6xl font-bold mx-auto max-w-2xl text-center">
             For work enquiries, freelancing or just a friendly chat,
           </div>
+          <button className="bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 m-8 rounded-lg mx-auto justify-center">
+            mail me
+          </button>
+        </div>
+
+        <div className="flex justify-center flex-1 items-center mb-32">
+          <img
+            className="social-icons"
+            src="//s.svgbox.net/social.svg?fill=000000&ic=instagram"
+          />
+          <img
+            className="social-icons"
+            src="//s.svgbox.net/social.svg?fill=000000&ic=github"
+          />
+          <img
+            className="social-icons"
+            src="//s.svgbox.net/social.svg?fill=000000&ic=behance"
+          />
+          <img
+            className="social-icons"
+            src="//s.svgbox.net/social.svg?fill=000000&ic=dribbble"
+          />
+          <img
+            className="social-icons"
+            src="//s.svgbox.net/social.svg?fill=000000&ic=twitter"
+          />
         </div>
       </Layout>
     </>
@@ -51,15 +79,9 @@ export default function Index({ allPosts, allWork }) {
 }
 
 export async function getStaticProps({ preview }) {
-  const allPosts = (await getAllPostsForHome(preview)) || []
+  const allPosts = await getAllPostsForHome(preview)
+  const allWork = await getAllProjectsForHome(preview)
   return {
-    props: { allPosts },
+    props: { allPosts, allWork },
   }
 }
-
-// export async function getStaticProps({ preview }) {
-//   const allWork = (await getAllProjectsWithSlug(preview)) || []
-//   return {
-//     props: { allWork },
-//   }
-// }
