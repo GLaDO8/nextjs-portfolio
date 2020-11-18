@@ -69,7 +69,7 @@
 }
 
 .menu-btn-lg {
-  @apply inline-block text-gray-500 transition duration-300 ease-in-out text-xl px-4 py-2 m-2 leading-none;
+  @apply inline-block text-inactive-gray transition duration-300 ease-in-out text-xl px-4 py-2 m-2 leading-none;
 }
 .menu-btn-lg-active {
   @apply text-black;
@@ -85,6 +85,18 @@
 
 .home-page-title {
   @apply text-black font-medium m-8;
+}
+.my-masonry-grid {
+  @apply mx-16 my-8;
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  /* margin-left: 0px; */
+  display: flex;
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding: 20px; /* gutter size */
+  background-clip: padding-box;
 }
 
 @screen md {
