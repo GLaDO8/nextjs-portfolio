@@ -4,22 +4,77 @@
 
 @layer base {
   @font-face {
-    font-family: "Chromate";
-    src: url("fonts/Chromate-Regular.woff") format("woff2"),
-      url("fonts/Chromate-Regular.woff2") format("woff");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+    font-family: 'Rubik';
+    src: url('fonts/Rubik-var.woff2') format('woff2-variations');
+    font-weight: 300 999;
+  }
+  @font-face {
+    font-family: 'Rubik';
+    src: url('fonts/Rubik-var-Italic.woff2') format('woff2-variations');
+    font-style: italic;
+    font-weight: 300 999;
+  }
+  @font-face {
+    font-family: 'Rubik';
+    src: url('fonts/Rubik-var.woff2') format('woff2-variations'),
+      url('fonts/Rubik-Bold.woff2') format('woff2');
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: 'Rubik';
+    src: url('fonts/Rubik-var-Italic.woff2') format('woff2-variations'),
+      url('fonts/Rubik-BoldItalic.woff2') format('woff2');
+    font-style: italic;
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: 'Rubik';
+    src: url('fonts/Rubik-var.woff2') format('woff2-variations'),
+      url('fonts/Rubik-Medium.woff2') format('woff2');
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: 'Rubik';
+    src: url('fonts/Rubik-var-Italic.woff2') format('woff2-variations'),
+      url('fonts/Rubik-MediumItalic.woff2') format('woff2');
+    font-style: italic;
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: 'Rubik';
+    src: url('fonts/Rubik-var.woff2') format('woff2-variations'),
+      url('fonts/Rubik-Regular.woff2') format('woff2');
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'Rubik';
+    src: url('fonts/Rubik-var-Italic.woff2') format('woff2-variations'),
+      url('fonts/Rubik-Italic.woff2') format('woff2');
+    font-style: italic;
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'Rubik';
+    src: url('fonts/Rubik-var.woff2') format('woff2-variations'),
+      url('fonts/Rubik-Light.woff2') format('woff2');
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: 'Rubik';
+    src: url('fonts/Rubik-var-Italic.woff2') format('woff2-variations'),
+      url('fonts/Rubik-LightItalic.woff2') format('woff2');
+    font-style: italic;
+    font-weight: 300;
   }
 }
 
 .menu-btn-lg {
-  @apply inline-block transition duration-300 ease-in-out text-xl px-4 py-2 m-2 leading-none;
+  @apply inline-block text-gray-500 transition duration-300 ease-in-out text-xl px-4 py-2 m-2 leading-none;
 }
 .menu-btn-lg-active {
-  @apply bg-black text-white rounded-full;
+  @apply text-black;
 }
 
 .menu-btn-lg:hover {
-  @apply underline;
+  @apply text-black;
 }
