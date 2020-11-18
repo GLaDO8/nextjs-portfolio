@@ -1,6 +1,6 @@
-import NavButton from "@/components/navbutton";
-import Link from "next/link";
-import Logo from "./../public/logo.svg";
+import NavButton from '@/components/navbutton'
+import Link from 'next/link'
+import Logo from './../public/newlogo.svg'
 
 const Navbar = (props) => (
   <>
@@ -45,6 +45,6 @@ const Navbar = (props) => (
       </div>
     </nav>
   </>
-);
+)
 
-export default Navbar;
+export default Navbar
