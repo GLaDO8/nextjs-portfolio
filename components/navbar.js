@@ -19,7 +19,7 @@ const Navbar = (props) => (
           className="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-white hover:border-white"
         >
           <svg
-            class="fill-current h-3 w-3"
+            className="fill-current h-3 w-3"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -30,7 +30,7 @@ const Navbar = (props) => (
       </div>
 
       <div
-        className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0"
+        className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden pt-6 lg:pt-0"
         id="nav-content"
       >
         <div className="lg:flex justify-end flex-1 items-center">

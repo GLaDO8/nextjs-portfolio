@@ -1,7 +1,7 @@
 export default function About() {
   return (
-    <div className="text-lg font-light text-gray-900 leading-relaxed mt-24 mb-4 max-w-2xl mx-auto">
-      <p>
+    <div className="text-lg font-light text-gray-900 leading-relaxed pt-24 mb-4 max-w-2xl mx-auto">
+      <p className="pt-24">
         I’m a UX Designer and iOS developer studying at
         <a
           className="text-blue-600"
@@ -42,5 +42,5 @@ export default function About() {
         quick chat. I’m active on Twitter and strive to maintain inbox zero!
       </p>
     </div>
-  );
+  )
 }
