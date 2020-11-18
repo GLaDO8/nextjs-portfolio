@@ -44,7 +44,7 @@ export default function Index({ allPosts, allWork }) {
         <MoreStories posts={allWork} />
         <div className="home-page-title">MY WRITINGS</div>
         <MoreStories posts={allPosts} />
-        <TwitterMasonry />
+        {/* <TwitterMasonry /> */}
         <div className="flex flex-col mb-24">
           <div className="text-6xl font-bold mx-auto max-w-2xl text-center">
             For work enquiries, freelancing or just a friendly chat,
