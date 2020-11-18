@@ -1,10 +1,16 @@
 .markdown {
-  @apply text-lg font-light text-gray-900 leading-relaxed;
+  @apply text-lg text-gray-900 leading-relaxed;
+  font-weight: 340;
+  line-height: 1.7;
 }
 
 /* Paragraph */
 .markdown p {
-  @apply mb-4 max-w-lg mx-auto;
+  @apply mb-8 max-w-lg mx-auto;
+}
+
+.markdown strong {
+  @apply font-semibold;
 }
 
 /* Lists */
@@ -26,7 +32,7 @@
 
 /* Blockquote */
 .markdown blockquote > p {
-  @apply my-6 bg-green-200;
+  @apply my-6;
 }
 
 /* Headings */
