@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Link from 'next/link'
 export default function Footer() {
   return (
     <footer className="">
@@ -10,6 +10,9 @@ export default function Footer() {
           </div>
           <div className="flex justify-end flex-1 items-center">
             <div className="text-inactive-gray p-4">META</div>
+            <div className="text-inactive-gray p-4">
+              <Link href="/thoughtboard">THOUGHT BOARD</Link>
+            </div>
             <div className="text-inactive-gray p-4 pr-6 lg:pr-8">SOURCE</div>
           </div>
         </div>
