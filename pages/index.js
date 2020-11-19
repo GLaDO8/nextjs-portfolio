@@ -4,7 +4,6 @@ import Logo from './../public/newlogo.svg'
 import Head from 'next/head'
 import Buttonlist from '@/components/buttonlist'
 import MoreStories from '@/components/more-stories'
-import TwitterMasonry from '@/components/twitter-masonry'
 import SocialIcons from '@/components/social-icons'
 import { getAllPostsForHome, getAllProjectsForHome } from '@/lib/api'
 

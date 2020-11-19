@@ -1,9 +1,9 @@
-import PostPreview from "./post-preview";
+import PostPreview from './post-preview'
 
 export default function MoreStories({ posts }) {
   return (
     <section className="m-16">
-      <div className="grid grid-cols-1 md:grid-cols-3 md:col-gap-16 lg:col-gap-20 row-gap-20 md:row-gap-20 mb-20">
+      <div className="grid grid-cols-1 md:grid-cols-3 md:gap-x-16 lg:gap-x-20 gap-y-20 md:gap-y-20 mb-20">
         {posts.map((post) => (
           <PostPreview
             key={post.slug}
@@ -17,5 +17,5 @@ export default function MoreStories({ posts }) {
         ))}
       </div>
     </section>
-  );
+  )
 }

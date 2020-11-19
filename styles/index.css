@@ -69,18 +69,14 @@
 }
 
 .menu-btn-lg {
-  @apply inline-block text-inactive-gray transition duration-300 ease-in-out text-xl px-4 py-2 m-2 leading-none;
+  @apply inline-block text-inactive-gray transition duration-300 ease-in-out text-xl px-4 py-2 m-2 leading-none hover:text-black;
 }
 .menu-btn-lg-active {
   @apply text-black;
 }
 
-.menu-btn-lg:hover {
-  @apply text-black;
-}
-
 .social-icons {
-  @apply h-6 m-6;
+  @apply h-6 md:h-6 lg:h-8 m-6 lg:mx-12;
 }
 
 .home-page-title {
@@ -97,15 +93,4 @@
 .my-masonry-grid_column {
   padding: 20px; /* gutter size */
   background-clip: padding-box;
-}
-
-@screen md {
-  .social-icons {
-    @apply h-6;
-  }
-}
-@screen lg {
-  .social-icons {
-    @apply h-8 mx-12;
-  }
 }

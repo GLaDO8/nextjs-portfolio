@@ -11,7 +11,7 @@ export default function Index({ allPosts }) {
           <title>Work</title>
         </Head>
         <section className="m-16">
-          <div className="grid grid-cols-1 md:grid-cols-3 md:col-gap-16 lg:col-gap-20 row-gap-20 md:row-gap-20 mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-3 md:gap-x-16 lg:gap-x-20 gap-y-20 md:gap-y-20 mb-20">
             {allPosts.map((post) => (
               <ProjectPreview
                 key={post.slug}
