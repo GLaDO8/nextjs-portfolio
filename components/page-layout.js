@@ -34,7 +34,7 @@ export default function Layout({ children }) {
       </div>
       <Meta />
       <Navbar navButtons={Buttonlist} />
-      <div>
+      <div className="mx-6 lg:mx-8">
         <main>{children}</main>
       </div>
       <Footer />

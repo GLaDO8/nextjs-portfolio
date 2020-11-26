@@ -7,16 +7,15 @@ import ProjectTag from './../public/project-tag.svg'
 export default function PostHeader({ title, coverImage, date, excerpt }) {
   return (
     <>
-      <div className="container m-auto mt-12 lg:mt-16 mx-2 md:mx-4 lg:mx-6">
+      <div className="container m-auto mt-12 lg:mt-16 mx-4 md:mx-4 lg:mx-6">
         <ProjectTag className="inline-block h-5 md:h-6 lg:h-10" />
-        <div className="text-3xl font-title md:text-5xl lg:text-7xl max-w-4xl font-bold tracking-tighter leading-tight md:leading-none mb-2 text-left mt-1">
+        <div className="text-3xl font-title md:text-5xl lg:text-7xl max-w-4xl font-bold tracking-tighter leading-tight md:leading-none sm:mb-0 lg:mb-2 text-left mt-1 mr-4">
           <h1>{title}</h1>
         </div>
-        <div>
-          <PostExcerpt>{excerpt}</PostExcerpt>
-        </div>
-        <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-        <div className="mb-6 text-base md:text-xl lg:text-2xl text-gray-700 font-normal">
+        <p className="text-xl md:text-2xl lg:text-3xl mb-4 leading-relaxed lg:leading-relaxed lg:max-w-6xl mr-2">
+          {excerpt}
+        </p>
+        <div className="mb-6 text-base md:text-lg lg:text-xl text-grey-secondary font-normal">
           <Date dateString={date} />
         </div>
         {/* <div>{post.minutes}</div> */}

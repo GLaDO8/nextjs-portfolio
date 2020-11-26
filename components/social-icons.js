@@ -1,4 +1,4 @@
-export default function Index({ allPosts, allWork }) {
+export default function Index() {
   return (
     <div className="flex justify-center flex-1 items-center mb-32">
       <img
