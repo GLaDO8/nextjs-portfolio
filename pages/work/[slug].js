@@ -17,7 +17,6 @@ export default function Post({ post, morePosts, preview }) {
   }
   return (
     <PageLayout preview={preview}>
-      <Intro navButtons={ButtonList} />
       {router.isFallback ? (
         <PostTitle>Loading…</PostTitle>
       ) : (
