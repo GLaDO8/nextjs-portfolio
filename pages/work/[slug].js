@@ -2,11 +2,9 @@ import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
 import PostBody from '@/components/post-body'
 import MoreStories from '@/components/more-stories'
-import Intro from '@/components/navbar'
-import ButtonList from '@/components/buttonlist'
 import PostHeader from '@/components/post-header'
 import SectionSeparator from '@/components/section-separator'
-import Layout from '@/components/layout'
+import PageLayout from '@/components/page-layout'
 import { getAllProjectsWithSlug, getProjectAndMoreProjects } from '@/lib/api'
 import PostTitle from '@/components/post-title'
 import Head from 'next/head'
@@ -18,7 +16,7 @@ export default function Post({ post, morePosts, preview }) {
     return <ErrorPage statusCode={404} />
   }
   return (
-    <Layout preview={preview}>
+    <PageLayout preview={preview}>
       <Intro navButtons={ButtonList} />
       {router.isFallback ? (
         <PostTitle>Loading…</PostTitle>
@@ -45,7 +43,7 @@ export default function Post({ post, morePosts, preview }) {
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </>
       )}
-    </Layout>
+    </PageLayout>
   )
 }
 export async function getStaticProps({ params, preview = null }) {
