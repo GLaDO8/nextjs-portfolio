@@ -16,7 +16,7 @@
 /* Lists */
 .markdown ul,
 .markdown ol {
-  @apply mb-4 max-w-lg mx-auto;
+  @apply mb-4 max-w-lg mx-auto pl-8 lg:pl-0;
 }
 .markdown li > p,
 .markdown li > ul,
