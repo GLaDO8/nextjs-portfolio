@@ -74,13 +74,16 @@
 .menu-btn-lg-active {
   @apply text-black;
 }
+.footer-btn {
+  @apply text-inactive-gray transition duration-300 ease-in-out hover:text-black;
+}
 
 .social-icons {
   @apply h-6 md:h-6 lg:h-8 m-6 lg:mx-12;
 }
 
 .home-page-title {
-  @apply text-black font-medium m-8;
+  @apply text-black font-medium;
 }
 .my-masonry-grid {
   @apply mx-16 my-8;

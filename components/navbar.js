@@ -4,8 +4,8 @@ import Logo from './../public/newlogo.svg'
 
 const Navbar = (props) => (
   <>
-    <nav className="flex items-center justify-between flex-wrap shadow-xl bg-white p-6 fixed w-full z-10 top-0">
-      <div className="flex items-center flex-shrink-0 mr-6">
+    <nav className="flex items-center justify-between bg-white p-2 lg:p-6 z-10 mt-4 md:mt-8 lg:mt-12">
+      <div className="flex mr-2 lg:mr-6">
         <Link href="/">
           <a>
             <Logo className="h-10 md:h-12 lg:h-20" />
