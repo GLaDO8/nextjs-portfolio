@@ -15,7 +15,7 @@ export default function PostHeader({ title, coverImage, date, excerpt }) {
         <p className="text-base md:text-2xl lg:text-3xl mb-4 leading-relaxed lg:leading-relaxed mr-2 mt-4">
           {excerpt}
         </p>
-        <div className="mb-6 text-base md:text-lg lg:text-xl text-grey-secondary font-normal">
+        <div className="mb-6 text-base md:text-lg lg:text-xl text-grey-secondary font-light">
           <Date dateString={date} />
         </div>
         {/* <div>{post.minutes}</div> */}

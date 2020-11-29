@@ -75,11 +75,11 @@
   @apply text-black;
 }
 .footer-btn {
-  @apply text-inactive-gray transition duration-300 ease-in-out hover:text-black;
+  @apply text-xs sm:text-sm transition duration-300 ease-in-out text-inactive-gray font-light hover:text-black;
 }
 
 .social-icons {
-  @apply h-6 md:h-6 lg:h-8 m-6 lg:mx-12;
+  @apply h-6 md:h-6 lg:h-8 m-6 mx-4 lg:mx-12;
 }
 
 .home-page-title {

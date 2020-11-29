@@ -5,16 +5,16 @@ export default function Footer() {
     <footer>
       <div className="md:invisible">
         <div className="flex justify-center">
-          <div className="text-xs text-inactive-gray max-w-sm">
+          <div className="text-xs text-inactive-gray max-w-sm font-light">
             © 2020 by Shreyas Gupta, All rights reserved.
           </div>
         </div>
         <div className="flex justify-center flex-1 items-center">
-          <div className="footer-btn py-4 pr-4">META</div>
+          <div className="footer-btn py-4 pr-4">Meta</div>
           <div className="footer-btn py-4 pr-4">
-            <Link href="/thoughtboard">THOUGHT BOARD</Link>
+            <Link href="/thoughtboard">Thought Board</Link>
           </div>
-          <div className="text-xs footer-btn py-4">SOURCE</div>
+          <div className="text-xs footer-btn py-4">Source</div>
         </div>
       </div>
       <div className="items-center w-auto hidden md:flex">
