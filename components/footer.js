@@ -3,11 +3,25 @@ import Link from 'next/link'
 export default function Footer() {
   return (
     <footer>
-      <div className="flex items-center w-auto ">
-        <div className="text-inactive-gray flex justify-start py-4">
+      <div className="md:invisible">
+        <div className="flex justify-center">
+          <div className="text-xs text-inactive-gray max-w-sm">
+            © 2020 by Shreyas Gupta, All rights reserved.
+          </div>
+        </div>
+        <div className="flex justify-center flex-1 items-center">
+          <div className="footer-btn py-4 pr-4">META</div>
+          <div className="footer-btn py-4 pr-4">
+            <Link href="/thoughtboard">THOUGHT BOARD</Link>
+          </div>
+          <div className="text-xs footer-btn py-4">SOURCE</div>
+        </div>
+      </div>
+      <div className="items-center w-auto hidden md:flex">
+        <div className="text-sm text-inactive-gray flex justify-start py-4 p-8">
           © Copyright 2020-2077, I hope?
         </div>
-        <div className="flex justify-end flex-1 items-center">
+        <div className="flex justify-end flex-1 items-center p-8">
           <div className="footer-btn py-4 pr-4">META</div>
           <div className="footer-btn py-4 pr-4">
             <Link href="/thoughtboard">THOUGHT BOARD</Link>
