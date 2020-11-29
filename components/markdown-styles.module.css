@@ -1,5 +1,5 @@
 .markdown {
-  @apply text-lg text-gray-900 leading-relaxed;
+  @apply text-base md:text-lg lg:text-xl text-gray-900 leading-relaxed;
   font-weight: 340;
   line-height: 1.7;
 }
@@ -16,7 +16,7 @@
 /* Lists */
 .markdown ul,
 .markdown ol {
-  @apply mb-4 max-w-lg mx-auto pl-8 lg:pl-0;
+  @apply mb-4 max-w-lg mx-auto pl-6 lg:pl-0;
 }
 .markdown li > p,
 .markdown li > ul,

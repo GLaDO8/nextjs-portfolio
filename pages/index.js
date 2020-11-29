@@ -43,7 +43,7 @@ export default function Index({ allPosts, allWork }) {
       <div className="home-page-title">MY WRITINGS</div>
       <MoreStories posts={allPosts} />
       <div className="flex flex-col mb-24">
-        <div className="text-6xl font-bold mx-auto max-w-2xl text-center">
+        <div className="text-2xl md:text-5xl lg:text-6xl font-bold mx-auto max-w-2xl text-center">
           For work enquiries, freelancing or just a friendly chat,
         </div>
         <button className="bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 m-8 rounded-lg mx-auto justify-center">

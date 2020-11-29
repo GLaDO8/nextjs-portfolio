@@ -1,6 +1,6 @@
 export default function Index() {
   return (
-    <div className="flex justify-center flex-1 items-center mb-32">
+    <div className="flex justify-center mb-32 mx-10">
       <img
         className="social-icons"
         src="//s.svgbox.net/social.svg?fill=000000&ic=instagram"
