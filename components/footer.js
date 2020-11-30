@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'next/link'
-import SectionSeparator from '@/components/section-separator'
 export default function Footer() {
   return (
     <footer>
@@ -21,7 +20,7 @@ export default function Footer() {
       </div>
       <div className="items-center w-auto hidden md:flex">
         <div className="text-sm text-inactive-gray flex justify-start py-4 p-8">
-          © Copyright 2020-2077, I hope?
+          © 2020-2077 by Shreyas Gupta, All rights reserved.
         </div>
         <div className="flex justify-end flex-1 items-center p-8">
           <div className="footer-btn py-4 pr-4">META</div>
