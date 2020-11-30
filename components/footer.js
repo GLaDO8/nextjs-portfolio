@@ -1,8 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
+import SectionSeparator from '@/components/section-separator'
 export default function Footer() {
   return (
     <footer>
+      <hr className="border-accent-2 -mb-16 md:-mb-24 w-11/12 mx-auto" />
       <div className="md:invisible">
         <div className="flex justify-center">
           <div className="text-xs text-inactive-gray max-w-sm font-light">
