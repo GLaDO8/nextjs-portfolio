@@ -1,26 +1,16 @@
-import cn from "classnames";
-import Link from "next/link";
-import Imgix from "react-imgix";
+import Link from 'next/link'
+import Image from 'next/image'
 
 export default function CoverImage({ title, url, slug }) {
   const image = (
-    <Imgix
+    <Image
       src={url}
       alt={`Cover Image for ${title}`}
-      className={cn("lazyload", {
-        "": slug,
-      })}
-      sizes="200vw"
-      attributeConfig={{
-        src: "data-src",
-        srcSet: "data-srcset",
-        sizes: "data-sizes",
-      }}
-      htmlAttributes={{
-        src: `${url}?auto=format,compress&q=1&blur=500&w=auto`,
-      }}
+      width={1200}
+      height={800}
+      layout="responsive"
     />
-  );
+  )
   return (
     <div className="sm:mx-0">
       {slug ? (
@@ -31,5 +21,5 @@ export default function CoverImage({ title, url, slug }) {
         image
       )}
     </div>
-  );
+  )
 }
