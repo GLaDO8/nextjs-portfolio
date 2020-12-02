@@ -43,7 +43,7 @@
   @apply font-bold text-xl tracking-tight mt-8 mb-4 leading-snug max-w-lg mx-auto;
 }
 .markdown h4 {
-  @apply font-bold text-lg tracking-tight mt-12 leading-snug max-w-lg mx-auto;
+  @apply font-bold text-lg tracking-tight mt-8 leading-snug max-w-lg mx-auto;
 }
 .markdown h5 {
   @apply font-bold text-base text-gray-600 tracking-tight mb-4 leading-snug max-w-lg mx-auto;

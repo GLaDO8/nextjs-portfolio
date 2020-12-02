@@ -13,7 +13,7 @@ export default function Index({ allPosts, allWork }) {
       <Head>
         <title>Home</title>
       </Head>
-      <Logo className="h-24 md:h-32 lg:h-40 mx-auto mt-16" />
+      <Logo className="h-20 md:h-24 lg:h-28 mx-auto mt-16" />
       <div
         className="w-full lg:flex lg:items-center lg:w-auto hidden pt-6 lg:pt-6"
         id="nav-content"
@@ -28,8 +28,8 @@ export default function Index({ allPosts, allWork }) {
           ))}
         </div>
       </div>
-      <div className="">
-        <div className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 mt-24 mx-auto max-w-lg text-center">
+      <div className="my-24">
+        <div className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 mx-auto max-w-lg text-center">
           Hello, netizen.
         </div>
         <div className="text-lg md:text-xl lg:text-2xl font-regular mx-auto max-w-xl text-center">

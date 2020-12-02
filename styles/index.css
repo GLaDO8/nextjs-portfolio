@@ -83,7 +83,7 @@
 }
 
 .home-page-title {
-  @apply text-black font-medium;
+  @apply text-black font-medium mb-4;
 }
 .my-masonry-grid {
   @apply mx-16 my-8;

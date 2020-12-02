@@ -2,9 +2,9 @@ import React from 'react'
 import Link from 'next/link'
 export default function Footer() {
   return (
-    <>
-      <hr className="border-accent-2 -mb-16 md:-mb-24 w-11/12 mx-auto" />
-      <footer>
+    <div className="bottom-0 -mb-16">
+      <hr className="border-accent-2 md:-mb-28 w-11/12 mx-auto" />
+      <footer className="mt-4">
         <div className="md:invisible">
           <div className="flex justify-center">
             <div className="text-xs text-inactive-gray max-w-sm font-light">
@@ -32,6 +32,6 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-    </>
+    </div>
   )
 }
