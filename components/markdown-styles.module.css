@@ -1,5 +1,5 @@
 .markdown {
-  @apply text-base md:text-lg lg:text-xl text-gray-900 leading-relaxed;
+  @apply text-sm sm:text-lg md:text-lg lg:text-lg text-gray-900 leading-relaxed;
   font-weight: 340;
   line-height: 1.7;
 }
@@ -32,7 +32,7 @@
 
 /* Blockquote */
 .markdown blockquote > p {
-  @apply my-6;
+  @apply my-6 p-6 bg-gray-100 text-gray-800;
 }
 
 /* Headings */
@@ -54,7 +54,7 @@
   @apply text-blue-600;
 }
 .markdown a:hover {
-  @apply underline;
+  border-bottom: 1px solid blue;
 }
 
 /* Responsive Design */
