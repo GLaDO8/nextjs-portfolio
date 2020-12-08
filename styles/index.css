@@ -69,7 +69,7 @@
 }
 
 .menu-btn-lg {
-  @apply inline-block text-inactive-gray transition duration-300 ease-in-out text-xl px-4 py-2 m-2 leading-none hover:text-black;
+  @apply inline-block text-inactive-gray transition font-light duration-300 ease-in-out text-xl px-4 py-2 lg:py-8 m-2 leading-none hover:text-black;
 }
 .menu-btn-lg-active {
   @apply text-black;
@@ -96,4 +96,8 @@
 .my-masonry-grid_column {
   padding: 20px; /* gutter size */
   background-clip: padding-box;
+}
+
+.footnote-item {
+  @apply text-base mb-4;
 }

@@ -1,11 +1,25 @@
 module.exports = {
-  purge: ['./components/**/*.js', './pages/**/*.js'],
+  purge: {
+    enabled: true,
+    content: [
+      './components/**/*.js',
+      './components/*.js',
+      './pages/**/*.js',
+      './pages/*.js',
+    ],
+  },
   theme: {
     fontFamily: {
       title: ['Rubik', 'sans-serif'],
       sans: ['Rubik', 'sans-serif'],
     },
+    minWidth: {
+      '1/2': '50%',
+    },
     extend: {
+      height: {
+        box: '300px',
+      },
       colors: {
         'accent-1': '#FAFAFA',
         'accent-2': '#EAEAEA',

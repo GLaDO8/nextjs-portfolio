@@ -6,10 +6,6 @@ const navButtons = [
     path: '/',
   },
   {
-    label: 'Work',
-    path: '/work',
-  },
-  {
     label: 'Writings',
     path: '/writings',
   },
