@@ -1,7 +1,6 @@
 import NavButton from '@/components/navbutton'
 import Link from 'next/link'
 import Logo from './../public/logo.svg'
-import Share from './../public/shareicon.svg'
 const Navbar = (props) => (
   <>
     <nav className="hidden md:flex justify-between bg-white p-2 lg:p-6 z-10 mb-2 md:mb-4 lg:mb-6">
