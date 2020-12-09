@@ -1,5 +1,6 @@
 import NavButton from '@/components/navbutton'
-import Layout from '@/components/layout'
+import Meta from '@/components/meta'
+import Footer from '@/components/footer'
 import Logo from './../public/logo.svg'
 import Head from 'next/head'
 import Buttonlist from '@/components/buttonlist'
@@ -9,7 +10,8 @@ import { getAllPostsForHome, getAllProjectsForHome } from '@/lib/api'
 
 export default function Index({ allPosts, allWork }) {
   return (
-    <Layout>
+    <>
+      <Meta />
       <Head>
         <title>Home</title>
       </Head>
@@ -53,7 +55,8 @@ export default function Index({ allPosts, allWork }) {
       </div>
 
       <SocialIcons />
-    </Layout>
+      <Footer />
+    </>
   )
 }
 
