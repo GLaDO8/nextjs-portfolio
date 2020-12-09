@@ -7,7 +7,7 @@ const Navbar = (props) => (
       <div className="hidden md:flex">
         <Link href="/">
           <a>
-            <Logo className="h-6 w-0 lg:h-10" />
+            <Logo className="h-6 w-0 md:h-8 lg:h-10" />
           </a>
         </Link>
       </div>
