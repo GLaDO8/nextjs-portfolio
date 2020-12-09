@@ -1,9 +1,14 @@
-import Head from "next/head";
-import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
+import Head from 'next/head'
+import { CMS_NAME, HOME_OG_IMAGE_URL } from '@/lib/constants'
 
 export default function Meta() {
   return (
     <Head>
+      <script
+        defer
+        src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon='{"token": "b1d1af4020ba49baba3385a4f24a8d05"}'
+      ></script>
       <link
         rel="apple-touch-icon"
         sizes="57x57"
@@ -86,5 +91,5 @@ export default function Meta() {
       />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} />
     </Head>
-  );
+  )
 }
