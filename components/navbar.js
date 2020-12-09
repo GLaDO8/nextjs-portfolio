@@ -4,10 +4,10 @@ import Logo from './../public/logo.svg'
 const Navbar = (props) => (
   <>
     <nav className="hidden md:flex justify-between bg-white p-2 lg:p-6 z-10 mb-2 md:mb-4 lg:mb-6">
-      <div className="hidden md:flex">
+      <div className="hidden md:flex mr-2 lg:mr-6">
         <Link href="/">
           <a>
-            <Logo className="h-6 w-0 md:h-8 lg:h-10" />
+            <Logo className="h-10 w-0 md:h-12 lg:h-16" />
           </a>
         </Link>
       </div>
