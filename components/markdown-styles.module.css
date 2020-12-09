@@ -10,7 +10,7 @@
 }
 
 .markdown strong {
-  @apply font-semibold;
+  @apply font-medium;
 }
 
 /* Lists */

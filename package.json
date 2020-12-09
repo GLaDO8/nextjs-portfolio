@@ -25,8 +25,7 @@
     "react-datocms": "1.2.4",
     "react-dom": "^17.0.1",
     "react-imgix": "^9.0.2",
-    "react-masonry-css": "^1.0.14",
-    "remark-html": "11.0.2"
+    "react-masonry-css": "^1.0.14"
   },
   "devDependencies": {
     "babel-plugin-inline-react-svg": "^1.1.2",
