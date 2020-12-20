@@ -60,6 +60,9 @@
 /* Responsive Design */
 @screen lg {
   .markdown img {
+    @apply content-center w-11/12 my-4 mx-auto;
+  }
+  .markdown p > img {
     @apply content-center max-w-2xl mx-auto;
   }
   .markdown p {
