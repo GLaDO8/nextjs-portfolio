@@ -89,7 +89,7 @@ export default function Meta() {
         name="Shreyas Gupta"
         content={`Personal website of Shreyas Gupta, iOS developer and UX Designer.`}
       />
-      <meta property="og:image" content={HOME_OG_IMAGE_URL} />
+      {/* <meta property="og:image" content={HOME_OG_IMAGE_URL} /> */}
     </Head>
   )
 }
