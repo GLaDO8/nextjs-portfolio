@@ -15,29 +15,34 @@ export default function Index({ allPosts, allWork }) {
       <Head>
         <title>Home</title>
       </Head>
-      <div className=" grid lg:grid-cols-2">
-        <div className="w-1/2 h-1/2">
-          <Logo className="h-20 md:h-24 lg:h-28" />
+      <Logo className="h-20 md:h-40 lg:h-56 mx-auto mt-16" />
+      <div
+        className="flex items-center w-auto"
+        id="nav-content"
+      >
+        <div className="flex justify-center flex-1 items-center">
+          {Buttonlist.map((button) => (
+            <NavButton
+              key={button.path}
+              path={button.path}
+              label={button.label}
+            />
+          ))}
         </div>
-        <div>
-          <div
-            className="lg:flex hidden flex-row-reverse pt-6"
-            id="nav-content"
-          >
-            {Buttonlist.map((button) => (
-              <NavButton
-                key={button.path}
-                path={button.path}
-                label={button.label}
-              />
-            ))}
-          </div>
-          <div>
-            <div className="text-base md:text-lg lg:text-xl font-regular z-10 p-8">
-              Hello Netizen, I’m Shreyas Gupta, a designer with a knack for
-              building things.
-            </div>
-          </div>
+      </div>
+      <div className="my-24">
+        <div className=" text-base md:text-lg lg:text-xl font-normal mx-auto max-w-md sm:mx-8 md:max-w-xl lg:max-w-2xl text-left">
+          <p>
+            Hello netizens, I’m Shreyas Gupta, a design researcher and developer studying at IIIT Bangalore, India. I’m currently working as a Research Intern under Prof. Alexandra Weilenmann at the HCI department at Gothenburg University. Previously I interned with GE Healthcare as a Data Scientist in their services department. I volunteer for EarthHero as an iOS developer, an organisation trying to help people track and reduce their carbon emissions. I was also the organiser for TEDxIIITBangalore’s very first TEDx event, along with my colleague Tejas Kotha.
+          </p> 
+          <br/>
+          <p>
+            When I’m not working, I tinker around and make art, click photos or write about things at the intersection of Psychology, Design, Tech and Business. I occasionally take up freelance work as a side hustle. 
+          </p>
+          <br/>
+          <p>
+            Feel free to get in touch with me for freelance work, questions or a quick chat. I’m active on Twitter and strive to maintain inbox zero :)
+          </p>
         </div>
       </div>
 

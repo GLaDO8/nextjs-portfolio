@@ -9,10 +9,6 @@ const navButtons = [
     label: 'Writings',
     path: '/writings',
   },
-  {
-    label: 'About',
-    path: '/about',
-  },
 ]
 
 export default navButtons
