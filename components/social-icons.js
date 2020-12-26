@@ -1,26 +1,20 @@
-import Behance from './../public/social/behance.svg'
-import Dribbble from './../public/social/dribbble.svg'
-import Github from './../public/social/github.svg'
-import Instagram from './../public/social/instagram.svg'
-import Twitter from './../public/social/twitter.svg'
-
 export default function Index() {
   return (
-    <div className="flex justify-center mb-32 mx-10">
+    <div className="hidden md:flex justify-start mb-32 mx-10">
       <a href="https://dribbble.com/shreyas_gupta">
-        <Dribbble className="social-icons" />
+        <img className="social-icons" src="https://s.svgbox.net/social.svg?fill=000000&ic=dribbble"/>
       </a>
       <a href="https://github.com/GLaDO8">
-        <Github className="social-icons" />
+        <img className="social-icons" src="https://s.svgbox.net/social.svg?fill=000000&ic=github"/>
       </a>
       <a href="https://www.behance.net/ShreyasGupta">
-        <Behance className="social-icons" />
+        <img className="social-icons" src="https://s.svgbox.net/social.svg?fill=000000&ic=behance"/>
       </a>
       <a href="https://www.instagram.com/shreyas.jpg/">
-        <Instagram className="social-icons" />
+        <img className="social-icons" src="https://s.svgbox.net/social.svg?fill=000000&ic=instagram"/>
       </a>
       <a href="https://twitter.com/shreyasjpg">
-        <Twitter className="social-icons" />
+        <img className="social-icons" src="https://s.svgbox.net/social.svg?fill=000000&ic=twitter"/>
       </a>
     </div>
   )
