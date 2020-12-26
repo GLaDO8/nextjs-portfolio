@@ -4,15 +4,15 @@ import Logo from './../public/logo.svg'
 const Navbar = (props) => (
   <>
     <nav className="hidden md:flex justify-between bg-white p-2 lg:p-6 z-10 mb-2 md:mb-4 lg:mb-6">
-      <div className="hidden md:flex mr-2 lg:mr-6">
+      <div className="flex mr-2 lg:mr-6">
         <Link href="/">
           <a>
-            <Logo className="h-10 w-0 md:h-12 lg:h-16" />
+            <Logo className="h-10 md:h-12 lg:h-16" />
           </a>
         </Link>
       </div>
       <div
-        className="lg:flex hidden justify-end flex-1 items-center"
+        className="md:flex hidden justify-end flex-1 items-center"
         id="nav-content"
       >
         {props.navButtons.map((button) => (
