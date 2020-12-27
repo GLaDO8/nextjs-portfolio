@@ -8,7 +8,7 @@ export default function WritingsList({ posts }) {
           <WritingPreview
             key={post.slug}
             title={post.title}
-            date={post.created_at}
+            udate={post.metadata.udate}
             slug={post.slug}
             excerpt={post.metadata.excerpt}
           />

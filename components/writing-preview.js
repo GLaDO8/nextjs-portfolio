@@ -1,17 +1,17 @@
 import Link from "next/link";
 export default function writingPreview({
 	title,
-	date,
+	udate,
 	excerpt,
 	slug,
   }) {
 	return (
 	  <Link as={`/writings/${slug}`} href="/writings/[slug]">
-		<div className="flex cursor-pointer mx-auto max-w-2xl">
-			<div className="flex-initial text-base font-normal mb-4 text-gray-700">
-			  <Date dateString={date} />
+		<div className="flex cursor-pointer mx-auto p-3 max-w-2xl">
+			<div className="flex-1 text-base justify-right font-normal text-gray-700">
+			  <p className="text-right">{udate}</p>
 			</div>
-		  <div className="flex-initial p-5 mx-auto max-w-lg" >
+		  <div className="flex-initial mx-auto max-w-lg" >
 			<h3 className="text-xl mb-1 font-semibold leading-snug text-gray-800">
 			  {title}
 			</h3>
