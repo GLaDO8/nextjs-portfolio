@@ -20,14 +20,14 @@ export default function Index({ allPosts, allWork }) {
             building things. Currently I’m studying at{' '}
             <a
               className="link-styling cursor-pointer"
-              src="https://www.iiitb.ac.in"
+              href="https://www.iiitb.ac.in"
             >
               IIIT Bangalore
             </a>{' '}
             and working as a research intern at the{' '}
             <a
               className="link-styling cursor-pointer"
-              src="https://www.gu.se/en/applied-information-technology/division-of-human-computer-interaction#Research"
+              href="https://www.gu.se/en/applied-information-technology/division-of-human-computer-interaction#Research"
             >
               HCI Department
             </a>{' '}
@@ -42,7 +42,7 @@ export default function Index({ allPosts, allWork }) {
               </Link>
             </div>
             <div>
-              <Link href="/about">
+              <Link href="https://twitter.com/shreyasjpg">
                 <button className="p-4 border-black border-2 cursor-pointer rounded-md mt-4">
                   Find me on Twitter
                 </button>
