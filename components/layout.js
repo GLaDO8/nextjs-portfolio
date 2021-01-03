@@ -5,10 +5,10 @@ import Navbar from './navbar'
 
 export default function Layout({ preview, children }) {
   return (
-    <div className="mx-6 lg:mx-8">
+    <div className="mx-4 lg:mx-8">
       <Meta />
       <Navbar navButtons={Buttonlist} />
-      <div className="min-h-screen">
+      <div className="max-w-3xl mx-auto">
         <main>{children}</main>
       </div>
       <Footer />

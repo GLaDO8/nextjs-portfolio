@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Link from 'next/link'
 import ProjectList from '@/components/projectlist'
 import WritingList from '@/components/writinglist'
-import SocialIcons from '@/components/social-icons'
 import { getAllPostsForHome, getAllProjectsForHome } from '@/lib/api'
 import { HOME_OG_IMAGE_URL } from '@/lib/constants'
 import Layout from '@/components/layout'
@@ -15,15 +14,41 @@ export default function Index({ allPosts, allWork }) {
           <meta property="og:image" content={HOME_OG_IMAGE_URL} />
           <title>Home</title>
         </Head>
-        <div className="mb-12">
+        <div className="mb-12 mt-6 lg:mt-12">
           <p className="text-xl md:text-xl lg:text-2xl font-normal text-left mt-8">
             Hello Netizen, I’m Shreyas Gupta, a designer with a knack for
-            building things. Currently I’m studying at IIIT Bangalore and
-            working as a research intern at Gothenburg University.
+            building things. Currently I’m studying at{' '}
+            <a
+              className="link-styling cursor-pointer"
+              src="https://www.iiitb.ac.in"
+            >
+              IIIT Bangalore
+            </a>{' '}
+            and working as a research intern at the{' '}
+            <a
+              className="link-styling cursor-pointer"
+              src="https://www.gu.se/en/applied-information-technology/division-of-human-computer-interaction#Research"
+            >
+              HCI Department
+            </a>{' '}
+            of Gothenburg University.
           </p>
-          <Link href="/about">
-            <button className="underline cursor-pointer mt-4">Know More</button>
-          </Link>
+          <div className="flex mt-2">
+            <div className="mr-4">
+              <Link href="/about">
+                <button className="p-4 bg-black border-black border-2 text-white cursor-pointer rounded-md mt-4">
+                  Know More
+                </button>
+              </Link>
+            </div>
+            <div>
+              <Link href="/about">
+                <button className="p-4 border-black border-2 cursor-pointer rounded-md mt-4">
+                  Find me on Twitter
+                </button>
+              </Link>
+            </div>
+          </div>
         </div>
         <div className="mt-12 lg:mt-36">
           <div className="home-page-title">Selected Work</div>
@@ -38,7 +63,6 @@ export default function Index({ allPosts, allWork }) {
             </button>
           </Link>
         </div>
-        <SocialIcons />
       </Layout>
     </>
   )

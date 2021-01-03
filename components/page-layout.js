@@ -24,20 +24,22 @@ export default function Layout({ children }) {
   })
   return (
     <>
-      <div className="App">
-        <div className="fixed top-0 left-0 w-full z-10">
-          <div
-            className="bg-black origin-top-left scale-0 h-1"
-            style={{ transform: `scale(${scroll}, 1)` }}
-          />
+      <div className="mx-4 lg:mx-8">
+        <div className="App">
+          <div className="fixed top-0 left-0 w-full z-10">
+            <div
+              className="bg-black origin-top-left scale-0 h-1"
+              style={{ transform: `scale(${scroll}, 1)` }}
+            />
+          </div>
         </div>
+        <Meta />
+        <Navbar navButtons={Buttonlist} />
+        <div>
+          <main>{children}</main>
+        </div>
+        <Footer />
       </div>
-      <Meta />
-      <Navbar navButtons={Buttonlist} />
-      <div className="mx-6 lg:mx-8">
-        <main>{children}</main>
-      </div>
-      <Footer />
     </>
   )
 }

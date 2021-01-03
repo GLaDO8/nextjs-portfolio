@@ -8,10 +8,10 @@ export default function ProjectPreview({ title, coverImage, excerpt, slug }) {
           <img className="" src={coverImage.imgix_url} />
         </div>
         <div className="mt-4">
-          <h3 className="text-lg font-semibold leading-snug text-black mb-1 cursor-pointer">
+          <h3 className="text-lg lg:text-xl font-semibold leading-snug text-black mb-1 cursor-pointer">
             {title}
           </h3>
-          <p className="text-base leading-relaxed text-black mb-2 cursor-pointer">
+          <p className="text-base lg:text-lg leading-relaxed text-black mb-2 cursor-pointer">
             {excerpt}
           </p>
         </div>
