@@ -2,8 +2,8 @@ import WritingPreview from './writing-preview'
 
 export default function WritingsList({ posts }) {
   return (
-    <section className="mb-8 lg:m-8">
-      <div className="">
+    <section>
+      <div>
         {posts.map((post) => (
           <WritingPreview
             key={post.slug}
