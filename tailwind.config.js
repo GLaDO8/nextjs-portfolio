@@ -17,9 +17,6 @@ module.exports = {
       '1/2': '50%',
     },
     extend: {
-      height: {
-        box: '300px',
-      },
       colors: {
         'accent-1': '#FAFAFA',
         'accent-2': '#EAEAEA',
@@ -40,6 +37,7 @@ module.exports = {
       },
       fontSize: {
         'lg': '1.075rem',
+        'xl': '1.4rem',
         '2xl': '1.6rem',
         '5xl': '2.5rem',
         '6xl': '3.5rem',
@@ -47,7 +45,8 @@ module.exports = {
         '8xl': '6.25rem',
       },
       maxWidth: {
-        '2xl': '44rem',
+        '2xl': '36rem',
+        '3xl': '50rem',
       },
       boxShadow: {
         small: '0 5px 10px rgba(0, 0, 0, 0.12)',

@@ -69,7 +69,7 @@
 }
 
 .menu-btn-lg {
-  @apply inline-block text-inactive-gray transition font-medium duration-300 ease-in-out text-xl px-4 py-4 leading-none hover:text-black;
+  @apply inline-block text-inactive-gray transition font-normal duration-300 ease-in-out text-base lg:text-xl px-2 lg:px-4 py-4 leading-none hover:text-black;
 }
 .menu-btn-lg-active {
   @apply text-black;
@@ -79,11 +79,11 @@
 }
 
 .social-icons {
-  @apply h-6 md:h-6 lg:h-8 m-6 mx-4 lg:mx-12;
+  @apply h-2 md:h-4 lg:h-6 m-2 mx-4 lg:mx-6;
 }
 
 .home-page-title {
-  @apply text-black font-medium mb-4;
+  @apply text-black text-base font-normal mb-4 mx-auto w-auto pr-8;
 }
 .my-masonry-grid {
   @apply mx-16 my-8;

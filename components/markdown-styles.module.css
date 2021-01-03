@@ -6,7 +6,7 @@
 
 /* Paragraph */
 .markdown p {
-  @apply mb-8 max-w-lg mx-auto;
+  @apply mb-8 max-w-3xl mx-auto;
 }
 
 .markdown strong {
@@ -37,16 +37,26 @@
 
 /* Headings */
 .markdown h2 {
-  @apply font-bold text-2xl tracking-tight mt-8 mb-4 leading-snug max-w-lg mx-auto;
+  @apply font-bold text-2xl tracking-tight mt-8 mb-4 max-w-3xl leading-snug mx-auto;
 }
 .markdown h3 {
-  @apply font-bold text-xl tracking-tight mt-8 mb-4 leading-snug max-w-lg mx-auto;
+  @apply font-bold text-xl tracking-tight mt-8 mb-4 max-w-3xl leading-snug mx-auto;
 }
 .markdown h4 {
-  @apply font-bold text-lg tracking-tight mt-8 leading-snug max-w-lg mx-auto;
+  @apply font-bold text-lg tracking-tight mt-8 max-w-3xl leading-snug mx-auto;
 }
 .markdown h5 {
-  @apply font-bold text-base text-gray-600 tracking-tight mb-4 leading-snug max-w-lg mx-auto;
+  @apply font-bold text-base text-gray-600 tracking-tight mb-4 max-w-3xl leading-snug mx-auto;
+}
+
+.markdown li {
+  @apply max-w-3xl ml-4;
+}
+.markdown ul {
+  @apply max-w-3xl mt-2;
+}
+.markdown ol {
+  @apply max-w-3xl mt-2;
 }
 
 /* Links */
@@ -63,30 +73,12 @@
     @apply content-center w-11/12 my-4 mx-auto;
   }
   .markdown p > img {
-    @apply content-center max-w-2xl mx-auto;
+    @apply content-center max-w-3xl mx-auto;
   }
   .markdown p {
-    @apply max-w-2xl;
-  }
-  .markdown h2 {
-    @apply max-w-2xl;
-  }
-  .markdown h3 {
-    @apply max-w-2xl;
-  }
-  .markdown h4 {
-    @apply max-w-2xl;
-  }
-  .markdown h5 {
-    @apply max-w-2xl;
+    @apply max-w-3xl;
   }
   .markdown li {
-    @apply max-w-2xl mx-auto ml-8;
-  }
-  .markdown ul {
-    @apply max-w-2xl mx-auto mt-2;
-  }
-  .markdown ol {
-    @apply max-w-2xl mx-auto mt-2;
+    @apply ml-8;
   }
 }
