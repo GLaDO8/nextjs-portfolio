@@ -50,7 +50,7 @@
 }
 
 .markdown li {
-  @apply max-w-3xl ml-4;
+  @apply max-w-3xl;
 }
 .markdown ul {
   @apply max-w-3xl mt-2;
