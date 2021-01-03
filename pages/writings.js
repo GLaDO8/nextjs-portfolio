@@ -1,4 +1,4 @@
-import MoreStories from '@/components/more-stories'
+import WritingList from '@/components/writinglist'
 import Layout from '@/components/layout'
 import { getOnlyBlogPosts } from '@/lib/api'
 import Head from 'next/head'
@@ -11,7 +11,7 @@ export default function Index({ allPosts }) {
           <title>Writings</title>
           <meta rel="og:description" content="Writings by Shreyas Gupta" />
         </Head>
-        <MoreStories posts={allPosts} />
+        <WritingList posts={allPosts} />
       </Layout>
     </>
   )
