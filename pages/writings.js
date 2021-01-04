@@ -11,7 +11,7 @@ export default function Index({ allPosts }) {
           <title>Writings</title>
           <meta rel="og:description" content="Writings by Shreyas Gupta" />
         </Head>
-        <WritingList posts={allPosts} />
+        <WritingList className="mt-6 lg:mt-16" posts={allPosts} />
       </Layout>
     </>
   )

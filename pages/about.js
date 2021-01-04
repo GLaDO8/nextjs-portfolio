@@ -10,7 +10,7 @@ export default function Index() {
           <title>Writings</title>
           <meta rel="og:description" content="Writings by Shreyas Gupta" />
         </Head>
-        <div className="text-lg mt-16">
+        <div className="text-lg mt-6 lg:mt-16">
           <p>
             Currently I’m Shreyas Gupta, a designer with a knack for building
             things. Currently I’m studying at{' '}
