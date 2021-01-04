@@ -1,6 +1,7 @@
 import WritingList from '@/components/writinglist'
 import Layout from '@/components/layout'
 import { getOnlyBlogPosts } from '@/lib/api'
+import { WRITING_OG_IMAGE_URL } from '@/lib/constants'
 import Head from 'next/head'
 
 export default function Index({ allPosts }) {
