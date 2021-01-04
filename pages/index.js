@@ -5,18 +5,26 @@ import WritingList from '@/components/writinglist'
 import { getAllPostsForHome, getAllProjectsForHome } from '@/lib/api'
 import { HOME_OG_IMAGE_URL } from '@/lib/constants'
 import Layout from '@/components/layout'
-
 export default function Index({ allPosts, allWork }) {
   return (
     <>
       <Layout>
         <Head>
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:site" content="@shreyasjpg" />
+          <meta name="twitter:title" content="Shreyas.design" />
+          <meta
+            name="twitter:description"
+            content="Selected Work and Writings by Shreyas Gupta"
+          />
+          <meta name="twitter:image" content={HOME_OG_IMAGE_URL} />
+
           <meta property="og:image" content={HOME_OG_IMAGE_URL} />
           <meta
             rel="og:description"
-            content="Writings and Work by Shreyas Gupta"
+            content="Selected Work and Writings by Shreyas Gupta"
           />
-          <title>Home</title>
+          <title>Homepage</title>
         </Head>
         <div className="mb-12 mt-6 lg:mt-16">
           <p className="text-xl md:text-xl lg:text-2xl font-normal text-left mt-8">
