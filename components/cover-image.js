@@ -6,8 +6,8 @@ export default function CoverImage({ title, url, slug }) {
     <Image
       src={url}
       alt={`Cover Image for ${title}`}
-      width={1200}
-      height={800}
+      width={1920}
+      height={1080}
       layout="responsive"
     />
   )
