@@ -1,13 +1,14 @@
-# My Personal Blog and Portfolio
+# Source Code for Personal Blog and Portfolio
 
-[shreyas.design](https//:shreyas.design) is,
+**[shreyas.design](https//:shreyas.design)** is,
 
-🎉 built using next.js
-</br>
-🚀 deployed on Vercel
-</br>
-🎨 themed using tailwindcss
-</br>
-📝 managed using cosmic.js CMS.
+* Built using Next.js 🎉
+* Deployed on Vercel 🚀
+* Styled using Tailwind CSS 🎨
+* Managed using Cosmic.js CMS 📝
+
+### Upcoming Changes 
+* Tweet Thoughtboard
+* Playground page for experiments
 
 The website contains my portfolio projects, blog posts and a lot more. Designers, feel free to reach out to me for help with building your online portfolios.
