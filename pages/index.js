@@ -14,24 +14,12 @@ export default function Index({ allPosts, allWork }) {
           <meta property="og:image" content={HOME_OG_IMAGE_URL} />
           <title>Home</title>
         </Head>
-        <div className="mb-12 mt-6 lg:mt-12">
+        <div className="mb-12 mt-6 lg:mt-16">
           <p className="text-xl md:text-xl lg:text-2xl font-normal text-left mt-8">
             Hello Netizen, I’m Shreyas Gupta, a designer with a knack for
-            building things. Currently I’m studying at{' '}
-            <a
-              className="link-styling cursor-pointer"
-              href="https://www.iiitb.ac.in"
-            >
-              IIIT Bangalore
-            </a>{' '}
-            and working as a research intern at the{' '}
-            <a
-              className="link-styling cursor-pointer"
-              href="https://www.gu.se/en/applied-information-technology/division-of-human-computer-interaction#Research"
-            >
-              HCI Department
-            </a>{' '}
-            of Gothenburg University.
+            building things. Currently I’m studying at IIIT Bangalore and
+            working as a research intern at the HCI Department of Gothenburg
+            University.
           </p>
           <div className="flex mt-2">
             <div className="mr-4">
