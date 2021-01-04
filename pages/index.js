@@ -12,6 +12,10 @@ export default function Index({ allPosts, allWork }) {
       <Layout>
         <Head>
           <meta property="og:image" content={HOME_OG_IMAGE_URL} />
+          <meta
+            rel="og:description"
+            content="Writings and Work by Shreyas Gupta"
+          />
           <title>Home</title>
         </Head>
         <div className="mb-12 mt-6 lg:mt-16">

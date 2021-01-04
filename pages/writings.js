@@ -10,6 +10,7 @@ export default function Index({ allPosts }) {
         <Head>
           <title>Writings</title>
           <meta rel="og:description" content="Writings by Shreyas Gupta" />
+          <meta property="og:image" content={WRITING_OG_IMAGE_URL} />
         </Head>
         <WritingList className="mt-6 lg:mt-16" posts={allPosts} />
       </Layout>
