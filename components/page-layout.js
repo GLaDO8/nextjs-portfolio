@@ -24,7 +24,7 @@ export default function Layout({ children }) {
   })
   return (
     <>
-      <div className="mx-4 lg:mx-8">
+      <div className="mx-8 md:mx-8 lg:mx-12">
         <div className="App">
           <div className="fixed top-0 left-0 w-full z-10">
             <div
