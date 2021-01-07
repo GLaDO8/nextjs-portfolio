@@ -8,17 +8,29 @@ export default function Footer() {
       <footer>
         <div className="max-w-3xl mx-auto text-lg lg:text-xl text-inactive-gray">
           Made from scratch using{' '}
-          <a className="link-styling cursor-pointer" href="https://nextjs.org">
+          <a
+            className="link-styling cursor-pointer"
+            href="https://nextjs.org"
+            rel="noopener"
+            target="_blank"
+          >
             Next.js
           </a>
           ,{' '}
-          <a className="link-styling cursor-pointer" href="https://vercel.com">
+          <a
+            className="link-styling cursor-pointer"
+            href="https://vercel.com"
+            rel="noopener"
+            target="_blank"
+          >
             Vercel
           </a>{' '}
           and{' '}
           <a
             className="link-styling cursor-pointer"
             href="https://tailwindcss.com"
+            rel="noopener"
+            target="_blank"
           >
             Tailwind CSS
           </a>
@@ -26,6 +38,8 @@ export default function Footer() {
           <a
             className="link-styling cursor-pointer"
             href="https://github.com/GLaDO8/nextjs-portfolio"
+            rel="noopener"
+            target="_blank"
           >
             open-source
           </a>

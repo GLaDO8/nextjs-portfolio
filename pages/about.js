@@ -17,6 +17,8 @@ export default function Index() {
             <a
               className="link-styling cursor-pointer"
               href="https://www.iiitb.ac.in"
+              rel="noopener"
+              target="_blank"
             >
               IIIT Bangalore
             </a>{' '}
@@ -25,6 +27,8 @@ export default function Index() {
             <a
               className="link-styling cursor-pointer"
               href="https://www.gu.se/en/applied-information-technology/division-of-human-computer-interaction#Research"
+              rel="noopener"
+              target="_blank"
             >
               HCI Department
             </a>{' '}
@@ -33,6 +37,8 @@ export default function Index() {
             <a
               className="link-styling cursor-pointer"
               href="https://www.earthhero.org/team"
+              rel="noopener"
+              target="_blank"
             >
               EarthHero
             </a>{' '}
