@@ -84,10 +84,6 @@ export default function Meta() {
       <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
       <meta name="theme-color" content="#000" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-      <meta
-        name="Shreyas Gupta"
-        content={`Personal website of Shreyas Gupta, iOS developer and UX Designer.`}
-      />
     </Head>
   )
 }

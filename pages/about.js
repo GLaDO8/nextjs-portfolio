@@ -7,7 +7,8 @@ export default function Index() {
       <Layout>
         <Head>
           <title>Writings</title>
-          <meta rel="og:description" content="Writings by Shreyas Gupta" />
+          <meta rel="og:description" content="About Me | Shreyas Gupta" />
+          <meta name="description" content="About Me | Shreyas Gupta" />
         </Head>
         <div className="text-lg mt-6 lg:mt-16">
           <p>

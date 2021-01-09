@@ -12,6 +12,7 @@ export default function Index({ allPosts }) {
           <title>Writings</title>
           <meta rel="og:description" content="Writings by Shreyas Gupta" />
           <meta property="og:image" content={WRITING_OG_IMAGE_URL} />
+          <meta name="description" content="Writings by Shreyas Gupta" />
 
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:site" content="@shreyasjpg" />

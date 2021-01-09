@@ -29,6 +29,7 @@ export default function Post({ post, morePosts, preview }) {
                 content={post.metadata.cover_image.imgix_url}
               />
               <meta property="og:description" content={post.metadata.excerpt} />
+              <meta name="description" content={post.metadata.excerpt} />
               <meta name="twitter:card" content="summary_large_image" />
               <meta name="twitter:site" content="@shreyasjpg" />
               <meta name="twitter:title" content={post.title} />

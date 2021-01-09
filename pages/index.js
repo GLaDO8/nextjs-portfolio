@@ -24,6 +24,10 @@ export default function Index({ allPosts, allWork }) {
             rel="og:description"
             content="Selected Work and Writings by Shreyas Gupta"
           />
+          <meta
+            name="description"
+            content="Selected Work and Writings by Shreyas Gupta"
+          />
           <title>Homepage</title>
         </Head>
         <div className="mb-12 mt-6 lg:mt-16">
