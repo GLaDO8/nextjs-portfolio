@@ -1,7 +1,6 @@
-import WritingList from '@/components/writinglist'
+import Link from 'next/link'
 import Layout from '@/components/layout'
 import Head from 'next/head'
-
 export default function Index() {
   return (
     <>
@@ -60,6 +59,20 @@ export default function Index() {
             quick chat. I’m active on Twitter and strive to maintain inbox zero
             :)
           </p>
+        </div>
+        <div className="mt-2">
+          <Link href="/public/Shreyas_Gupta_Resume.pdf">
+            <button className="flex p-4 bg-black border-black border-2 text-white cursor-pointer rounded-md mt-4">
+              <div className="pr-2">My Resume</div>
+              <div>
+                <img
+                  src="https://s.svgbox.net/hero-solid.svg?ic=arrow-right&fill=fff"
+                  width="22"
+                  height="22"
+                />
+              </div>
+            </button>
+          </Link>
         </div>
       </Layout>
     </>
