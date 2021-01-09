@@ -1,5 +1,7 @@
 {
-  "name": "App",
+  "short_name": "shreyas.design",
+  "name": "shreyas.design",
+  "description": "Work and Writings by Shreyas Gupta",
   "icons": [
     {
       "src": "/android-icon-36x36.png",
