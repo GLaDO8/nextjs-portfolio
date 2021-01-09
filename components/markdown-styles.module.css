@@ -61,7 +61,7 @@
 
 /* Links */
 .markdown a {
-  @apply text-blue-600;
+  @apply text-link-blue;
 }
 .markdown a:hover {
   border-bottom: 1px solid blue;
@@ -70,7 +70,7 @@
 /* Responsive Design */
 @screen lg {
   .markdown img {
-    @apply content-center w-11/12 my-4 mx-auto;
+    @apply content-center w-full my-4 mx-auto;
   }
   .markdown p > img {
     @apply content-center max-w-3xl mx-auto;
