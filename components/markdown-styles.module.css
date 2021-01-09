@@ -64,7 +64,7 @@
   @apply text-link-blue;
 }
 .markdown a:hover {
-  border-bottom: 1px solid blue;
+  border-bottom: 1px solid #06c;
 }
 
 /* Responsive Design */
