@@ -1,5 +1,5 @@
-import Date from "./date";
-import Link from "next/link";
+import Date from './date'
+import Link from 'next/link'
 
 export default function PostPreview({
   title,
@@ -12,7 +12,7 @@ export default function PostPreview({
     <Link as={`/writings/${slug}`} href="/writings/[slug]">
       <div className="transform bg-white shadow-lg hover:shadow-2xl hover:scale-100 duration-500 rounded-xl overflow-hidden cursor-pointer">
         <div className="">
-          <img src={coverImage.imgix_url} />
+          <img src={coverImage.imgix_url} alt={`Cover Image for ${title}`} />
         </div>
         <div className="p-5">
           <h3 className="text-xl mb-1 font-semibold leading-snug text-gray-800">
@@ -27,5 +27,5 @@ export default function PostPreview({
         </div>
       </div>
     </Link>
-  );
+  )
 }

@@ -5,7 +5,11 @@ export default function ProjectPreview({ title, coverImage, excerpt, slug }) {
     <Link as={`/work/${slug}`} href="/work/[slug]">
       <div>
         <div className="transform hover:shadow-xl hover:scale-100 duration-500 rounded-xl overflow-hidden cursor-pointer">
-          <img className="" src={coverImage.imgix_url} />
+          <img
+            className=""
+            src={coverImage.imgix_url}
+            alt={`Cover Image for ${title}`}
+          />
         </div>
         <div className="mt-4">
           <h3 className="text-lg lg:text-xl font-semibold leading-snug text-black mb-1 cursor-pointer">
