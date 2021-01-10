@@ -79,13 +79,10 @@
 }
 
 .menu-btn-lg {
-  @apply inline-block text-inactive-gray transition font-normal duration-300 ease-in-out text-lg px-2 lg:px-4 py-4 leading-none hover:text-black;
+  @apply inline-block text-grey-secondary transition font-normal duration-300 ease-in-out text-lg px-2 lg:px-4 py-4 leading-none hover:text-black;
 }
 .menu-btn-lg-active {
   @apply text-black;
-}
-.footer-btn {
-  @apply text-xs sm:text-sm transition duration-300 ease-in-out text-inactive-gray font-light hover:text-black;
 }
 
 .social-icons {
@@ -96,7 +93,6 @@
   border-bottom: 2px solid black;
   @apply text-black;
 }
-
 .home-page-title {
   @apply text-black text-base font-normal mb-4 mx-auto w-auto pr-8;
 }
@@ -111,8 +107,4 @@
 .my-masonry-grid_column {
   padding: 20px; /* gutter size */
   background-clip: padding-box;
-}
-
-.footnote-item {
-  @apply text-base mb-4;
 }

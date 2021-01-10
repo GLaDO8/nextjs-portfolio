@@ -60,14 +60,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        'accent-1': '#FAFAFA',
-        'accent-2': '#EAEAEA',
-        'accent-7': '#333',
         'link-blue': '#06c',
         'inactive-gray': '#9F9F9F',
         'grey-secondary': '#747474',
-        success: '#0070f3',
-        cyan: '#79FFE1',
       },
       spacing: {
         28: '7rem',
