@@ -10,6 +10,7 @@ export default function Index() {
           <meta rel="og:description" content="About Me | Shreyas Gupta" />
           <meta name="description" content="About Me | Shreyas Gupta" />
         </Head>
+        <h1>About</h1>
         <div className="text-lg mt-6 lg:mt-16">
           <p>
             Currently I’m Shreyas Gupta, a designer with a knack for building
