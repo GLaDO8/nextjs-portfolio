@@ -77,6 +77,18 @@
     font-display: swap;
   }
 }
+p > i {
+  @apply max-w-3xl mx-auto mb-4;
+}
+.page-title-design {
+  @apply text-2xl font-title md:text-5xl lg:text-6xl font-bold tracking-tighter leading-tight md:leading-none sm:mb-0 lg:mb-2 mt-24;
+}
+.section-title-design {
+  @apply text-2xl tracking-tight mt-8 mb-4 max-w-3xl leading-snug;
+}
+.page-para-design {
+  @apply text-base lg:text-lg leading-relaxed text-black my-4 cursor-pointer;
+}
 
 .menu-btn-lg {
   @apply inline-block text-grey-secondary transition font-normal duration-300 ease-in-out text-lg px-2 lg:px-4 py-4 leading-none hover:text-black;
