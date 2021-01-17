@@ -23,7 +23,7 @@ export default function Index({ allPosts }) {
           />
           <meta name="twitter:image" content={WRITING_OG_IMAGE_URL} />
         </Head>
-        <h1>Writings</h1>
+        <h1 className="page-title-design">Writings</h1>
         <WritingList className="mt-6 lg:mt-16" posts={allPosts} />
       </Layout>
     </>
