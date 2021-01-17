@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 import ProjectList from '@/components/projectlist'
 import WritingList from '@/components/writinglist'
 import { getAllPostsForHome, getAllProjectsForHome } from '@/lib/api'
@@ -70,11 +71,24 @@ export default function Index({ allPosts, allWork }) {
         <div className="mt-12 lg:mt-24">
           <div className="home-page-title">Playground</div>
           <Link href="/playground">
-            <p className="text-base lg:text-lg leading-relaxed text-black mb-2 cursor-pointer">
-              I tinker around and create visuals on various design tools. From
-              icons, illustrations, concept UI to donuts and unfinished ideas,
-              you will find everything here!
-            </p>
+            <div>
+              <div className="transform hover:shadow-xl hover:scale-100 duration-500 rounded-xl overflow-hidden cursor-pointer">
+                <Image
+                  src="/images/playground.png"
+                  alt="Cover image for playground section"
+                  width={3840}
+                  height={2160}
+                  layout="responsive"
+                />
+              </div>
+              <div className="mt-4">
+                <p className="text-base lg:text-lg leading-relaxed text-black mb-2 cursor-pointer">
+                  I tinker around and create visuals on various design tools.
+                  From icons, illustrations, concept UI to donuts and unfinished
+                  ideas, you will find everything here!
+                </p>
+              </div>
+            </div>
           </Link>
         </div>
       </Layout>
