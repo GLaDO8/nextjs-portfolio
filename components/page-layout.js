@@ -24,7 +24,7 @@ export default function Layout({ children }) {
   })
   return (
     <>
-      <div className="mx-8 md:mx-8 lg:mx-12">
+      <div>
         <div className="App">
           <div className="fixed top-0 left-0 w-full z-10">
             <div
@@ -34,11 +34,15 @@ export default function Layout({ children }) {
           </div>
         </div>
         <Meta />
-        <Navbar navButtons={Buttonlist} />
+        <div className="mx-4 md:mx-8 lg:mx-12">
+          <Navbar navButtons={Buttonlist} />
+        </div>
         <div>
           <main>{children}</main>
         </div>
-        <Footer />
+        <div className="mx-4 md:mx-8 lg:mx-12">
+          <Footer />
+        </div>
       </div>
     </>
   )
