@@ -1,6 +1,5 @@
 import Date from './date'
 import CoverImage from './cover-image'
-import ReadTime from './read-time'
 
 export default function PostHeader({ title, coverImage, date, excerpt }) {
   return (
