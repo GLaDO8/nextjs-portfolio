@@ -47,6 +47,7 @@ export default function Post({ post, morePosts, preview }) {
               coverImage={post.metadata.cover_image}
               date={post.created_at}
               excerpt={post.metadata.excerpt}
+              content={post.markdown}
             />
             <PostBody content={post.content} />
           </article>
@@ -60,12 +61,14 @@ export default function Post({ post, morePosts, preview }) {
 export async function getStaticProps({ params, preview = null }) {
   const data = await getProjectAndMoreProjects(params.slug, preview)
   const content = await markdownToHtml(data.post?.metadata?.content || '')
+  const markdown = data.post?.metadata?.content || ''
   return {
     props: {
       preview,
       post: {
         ...data.post,
         content,
+        markdown,
       },
       morePosts: data.morePosts || [],
     },

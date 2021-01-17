@@ -1,7 +1,13 @@
 import Date from './date'
 import CoverImage from './cover-image'
-
-export default function PostHeader({ title, coverImage, date, excerpt }) {
+import ReadingTime from './read-time'
+export default function PostHeader({
+  title,
+  coverImage,
+  date,
+  excerpt,
+  content,
+}) {
   return (
     <>
       <div className="w-auto mb-8 mt-8 md:mb-12 md:mt-12 lg:mb-16 lg:mt-16">
@@ -15,10 +21,14 @@ export default function PostHeader({ title, coverImage, date, excerpt }) {
           <p className="text-base md:text-xl lg:text-xl mb-2 leading-relaxed italic font-light">
             {excerpt}
           </p>
-          <div className="mb-8 text-base md:text-lg lg:text-lg text-grey-secondary font-light">
-            <Date dateString={date} />
+          <div className="flex">
+            <div className="mb-8 text-base md:text-lg lg:text-lg text-grey-secondary font-light mr-6">
+              <Date dateString={date} />
+            </div>
+            <div className="mb-8 text-base md:text-lg lg:text-lg text-grey-secondary font-light">
+              <ReadingTime content={content} />
+            </div>
           </div>
-          {/* <div>{post.minutes}</div> */}
         </div>
       </div>
     </>
