@@ -1,14 +1,17 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function ProjectPreview({ title, coverImage, excerpt, slug }) {
   return (
     <Link as={`/work/${slug}`} href="/work/[slug]">
       <div>
         <div className="transform hover:shadow-xl hover:scale-100 duration-500 rounded-xl overflow-hidden cursor-pointer">
-          <img
-            className=""
+          <Image
             src={coverImage.imgix_url}
             alt={`Cover Image for ${title}`}
+            width={3840}
+            height={2160}
+            layout="responsive"
           />
         </div>
         <div className="mt-4">
