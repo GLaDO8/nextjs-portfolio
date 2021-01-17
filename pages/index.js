@@ -32,9 +32,9 @@ export default function Index({ allPosts, allWork }) {
         </Head>
         <div className="mb-12 mt-6 lg:mt-16">
           <p className="text-xl md:text-xl lg:text-2xl font-normal text-left mt-8">
-            Hello Netizen, I’m Shreyas Gupta, a designer with a knack for
-            building things. Currently I’m studying at IIIT Bangalore and
-            working as a research intern at the HCI Department of Gothenburg
+            Hello! I’m Shreyas Gupta, a designer, researcher and writer with a
+            knack for building things. I’m currently studying at IIIT Bangalore
+            and working as a research intern at the HCI Department of Gothenburg
             University.
           </p>
           <div className="flex mt-2">
@@ -54,17 +54,27 @@ export default function Index({ allPosts, allWork }) {
             </div>
           </div>
         </div>
-        <div className="mt-12 lg:mt-36">
+        <div className="mt-12 lg:mt-48">
           <div className="home-page-title">Selected Work</div>
           <ProjectList posts={allWork} />
         </div>
-        <div className="mt-12">
+        <div className="mt-12 lg:mt-24">
           <div className="home-page-title">Selected Writings</div>
           <WritingList posts={allPosts} />
           <Link href="/writings">
             <button className="underline cursor-pointer -mt-4">
               Read More
             </button>
+          </Link>
+        </div>
+        <div className="mt-12 lg:mt-24">
+          <div className="home-page-title">Playground</div>
+          <Link href="/playground">
+            <p className="text-base lg:text-lg leading-relaxed text-black mb-2 cursor-pointer">
+              I tinker around and create visuals on various design tools. From
+              icons, illustrations, concept UI to donuts and unfinished ideas,
+              you will find everything here!
+            </p>
           </Link>
         </div>
       </Layout>
