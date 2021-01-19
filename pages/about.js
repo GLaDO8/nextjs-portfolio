@@ -64,18 +64,16 @@ export default function Index() {
         </div>
         <div className="mt-2">
           <Link href="/Resume-compressed.pdf" passHref={true}>
-            <a>
-              <button className="flex p-4 bg-black border-black border-2 text-white cursor-pointer rounded-md mt-4">
-                <div className="pr-2">My Resume</div>
-                <div>
-                  <img
-                    src="https://s.svgbox.net/hero-solid.svg?ic=arrow-right&fill=fff"
-                    width="22"
-                    height="22"
-                  />
-                </div>
-              </button>
-            </a>
+            <button className="flex p-4 bg-black border-black border-2 text-white cursor-pointer rounded-md mt-4">
+              <div className="pr-2">My Resume</div>
+              <div>
+                <img
+                  src="https://s.svgbox.net/hero-solid.svg?ic=arrow-right&fill=fff"
+                  width="22"
+                  height="22"
+                />
+              </div>
+            </button>
           </Link>
         </div>
       </Layout>
