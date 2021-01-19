@@ -22,11 +22,30 @@ export default function PostHeader({
             {excerpt}
           </p>
           <div className="flex">
-            <div className="mb-8 text-base md:text-lg lg:text-lg text-grey-secondary font-light mr-6">
-              <Date dateString={date} />
+            <div className="flex">
+              <div className="pr-2">
+                <img
+                  src="https://s2.svgbox.net/hero-outline.svg?ic=calendar&color=000"
+                  width="24"
+                  height="24"
+                />
+              </div>
+              <div className="mb-8 text-base md:text-lg lg:text-lg text-grey-secondary font-light mr-6">
+                <Date dateString={date} />
+              </div>
             </div>
-            <div className="mb-8 text-base md:text-lg lg:text-lg text-grey-secondary font-light">
-              <ReadingTime content={content} />
+
+            <div className="flex">
+              <div className="pr-2">
+                <img
+                  src="https://s2.svgbox.net/materialui.svg?ic=timer&color=000"
+                  width="24"
+                  height="24"
+                />
+              </div>
+              <div className="mb-8 text-base md:text-lg lg:text-lg text-grey-secondary font-light">
+                <ReadingTime content={content} />
+              </div>
             </div>
           </div>
         </div>
