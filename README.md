@@ -9,7 +9,6 @@
 
 ### Upcoming Changes 
 * Tweet Thoughtboard
-* Playground page for experiments
 * Automatic sitemap creation through Cosmic CMS API
 * Dark Mode Toggle
 
