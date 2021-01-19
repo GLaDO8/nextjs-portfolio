@@ -41,16 +41,20 @@ export default function Index({ allPosts, allWork }) {
           <div className="flex mt-2">
             <div className="mr-4">
               <Link href="/about">
-                <button className="p-4 bg-black border-black border-2 text-white cursor-pointer rounded-md mt-4">
-                  Know More
-                </button>
+                <a>
+                  <button className="p-4 bg-black border-black border-2 text-white cursor-pointer rounded-md mt-4">
+                    Know More
+                  </button>
+                </a>
               </Link>
             </div>
             <div>
               <Link href="https://twitter.com/shreyasjpg">
-                <button className="p-4 border-black border-2 cursor-pointer rounded-md mt-4">
-                  Find me on Twitter
-                </button>
+                <a>
+                  <button className="p-4 border-black border-2 cursor-pointer rounded-md mt-4">
+                    Find me on Twitter
+                  </button>
+                </a>
               </Link>
             </div>
           </div>
@@ -64,31 +68,33 @@ export default function Index({ allPosts, allWork }) {
           <WritingList posts={allPosts} />
           <Link href="/writings">
             <button className="underline cursor-pointer -mt-4">
-              Read More
+              <a>Read More</a>
             </button>
           </Link>
         </div>
         <div className="mt-12 lg:mt-24">
           <div className="home-page-title">Playground</div>
           <Link href="/playground">
-            <div>
-              <div className="transform hover:shadow-xl hover:scale-100 duration-500 rounded-xl overflow-hidden cursor-pointer">
-                <Image
-                  src="/images/playground.png"
-                  alt="Cover image for playground section"
-                  width={3840}
-                  height={2160}
-                  layout="responsive"
-                />
+            <a>
+              <div>
+                <div className="transform hover:shadow-xl hover:scale-100 duration-500 rounded-xl overflow-hidden cursor-pointer">
+                  <Image
+                    src="/images/playground.png"
+                    alt="Cover image for playground section"
+                    width={3840}
+                    height={2160}
+                    layout="responsive"
+                  />
+                </div>
+                <div className="mt-4">
+                  <p className="text-base lg:text-lg leading-relaxed text-black mb-2 cursor-pointer">
+                    I tinker around and create visuals on various design tools.
+                    From icons, illustrations, concept UI to donuts and
+                    unfinished ideas, you will find everything here!
+                  </p>
+                </div>
               </div>
-              <div className="mt-4">
-                <p className="text-base lg:text-lg leading-relaxed text-black mb-2 cursor-pointer">
-                  I tinker around and create visuals on various design tools.
-                  From icons, illustrations, concept UI to donuts and unfinished
-                  ideas, you will find everything here!
-                </p>
-              </div>
-            </div>
+            </a>
           </Link>
         </div>
       </Layout>

@@ -8,7 +8,7 @@ const NavButton = (props) => (
         props.router.pathname === props.path ? 'menu-btn-lg-active' : ''
       }`}
     >
-      {props.label}
+      <a>{props.label}</a>
     </div>
   </Link>
 )
