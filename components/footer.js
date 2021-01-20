@@ -1,6 +1,5 @@
 import React from 'react'
-import Link from 'next/link'
-import SocialIcons from '@/components/social-icons'
+import SocialLinks from './social-icons'
 
 export default function Footer() {
   return (
@@ -45,7 +44,8 @@ export default function Footer() {
           </a>
           .
         </div>
-        <div className="text-sm text-inactive-gray flex justify-start font-light py-4">
+        <SocialLinks />
+        <div className="text-sm text-inactive-gray flex justify-start font-light">
           © 2020-2077 by Shreyas Gupta, All rights reserved.
         </div>
       </footer>
