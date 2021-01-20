@@ -28,6 +28,7 @@ export default function PostHeader({
                   src="https://s2.svgbox.net/hero-outline.svg?ic=calendar&color=000"
                   width="24"
                   height="24"
+                  alt="date posted icon"
                 />
               </div>
               <div className="mb-8 text-base md:text-lg lg:text-lg text-grey-secondary font-light mr-6">
@@ -41,6 +42,7 @@ export default function PostHeader({
                   src="https://s2.svgbox.net/materialui.svg?ic=timer&color=000"
                   width="24"
                   height="24"
+                  alt="time to read icon"
                 />
               </div>
               <div className="mb-8 text-base md:text-lg lg:text-lg text-grey-secondary font-light">
