@@ -71,6 +71,7 @@ export default function Index() {
                   src="https://s.svgbox.net/hero-solid.svg?ic=arrow-right&fill=fff"
                   width="22"
                   height="22"
+                  alt="right arrow icon"
                 />
               </div>
             </button>
