@@ -98,7 +98,7 @@ p > i {
 }
 
 .social-icons {
-  @apply h-4 lg:h-6 m-2 mx-4 lg:mx-6;
+  @apply h-4 lg:h-5 mr-4 lg:mr-5;
 }
 
 .link-styling {
