@@ -1,5 +1,5 @@
 .markdown {
-  @apply text-lg sm:text-lg md:text-lg lg:text-lg text-gray-900 leading-relaxed;
+  @apply text-lg sm:text-lg md:text-lg lg:text-lg text-black leading-relaxed;
   font-weight: 340;
   line-height: 1.7;
 }
@@ -24,10 +24,13 @@
   @apply mb-0;
 }
 .markdown ol {
-  @apply list-decimal;
+  @apply list-decimal max-w-3xl mt-2;
 }
 .markdown ul {
-  @apply list-disc;
+  @apply list-disc max-w-3xl mt-2;
+}
+.markdown li {
+  @apply max-w-3xl mb-3;
 }
 
 /* Blockquote */
@@ -47,16 +50,6 @@
 }
 .markdown h5 {
   @apply font-bold text-base text-gray-600 tracking-tight mb-4 max-w-3xl leading-snug mx-auto;
-}
-
-.markdown li {
-  @apply max-w-3xl;
-}
-.markdown ul {
-  @apply max-w-3xl mt-2;
-}
-.markdown ol {
-  @apply max-w-3xl mt-2;
 }
 
 /* Links */
