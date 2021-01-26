@@ -31,7 +31,7 @@ export default function PostHeader({
                   alt="date posted icon"
                 />
               </div>
-              <div className="mb-8 text-base md:text-lg lg:text-lg text-grey-secondary font-light mr-6">
+              <div className="mb-8 text-base md:text-lg lg:text-lg font-light mr-6">
                 <Date dateString={date} />
               </div>
             </div>
@@ -45,7 +45,7 @@ export default function PostHeader({
                   alt="time to read icon"
                 />
               </div>
-              <div className="mb-8 text-base md:text-lg lg:text-lg text-grey-secondary font-light">
+              <div className="mb-8 text-base md:text-lg lg:text-lg font-light">
                 <ReadingTime content={content} />
               </div>
             </div>
