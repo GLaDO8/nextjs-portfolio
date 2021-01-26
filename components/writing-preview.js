@@ -15,8 +15,8 @@ export default function writingPreview({
             <Image
               src={coverImage.imgix_url}
               alt={`Cover Image for ${title}`}
-              width={1920}
-              height={1080}
+              width={960}
+              height={540}
               layout="responsive"
             />
           </div>
