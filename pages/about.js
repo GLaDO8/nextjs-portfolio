@@ -52,8 +52,9 @@ export default function Index() {
           <p>
             When I’m not working, I tinker around and make art, click photos or
             write about things at the intersection of Psychology, Design, Tech
-            and Business. I occasionally take up freelance work as a side
-            hustle.
+            and Business. You will usually find me in the kitchen trying out all
+            those youtube recipes. I occasionally take up freelance work as a
+            side hustle.
           </p>
           <br />
           <p>
