@@ -35,8 +35,8 @@ export default function Index({ allPosts, allWork }) {
           <p className="text-xl md:text-xl lg:text-2xl font-normal text-left mt-8">
             Hello! I’m Shreyas Gupta, a designer, researcher and writer with a
             knack for building things. I’m currently studying at IIIT Bangalore
-            and working as a research intern at the HCI Department of Gothenburg
-            University.
+            and doing my master's thesis in collaboration with the HCI Division
+            of Gothenburg University.
           </p>
           <div className="flex mt-2">
             <div className="mr-4">
