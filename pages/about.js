@@ -23,8 +23,16 @@ export default function Index() {
             >
               IIIT Bangalore
             </a>{' '}
-            , India and doing my master's thesis under the supervision of Dr.
-            Mattias Rost from the{' '}
+            , India and doing my master's thesis under the supervision of{' '}
+            <a
+              className="link-styling cursor-pointer"
+              href="https://www.gu.se/en/about/find-staff/mattiasrost"
+              rel="noopener"
+              target="_blank"
+            >
+              Dr. Mattias Rost
+            </a>{' '}
+            from the{' '}
             <a
               className="link-styling cursor-pointer"
               href="https://www.gu.se/en/applied-information-technology/division-of-human-computer-interaction#Research"
@@ -33,10 +41,18 @@ export default function Index() {
             >
               HCI Division
             </a>{' '}
-            of Gothenburg University and Dr. Bidisha Chaudhuri. Previously I
-            interned with GE Healthcare as a Data Scientist in their services
-            department to optimise the recovery and refurbishment of CT and MRI
-            machines. I volunteer for{' '}
+            of Gothenburg University and{' '}
+            <a
+              className="link-styling cursor-pointer"
+              href="https://www.iiitb.ac.in/faculty/bidisha-chaudhuri"
+              rel="noopener"
+              target="_blank"
+            >
+              Dr. Bidisha Chaudhuri
+            </a>
+            . Previously I interned with GE Healthcare as a Data Scientist in
+            their services department to optimise the recovery and refurbishment
+            of CT and MRI machines. I volunteer for{' '}
             <a
               className="link-styling cursor-pointer"
               href="https://www.earthhero.org/team"
