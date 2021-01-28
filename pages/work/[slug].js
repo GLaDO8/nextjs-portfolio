@@ -52,7 +52,7 @@ export default function Post({ post, morePosts, preview }) {
             <PostBody content={post.content} />
           </article>
           <SectionSeparator />
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+          {/* {morePosts.length > 0 && <MoreStories posts={morePosts} />} */}
         </>
       )}
     </PageLayout>
