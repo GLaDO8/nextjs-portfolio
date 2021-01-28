@@ -10,7 +10,7 @@ export default function PostHeader({
 }) {
   return (
     <>
-      <div className="w-auto mb-8 mt-8 md:mb-12 md:mt-12 lg:mb-16 lg:mt-16">
+      <div className="w-auto my-12 md:my-16 lg:my-24">
         <CoverImage title={title} url={coverImage.imgix_url} />
       </div>
       <div className="mx-4 md:mx-8 lg:mx-12">
