@@ -23,18 +23,20 @@ export default function Index() {
             >
               IIIT Bangalore
             </a>{' '}
-            , India and working as a Research Intern under Prof. Alexandra
-            Weilenmann at the{' '}
+            , India and doing my master's thesis under the supervision of Dr.
+            Mattias Rost from the{' '}
             <a
               className="link-styling cursor-pointer"
               href="https://www.gu.se/en/applied-information-technology/division-of-human-computer-interaction#Research"
               rel="noopener"
               target="_blank"
             >
-              HCI Department
+              HCI Division
             </a>{' '}
-            of Gothenburg University. Previously I interned with GE Healthcare
-            as a Data Scientist in their services department. I volunteer for{' '}
+            of Gothenburg University and Dr. Bidisha Chaudhuri. Previously I
+            interned with GE Healthcare as a Data Scientist in their services
+            department to optimise the recovery and refurbishment of CT and MRI
+            machines. I volunteer for{' '}
             <a
               className="link-styling cursor-pointer"
               href="https://www.earthhero.org/team"
