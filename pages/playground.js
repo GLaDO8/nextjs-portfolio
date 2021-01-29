@@ -19,7 +19,7 @@ export default function Index() {
         <h1 className="page-title-design">Playground</h1>
         <div>
           <div>
-            <h2 className="section-title-design">Trying out art styles</h2>
+            <h2 className="section-title-design">Neue Instagram</h2>
             <div className="rounded-xl overflow-hidden">
               <Image
                 src="/images/Instagram-nu.png"
@@ -39,9 +39,7 @@ export default function Index() {
           </div>
 
           <div>
-            <h2 className="section-title-design">
-              Realism in icons. The Big Sur effect.
-            </h2>
+            <h2 className="section-title-design">Iconography</h2>
             <div className="rounded-xl overflow-hidden">
               <Image
                 src="/images/icons.png"
