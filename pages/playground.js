@@ -24,8 +24,8 @@ export default function Index() {
               <Image
                 src="/images/Instagram-nu.png"
                 alt="Neumorphic Concept art for Instagram"
-                width={2000}
-                height={1748}
+                width={1000}
+                height={874}
                 layout="responsive"
               />
             </div>
@@ -46,8 +46,8 @@ export default function Index() {
               <Image
                 src="/images/icons.png"
                 alt="Various icons designed with 3D realism in mind"
-                width={2500}
-                height={1361}
+                width={1250}
+                height={680}
                 layout="responsive"
               />
             </div>
@@ -65,35 +65,47 @@ export default function Index() {
           </div>
 
           <div>
-            <h2 className="section-title-design">Blender. Donuts. 3D</h2>
+            <h2 className="section-title-design">Blender experiments</h2>
             <div className="rounded-xl overflow-hidden">
               {' '}
               <Image
                 src="/images/donut.png"
                 alt="3D Donut made in Blender"
-                width={3840}
-                height={3840}
+                width={1000}
+                height={1000}
                 layout="responsive"
               />
             </div>
             <p className="page-para-design">
               I've been meaning to learn Blender for quite some time and I
-              finally got around to making something. It's just a start, I've
-              got a lot of ideas to explore!
+              finally got around to making something. It's just a start, lot of
+              ideas to explore!
             </p>
           </div>
 
           <div>
             <h2 className="section-title-design">Vector Art</h2>
-            <div className="rounded-xl overflow-hidden">
-              <Image
-                src="/images/lowpolyearth.png"
-                alt="low ploygon count vector earth"
-                width={2500}
-                height={2500}
-                layout="responsive"
-              />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="rounded-xl overflow-hidden">
+                <Image
+                  src="/images/lowpolyearth.png"
+                  alt="low ploygon count vector earth"
+                  width={800}
+                  height={800}
+                  layout="responsive"
+                />
+              </div>
+              <div className="rounded-xl overflow-hidden">
+                <Image
+                  src="/images/logorender1.png"
+                  alt=""
+                  width={800}
+                  height={800}
+                  layout="responsive"
+                />
+              </div>
             </div>
+
             <p className="page-para-design"></p>
           </div>
         </div>
