@@ -59,6 +59,31 @@ export default function Index({ allPosts, allWork }) {
           <div className="home-page-title">Selected Work</div>
           <ProjectList posts={allWork} />
         </div>
+        <div>
+          <Link href="https://www.behance.net/gallery/94684063/Zomato-A-UX-Review">
+            <div>
+              <div className="transform hover:shadow-xl hover:scale-100 duration-500 rounded-xl overflow-hidden cursor-pointer">
+                <Image
+                  src="/images/zomato.png"
+                  alt="Cover image for playground section"
+                  width={1600}
+                  height={900}
+                  layout="responsive"
+                />
+              </div>
+              <div className="mt-4">
+                <h3 className="hover:underline text-lg lg:text-xl mb-2 font-semibold leading-snug text-black">
+                  Zomato UX Teardown Challenge
+                </h3>
+                <p className="text-base lg:text-lg leading-relaxed text-black mb-2 cursor-pointer">
+                  I tinker around and create visuals on various design tools.
+                  From icons, illustrations, concept UI to donuts and unfinished
+                  ideas, you will find everything here!
+                </p>
+              </div>
+            </div>
+          </Link>
+        </div>
         <div className="mt-12 lg:mt-24">
           <div className="home-page-title">Selected Writings</div>
           <WritingList posts={allPosts} />
@@ -76,8 +101,8 @@ export default function Index({ allPosts, allWork }) {
                 <Image
                   src="/images/playground.png"
                   alt="Cover image for playground section"
-                  width={3840}
-                  height={2160}
+                  width={1920}
+                  height={1080}
                   layout="responsive"
                 />
               </div>
