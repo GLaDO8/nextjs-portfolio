@@ -76,9 +76,8 @@ export default function Index({ allPosts, allWork }) {
                   Zomato UX Teardown Challenge
                 </h3>
                 <p className="text-base lg:text-lg leading-relaxed text-black mb-2 cursor-pointer">
-                  I tinker around and create visuals on various design tools.
-                  From icons, illustrations, concept UI to donuts and unfinished
-                  ideas, you will find everything here!
+                  A thorough UX review of Zomato's 2019 redesign, conducted as
+                  part of their UX Teardown Challenge.
                 </p>
               </div>
             </div>
