@@ -82,6 +82,7 @@ export default function Meta() {
       <meta name="msapplication-TileColor" content="#000000" />
       <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
       <meta name="theme-color" content="#000" />
+      <meta name="robots" content="index, follow" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
     </Head>
   )
