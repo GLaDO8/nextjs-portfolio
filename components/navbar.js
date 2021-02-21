@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Logo from './../public/logo.svg'
 const Navbar = (props) => (
   <>
-    <div className="container mx-auto max-w-3xl">
+    <div className="container mx-auto max-w-xl lg:max-w-3xl">
       <nav className="flex justify-between mt-8 z-10 mb-2 md:mb-4 lg:mb-6">
         <div>
           <Link href="/">

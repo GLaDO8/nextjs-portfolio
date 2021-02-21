@@ -16,7 +16,7 @@ export default function Index() {
             Hello! I’m Shreyas Gupta, a designer, researcher and writer with a
             knack for building things. I’m currently studying at{' '}
             <a
-              className="link-styling cursor-pointer"
+              className="general-link cursor-pointer"
               href="https://www.iiitb.ac.in"
               rel="noopener"
               target="_blank"
@@ -25,7 +25,7 @@ export default function Index() {
             </a>{' '}
             , India and doing my master's thesis under the supervision of{' '}
             <a
-              className="link-styling cursor-pointer"
+              className="general-link cursor-pointer"
               href="https://www.gu.se/en/about/find-staff/mattiasrost"
               rel="noopener"
               target="_blank"
@@ -34,7 +34,7 @@ export default function Index() {
             </a>{' '}
             from the{' '}
             <a
-              className="link-styling cursor-pointer"
+              className="general-link cursor-pointer"
               href="https://www.gu.se/en/applied-information-technology/division-of-human-computer-interaction#Research"
               rel="noopener"
               target="_blank"
@@ -43,7 +43,7 @@ export default function Index() {
             </a>{' '}
             of Gothenburg University and{' '}
             <a
-              className="link-styling cursor-pointer"
+              className="general-link cursor-pointer"
               href="https://www.iiitb.ac.in/faculty/bidisha-chaudhuri"
               rel="noopener"
               target="_blank"
@@ -54,7 +54,7 @@ export default function Index() {
             their services department to optimise the recovery and refurbishment
             of CT and MRI machines. I volunteer for{' '}
             <a
-              className="link-styling cursor-pointer"
+              className="general-link cursor-pointer"
               href="https://www.earthhero.org/team"
               rel="noopener"
               target="_blank"
@@ -81,15 +81,15 @@ export default function Index() {
             :)
           </p>
         </div>
-        <div className="mt-2">
+        <div className="mt-6">
           <Link href="/Resume-compressed.pdf" passHref={true}>
-            <button className="flex p-4 bg-black border-black border-2 text-white cursor-pointer rounded-md mt-4">
+            <button className="flex p-4 bg-black border-black border-2 text-white cursor-pointer rounded-xl mt-4 items-center">
               <div className="pr-2">My Resume</div>
               <div>
                 <img
                   src="https://s.svgbox.net/hero-solid.svg?ic=arrow-right&fill=fff"
-                  width="22"
-                  height="22"
+                  width="20"
+                  height="20"
                   alt="right arrow icon"
                 />
               </div>
