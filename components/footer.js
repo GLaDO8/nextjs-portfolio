@@ -1,14 +1,19 @@
 import React from 'react'
 import SocialLinks from './social-icons'
+import { useTheme } from 'next-themes'
 
 export default function Footer() {
+  const { theme } = useTheme()
+
   return (
     <div className="bottom-0 max-w-3xl mx-auto my-36">
       <footer>
         <div className="max-w-3xl mx-auto text-lg lg:text-xl text-inactive-gray">
           Made from scratch using{' '}
           <a
-            className="link-styling cursor-pointer"
+            className={`cursor-pointer ${
+              theme === 'dark' ? 'link-styling-dark' : 'link-styling'
+            }`}
             href="https://nextjs.org"
             rel="noopener"
             target="_blank"
@@ -17,7 +22,9 @@ export default function Footer() {
           </a>
           ,{' '}
           <a
-            className="link-styling cursor-pointer"
+            className={`cursor-pointer ${
+              theme === 'dark' ? 'link-styling-dark' : 'link-styling'
+            }`}
             href="https://vercel.com"
             rel="noopener"
             target="_blank"
@@ -26,7 +33,9 @@ export default function Footer() {
           </a>{' '}
           and{' '}
           <a
-            className="link-styling cursor-pointer"
+            className={`cursor-pointer ${
+              theme === 'dark' ? 'link-styling-dark' : 'link-styling'
+            }`}
             href="https://tailwindcss.com"
             rel="noopener"
             target="_blank"
@@ -35,7 +44,9 @@ export default function Footer() {
           </a>
           . The code is{' '}
           <a
-            className="link-styling cursor-pointer"
+            className={`cursor-pointer ${
+              theme === 'dark' ? 'link-styling-dark' : 'link-styling'
+            }`}
             href="https://github.com/GLaDO8/nextjs-portfolio"
             rel="noopener"
             target="_blank"

@@ -15,10 +15,10 @@ export default function ProjectPreview({ title, coverImage, excerpt, slug }) {
           />
         </div>
         <div className="mt-4">
-          <h3 className="hover:underline text-lg lg:text-xl font-semibold leading-snug text-black mb-1 cursor-pointer">
+          <h3 className="hover:underline text-lg lg:text-xl font-semibold leading-snug text-black dark:text-white mb-1 cursor-pointer">
             {title}
           </h3>
-          <p className="text-base lg:text-lg leading-relaxed text-black mb-2 cursor-pointer">
+          <p className="text-base lg:text-lg leading-relaxed text-black dark:text-white mb-2 cursor-pointer">
             {excerpt}
           </p>
         </div>

@@ -28,7 +28,7 @@ export default function Layout({ children }) {
         <div className="App">
           <div className="fixed top-0 left-0 w-full z-10">
             <div
-              className="bg-black origin-top-left scale-0 h-2"
+              className="bg-black dark:bg-white origin-top-left scale-0 h-2"
               style={{ transform: `scale(${scroll}, 1)` }}
             />
           </div>

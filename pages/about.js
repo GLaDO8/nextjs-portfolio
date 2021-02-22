@@ -1,7 +1,12 @@
 import Link from 'next/link'
 import Layout from '@/components/layout'
 import Head from 'next/head'
+import { useTheme } from 'next-themes'
 export default function Index() {
+  const { theme } = useTheme()
+  const rightArrowLink = `https://s.svgbox.net/hero-solid.svg?ic=arrow-right&fill=${
+    theme === 'dark' ? '000' : 'fff'
+  }`
   return (
     <>
       <Layout>
@@ -83,11 +88,11 @@ export default function Index() {
         </div>
         <div className="mt-6">
           <Link href="/Resume-compressed.pdf" passHref={true}>
-            <button className="flex p-4 bg-black border-black border-2 text-white cursor-pointer rounded-xl mt-4 items-center">
+            <button className="flex p-4 bg-black dark:bg-white border-black border-2 text-white dark:text-black cursor-pointer rounded-xl mt-4 items-center">
               <div className="pr-2">My Resume</div>
               <div>
                 <img
-                  src="https://s.svgbox.net/hero-solid.svg?ic=arrow-right&fill=fff"
+                  src={rightArrowLink}
                   width="20"
                   height="20"
                   alt="right arrow icon"
