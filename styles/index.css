@@ -142,3 +142,11 @@ p > i {
 .logo-light-mode {
   fill: #000;
 }
+
+p {
+  @apply text-black dark:text-white;
+}
+
+blockquote > p {
+  @apply bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white;
+}

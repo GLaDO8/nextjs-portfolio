@@ -1,19 +1,15 @@
 .markdown {
-  @apply text-lg sm:text-lg md:text-lg lg:text-lg text-black dark:text-white leading-relaxed;
+  @apply text-lg sm:text-lg md:text-lg lg:text-lg leading-relaxed;
   font-weight: 340;
   line-height: 1.7;
 }
 
 /* Paragraph */
 .markdown p {
-  @apply mb-4 max-w-3xl mx-auto text-black dark:text-white;
-}
-
-.markdown p {
-  @apply mb-4 max-w-3xl mx-auto text-black dark:text-white;
+  @apply mb-4 max-w-3xl mx-auto;
 }
 .markdown strong {
-  @apply font-medium text-black dark:text-white;
+  @apply font-medium;
 }
 
 /* Lists */
@@ -38,18 +34,18 @@
 
 /* Blockquote */
 .markdown blockquote > p {
-  @apply my-6 p-6 bg-gray-100 text-gray-800;
+  @apply my-6 p-6;
 }
 
 /* Headings */
 .markdown h2 {
-  @apply font-bold text-2xl tracking-tight mt-8 mb-4 max-w-3xl leading-snug mx-auto text-black dark:text-white;
+  @apply font-bold text-2xl tracking-tight mt-8 mb-4 max-w-3xl leading-snug mx-auto;
 }
 .markdown h3 {
-  @apply font-bold text-xl tracking-tight mt-8 mb-4 max-w-3xl leading-snug mx-auto text-black dark:text-white;
+  @apply font-bold text-xl tracking-tight mt-8 mb-4 max-w-3xl leading-snug mx-auto;
 }
 .markdown h4 {
-  @apply font-bold text-lg tracking-tight mt-8 max-w-3xl leading-snug mx-auto text-black dark:text-white;
+  @apply font-bold text-lg tracking-tight mt-8 max-w-3xl leading-snug mx-auto;
 }
 .markdown h5 {
   @apply font-bold text-base text-gray-600 dark:text-white tracking-tight mb-4 max-w-3xl leading-snug mx-auto;
