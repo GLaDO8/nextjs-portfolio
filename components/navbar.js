@@ -43,7 +43,7 @@ function Navbar({ navButtons }) {
               />
             ))}
             <button
-              className="p-2 md:p-3 lg:p-4 text-white dark:text-black bg-gray-300 dark:bg-gray-50 bg-opacity-50 font-semibold rounded-md ml-4"
+              className="p-2 md:p-3 lg:p-3 text-white dark:text-black bg-gray-300 dark:bg-gray-50 bg-opacity-50 font-semibold rounded-md ml-4"
               onClick={() => {
                 setTheme(theme === 'light' ? 'dark' : 'light')
               }}
