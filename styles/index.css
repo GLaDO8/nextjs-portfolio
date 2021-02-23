@@ -101,7 +101,7 @@ p > i {
 }
 
 .social-icons {
-  @apply h-4 lg:h-5 mr-4 lg:mr-5 transform transition duration-500 hover:scale-125;
+  @apply h-5 mr-4 lg:mr-5 transform transition duration-500 hover:scale-125;
 }
 
 .link-styling {
