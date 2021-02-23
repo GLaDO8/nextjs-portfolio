@@ -43,7 +43,7 @@ function Navbar({ navButtons }) {
               />
             ))}
             <button
-              className="p-2 md:p-3 lg:p-3 text-white dark:text-black bg-gray-300 dark:bg-gray-50 bg-opacity-50 font-semibold rounded-md ml-4"
+              className="p-2 md:p-3 text-white dark:text-black bg-gray-300 dark:bg-gray-50 bg-opacity-50 font-semibold rounded-md ml-4"
               onClick={() => {
                 setTheme(theme === 'light' ? 'dark' : 'light')
               }}
@@ -51,15 +51,15 @@ function Navbar({ navButtons }) {
             >
               <img
                 src="https://s2.svgbox.net/hero-solid.svg?ic=moon&color=000"
-                className={`h-4 w-4 md:h-5 md:w-5 lg:h-6 lg:w-6 ${
-                  theme === 'dark' ? 'hidden' : 'flex-1'
+                className={`h-4 w-4 md:h-5 md:w-5 lg:h-6 lg:w-6 transition-all duration-500 ${
+                  theme === 'dark' ? 'hidden' : ''
                 }`}
                 alt="dark mode toggle - switch to light mode"
               />
               <img
                 src="https://s2.svgbox.net/hero-solid.svg?ic=sun&color=000"
-                className={`h-4 w-4 md:h-5 md:w-5 lg:h-6 lg:w-6 ${
-                  theme === 'dark' ? 'flex-1' : 'hidden'
+                className={`h-4 w-4 md:h-5 md:w-5 lg:h-6 lg:w-6 transition-all duration-500 ${
+                  theme === 'dark' ? '' : 'hidden'
                 }`}
                 alt="dark mode toggle - switch to dark mode"
               />
