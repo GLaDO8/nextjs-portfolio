@@ -39,18 +39,21 @@ function Navbar({ navButtons }) {
               onClick={() => {
                 setTheme(theme === 'light' ? 'dark' : 'light')
               }}
+              aria-label="dark mode toggle"
             >
               <img
                 src="https://s2.svgbox.net/hero-solid.svg?ic=moon&color=000"
                 className={`h-4 w-4 md:h-5 md:w-5 lg:h-6 lg:w-6 ${
                   theme === 'dark' ? 'hidden' : 'flex-1'
                 }`}
+                alt="dark mode toggle - switch to light mode"
               />
               <img
                 src="https://s2.svgbox.net/hero-solid.svg?ic=sun&color=000"
                 className={`h-4 w-4 md:h-5 md:w-5 lg:h-6 lg:w-6 ${
                   theme === 'dark' ? 'flex-1' : 'hidden'
                 }`}
+                alt="dark mode toggle - switch to dark mode"
               />
             </button>
           </div>
