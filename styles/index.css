@@ -150,3 +150,7 @@ p {
 blockquote > p {
   @apply bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white;
 }
+
+section > ol > li > p {
+  @apply text-black dark:text-white;
+}
