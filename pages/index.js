@@ -46,14 +46,14 @@ export default function Index({ allPosts, allWork }) {
           <div className="flex mt-2">
             <div className="mr-4">
               <Link href="/about" passHref={true}>
-                <button className="p-4 bg-black dark:bg-white border-black border-2 text-white dark:text-black cursor-pointer rounded-xl mt-4 transform transition duration-300 hover:bg-gray-800 hover:border-gray-800">
+                <button className="p-4 bg-black dark:bg-white border-black border-2 text-white dark:text-black cursor-pointer rounded-xl mt-4 transform transition duration-300 hover:bg-gray-800 hover:border-gray-800 hover:bg-opacity-80">
                   Know More
                 </button>
               </Link>
             </div>
             <div>
               <Link href="https://twitter.com/shreyasjpg" passHref={true}>
-                <button className="p-4 border-black dark:border-white dark:text-white border-2 cursor-pointer rounded-xl mt-4 transform transition duration-300 flex items-center">
+                <button className="p-4 border-black dark:border-white dark:text-white border-2 cursor-pointer rounded-xl mt-4 transform transition duration-300 flex items-center hover:border-opacity-80 hover:text-opacity-80">
                   <div className="pr-2">
                     <img
                       src={twitterSvgTagLink}

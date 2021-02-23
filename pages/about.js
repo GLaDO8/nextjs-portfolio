@@ -88,7 +88,7 @@ export default function Index() {
         </div>
         <div className="mt-6">
           <Link href="/Resume-compressed.pdf" passHref={true}>
-            <button className="flex p-4 bg-black dark:bg-white border-black border-2 text-white dark:text-black cursor-pointer rounded-xl mt-4 items-center">
+            <button className="flex p-4 bg-black dark:bg-white border-black border-2 text-white dark:text-black cursor-pointer rounded-xl mt-4 items-center hover:bg-opacity-80 transition duration-300">
               <div className="pr-2">My Resume</div>
               <div>
                 <img
