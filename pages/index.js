@@ -113,8 +113,8 @@ export default function Index({ allPosts, allWork }) {
                 <Image
                   src="/images/playground.png"
                   alt="Cover image for playground section"
-                  width={1920}
-                  height={1080}
+                  width={1600}
+                  height={900}
                   layout="responsive"
                 />
               </div>
