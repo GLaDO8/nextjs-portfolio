@@ -1,4 +1,5 @@
 module.exports = {
+  darkMode: 'class',
   purge: {
     enabled: true,
     content: [
@@ -63,6 +64,8 @@ module.exports = {
         'link-blue': '#06c',
         'inactive-gray': '#9F9F9F',
         'grey-secondary': '#747474',
+        'dark-mode-black': '#131313',
+        'dark-mode-gray': '#8A8A8A',
       },
       spacing: {
         28: '7rem',

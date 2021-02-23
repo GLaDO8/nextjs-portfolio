@@ -7,7 +7,7 @@ export default function Meta() {
         defer
         src="https://static.cloudflareinsights.com/beacon.min.js"
         data-cf-beacon='{"token": "b1d1af4020ba49baba3385a4f24a8d05"}'
-      ></script>
+      />
       <link
         rel="apple-touch-icon"
         sizes="57x57"

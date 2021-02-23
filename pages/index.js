@@ -1,12 +1,17 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useTheme } from 'next-themes'
 import ProjectList from '@/components/projectlist'
 import WritingList from '@/components/writinglist'
 import { getAllPostsForHome, getAllProjectsForHome } from '@/lib/api'
 import { HOME_OG_IMAGE_URL } from '@/lib/constants'
 import Layout from '@/components/layout'
 export default function Index({ allPosts, allWork }) {
+  const { theme } = useTheme()
+  const twitterSvgTagLink = `https://s2.svgbox.net/social.svg?ic=twitter&color=${
+    theme === 'light' ? '000' : 'fff'
+  }`
   return (
     <>
       <Layout>
@@ -32,7 +37,7 @@ export default function Index({ allPosts, allWork }) {
           <title>Homepage</title>
         </Head>
         <div className="mb-12 mt-6 lg:mt-16">
-          <p className="text-xl md:text-xl lg:text-2xl font-normal text-left mt-8">
+          <p className="text-xl md:text-xl lg:text-2xl font-normal text-left mt-8 text-black dark:text-white">
             Hello! I’m Shreyas Gupta, a designer, researcher and writer with a
             knack for building things. I’m currently studying at IIIT Bangalore
             and doing my master's thesis in collaboration with the HCI Division
@@ -41,15 +46,23 @@ export default function Index({ allPosts, allWork }) {
           <div className="flex mt-2">
             <div className="mr-4">
               <Link href="/about" passHref={true}>
-                <button className="p-4 bg-black border-black border-2 text-white cursor-pointer rounded-xl mt-4 transform transition duration-300 hover:bg-gray-800 hover:border-gray-8 00">
+                <button className="p-4 bg-black dark:bg-white border-black border-2 text-white dark:text-black cursor-pointer rounded-xl mt-4 transform transition duration-300 hover:bg-gray-800 hover:border-gray-800">
                   Know More
                 </button>
               </Link>
             </div>
             <div>
               <Link href="https://twitter.com/shreyasjpg" passHref={true}>
-                <button className="p-4 border-black border-2 cursor-pointer rounded-xl mt-4 hover:bg-black hover:text-white transform transition duration-300">
-                  Find me on Twitter
+                <button className="p-4 border-black dark:border-white dark:text-white border-2 cursor-pointer rounded-xl mt-4 transform transition duration-300 flex items-center">
+                  <div className="pr-2">
+                    <img
+                      src={twitterSvgTagLink}
+                      width="22"
+                      height="22"
+                      alt="twitter logo"
+                    />
+                  </div>
+                  <div>Find me on Twitter</div>
                 </button>
               </Link>
             </div>
@@ -72,10 +85,10 @@ export default function Index({ allPosts, allWork }) {
                 />
               </div>
               <div className="mt-4">
-                <h3 className="hover:underline text-lg lg:text-xl mb-2 font-semibold leading-snug text-black">
+                <h3 className="hover:underline text-lg lg:text-xl mb-2 font-semibold leading-snug text-black dark:text-white">
                   Zomato UX Teardown Challenge
                 </h3>
-                <p className="text-base lg:text-lg leading-relaxed text-black mb-2 cursor-pointer">
+                <p className="text-base lg:text-lg leading-relaxed text-black dark:text-white mb-2 cursor-pointer">
                   A thorough UX review of Zomato's 2019 redesign, conducted as
                   part of their UX Teardown Challenge.
                 </p>
@@ -87,7 +100,7 @@ export default function Index({ allPosts, allWork }) {
           <div className="home-page-title">Selected Writings</div>
           <WritingList posts={allPosts} />
           <Link href="/writings" passHref={true}>
-            <button className="underline cursor-pointer -mt-4">
+            <button className="underline cursor-pointer -mt-4 text-black dark:text-white">
               Read More
             </button>
           </Link>
@@ -106,7 +119,7 @@ export default function Index({ allPosts, allWork }) {
                 />
               </div>
               <div className="mt-4">
-                <p className="text-base lg:text-lg leading-relaxed text-black mb-2 cursor-pointer">
+                <p className="text-base lg:text-lg leading-relaxed text-black dark:text-white mb-2 cursor-pointer">
                   I tinker around and create visuals on various design tools.
                   From icons, illustrations, concept UI to donuts and unfinished
                   ideas, you will find everything here!

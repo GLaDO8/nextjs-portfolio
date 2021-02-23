@@ -1,5 +1,5 @@
 .markdown {
-  @apply text-lg sm:text-lg md:text-lg lg:text-lg text-black leading-relaxed;
+  @apply text-lg sm:text-lg md:text-lg lg:text-lg leading-relaxed;
   font-weight: 340;
   line-height: 1.7;
 }
@@ -8,7 +8,6 @@
 .markdown p {
   @apply mb-4 max-w-3xl mx-auto;
 }
-
 .markdown strong {
   @apply font-medium;
 }
@@ -21,7 +20,7 @@
 .markdown li > p,
 .markdown li > ul,
 .markdown li > ol {
-  @apply mb-0;
+  @apply mb-0 text-black dark:text-white;
 }
 .markdown ol {
   @apply list-decimal max-w-3xl mt-2;
@@ -35,7 +34,7 @@
 
 /* Blockquote */
 .markdown blockquote > p {
-  @apply my-6 p-6 bg-gray-100 text-gray-800;
+  @apply my-6 p-6;
 }
 
 /* Headings */
@@ -49,7 +48,7 @@
   @apply font-bold text-lg tracking-tight mt-8 max-w-3xl leading-snug mx-auto;
 }
 .markdown h5 {
-  @apply font-bold text-base text-gray-600 tracking-tight mb-4 max-w-3xl leading-snug mx-auto;
+  @apply font-bold text-base text-gray-600 dark:text-white tracking-tight mb-4 max-w-3xl leading-snug mx-auto;
 }
 
 /* Links */

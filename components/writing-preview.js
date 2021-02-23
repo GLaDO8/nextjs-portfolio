@@ -21,10 +21,10 @@ export default function writingPreview({
             />
           </div>
           <div className="mt-4">
-            <h3 className="hover:underline text-lg lg:text-xl mb-2 font-semibold leading-snug text-black">
+            <h3 className="hover:underline text-lg lg:text-xl mb-2 font-semibold leading-snug text-black dark:text-white">
               {title}
             </h3>
-            <p className="text-base lg:text-lg text-black leading-tight mb-2">
+            <p className="text-base lg:text-lg text-black dark:text-white leading-tight mb-2">
               {excerpt}
             </p>
             <p className="text-sm lg:text-base font-normal text-inactive-gray">
