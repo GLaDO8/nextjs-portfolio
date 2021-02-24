@@ -83,6 +83,18 @@ p {
 p > i {
   @apply max-w-3xl mx-auto mb-4;
 }
+
+p > a,
+a,
+sup > a {
+  @apply text-link-blue dark:text-dark-mode-link-blue transition-opacity duration-300 ease-in-out;
+}
+p > a:hover,
+a:hover,
+sup > a:hover {
+  border-bottom: 1.5px solid #06c;
+}
+
 .page-title-design {
   @apply text-2xl font-title md:text-5xl lg:text-6xl font-bold tracking-tighter leading-tight md:leading-none my-16 text-black dark:text-white;
 }
@@ -141,10 +153,6 @@ p > i {
 
 .logo-light-mode {
   fill: #000;
-}
-
-p {
-  @apply text-black dark:text-white;
 }
 
 blockquote > p {

@@ -62,6 +62,7 @@ module.exports = {
     extend: {
       colors: {
         'link-blue': '#06c',
+        'dark-mode-link-blue': '#5BADFF',
         'inactive-gray': '#9F9F9F',
         'grey-secondary': '#747474',
         'dark-mode-black': '#131313',

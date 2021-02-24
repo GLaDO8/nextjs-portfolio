@@ -53,7 +53,7 @@
 
 /* Links */
 .markdown a {
-  @apply text-link-blue transition duration-300 ease-in-out;
+  @apply text-link-blue transition-opacity duration-300 ease-in-out;
 }
 .markdown a:hover {
   border-bottom: 1.5px solid #06c;
