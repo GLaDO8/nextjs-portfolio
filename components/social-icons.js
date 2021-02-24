@@ -1,6 +1,14 @@
 import { useTheme } from 'next-themes'
+import React, { useState, useEffect } from 'react'
 export default function Index() {
+  const [mounted, setMounted] = useState(false)
   const { theme } = useTheme()
+
+  // When mounted on client, now we can show the UI
+  useEffect(() => setMounted(true), [])
+
+  if (!mounted) return null
+
   const twitterSvgTagLink = `https://s2.svgbox.net/social.svg?ic=twitter&color=${
     theme === 'light' ? '000' : 'fff'
   }`
