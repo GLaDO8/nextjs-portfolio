@@ -67,6 +67,7 @@ module.exports = {
         'grey-secondary': '#747474',
         'dark-mode-black': '#131313',
         'dark-mode-gray': '#8A8A8A',
+        'dark-mode-blockquote-gray': '#363636',
       },
       spacing: {
         28: '7rem',
