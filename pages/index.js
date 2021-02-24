@@ -74,8 +74,8 @@ export default function Index({ allPosts, allWork }) {
         </div>
         <div>
           <Link href="https://www.behance.net/gallery/94684063/Zomato-A-UX-Review">
-            <div>
-              <div className="transform hover:shadow-xl hover:scale-100 duration-500 rounded-xl overflow-hidden cursor-pointer">
+            <div className="group">
+              <div className="transform group-hover:shadow-xl hover:scale-100 duration-500 rounded-xl overflow-hidden cursor-pointer">
                 <Image
                   src="/images/zomato.png"
                   alt="Cover image for playground section"
@@ -85,7 +85,7 @@ export default function Index({ allPosts, allWork }) {
                 />
               </div>
               <div className="mt-4">
-                <h3 className="hover:underline text-lg lg:text-xl mb-2 font-semibold leading-snug text-black dark:text-white">
+                <h3 className="group-hover:underline text-lg lg:text-xl mb-2 font-semibold leading-snug text-black dark:text-white">
                   Zomato UX Teardown Challenge
                 </h3>
                 <p className="text-base lg:text-lg leading-relaxed text-black dark:text-white mb-2 cursor-pointer">
