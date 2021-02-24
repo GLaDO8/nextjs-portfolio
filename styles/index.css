@@ -85,14 +85,18 @@ p > i {
 }
 
 p > a,
-sup > a {
+sup > a,
+em > a {
   @apply text-link-blue dark:text-dark-mode-link-blue;
 }
 p > a:hover,
-sup > a:hover {
+sup > a:hover,
+em > a:hover {
   border-bottom: 1.5px solid #06c;
 }
-
+h5 {
+  @apply font-bold text-base tracking-tight mb-4 max-w-3xl leading-snug mx-auto text-gray-500 dark:text-gray-500;
+}
 .page-title-design {
   @apply text-2xl font-title md:text-5xl lg:text-6xl font-bold tracking-tighter leading-tight md:leading-none my-16 text-black dark:text-white;
 }
@@ -145,18 +149,9 @@ sup > a:hover {
   background-clip: padding-box;
 }
 
-.logo-dark-mode {
-  fill: #868686;
-}
-
-.logo-light-mode {
-  fill: #000;
-}
-
 blockquote > p {
   @apply bg-gray-100 dark:bg-dark-mode-blockquote-gray text-gray-900 dark:text-white rounded-xl;
 }
-
 section > ol > li > p {
   @apply text-black dark:text-white;
 }

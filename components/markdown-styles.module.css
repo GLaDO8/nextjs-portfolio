@@ -47,9 +47,6 @@
 .markdown h4 {
   @apply font-bold text-lg tracking-tight mt-8 max-w-3xl leading-snug mx-auto;
 }
-.markdown h5 {
-  @apply font-bold text-base text-gray-600 dark:text-white tracking-tight mb-4 max-w-3xl leading-snug mx-auto;
-}
 
 /* Links */
 .markdown a {
