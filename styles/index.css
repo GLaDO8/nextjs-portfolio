@@ -85,12 +85,10 @@ p > i {
 }
 
 p > a,
-a,
 sup > a {
-  @apply text-link-blue dark:text-dark-mode-link-blue transition-opacity duration-300 ease-in-out;
+  @apply text-link-blue dark:text-dark-mode-link-blue;
 }
 p > a:hover,
-a:hover,
 sup > a:hover {
   border-bottom: 1.5px solid #06c;
 }
