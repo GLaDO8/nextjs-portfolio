@@ -24,8 +24,8 @@ export default function Index() {
               <Image
                 src="/images/Instagram-nu.png"
                 alt="Neumorphic Concept art for Instagram"
-                width={1000}
-                height={874}
+                width={667}
+                height={583}
                 layout="responsive"
               />
             </div>
@@ -44,8 +44,8 @@ export default function Index() {
               <Image
                 src="/images/icons.png"
                 alt="Various icons designed with 3D realism in mind"
-                width={1250}
-                height={680}
+                width={834}
+                height={454}
                 layout="responsive"
               />
             </div>
@@ -69,8 +69,8 @@ export default function Index() {
               <Image
                 src="/images/donut.png"
                 alt="3D Donut made in Blender"
-                width={1000}
-                height={1000}
+                width={800}
+                height={800}
                 layout="responsive"
               />
             </div>
@@ -88,8 +88,8 @@ export default function Index() {
                 <Image
                   src="/images/lowpolyearth.png"
                   alt="low ploygon count vector earth"
-                  width={800}
-                  height={800}
+                  width={600}
+                  height={600}
                   layout="responsive"
                 />
               </div>
@@ -97,8 +97,8 @@ export default function Index() {
                 <Image
                   src="/images/logorender1.png"
                   alt=""
-                  width={800}
-                  height={800}
+                  width={600}
+                  height={600}
                   layout="responsive"
                 />
               </div>
