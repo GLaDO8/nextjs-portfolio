@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useTheme } from 'next-themes'
@@ -8,7 +9,13 @@ import { getAllPostsForHome, getAllProjectsForHome } from '@/lib/api'
 import { HOME_OG_IMAGE_URL } from '@/lib/constants'
 import Layout from '@/components/layout'
 export default function Index({ allPosts, allWork }) {
+  const [mounted, setMounted] = useState(false)
   const { theme } = useTheme()
+
+  // When mounted on client, now we can show the UI
+  useEffect(() => setMounted(true), [])
+
+  if (!mounted) return null
   const twitterSvgTagLink = `https://s2.svgbox.net/social.svg?ic=twitter&color=${
     theme === 'light' ? '000' : 'fff'
   }`
