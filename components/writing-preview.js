@@ -24,10 +24,10 @@ export default function writingPreview({
             <h3 className="group-hover:underline text-lg lg:text-xl mb-2 font-semibold leading-snug text-black dark:text-white duration-500 transition transform">
               {title}
             </h3>
-            <p className="text-base lg:text-lg text-black dark:text-white leading-tight mb-2">
+            <p className="text-base lg:text-lg text-black dark:text-white font-preview-desc leading-tight mb-2">
               {excerpt}
             </p>
-            <p className="text-sm lg:text-base font-normal text-inactive-gray">
+            <p className="text-sm lg:text-base text-inactive-gray font-preview-desc">
               {udate}
             </p>
           </div>

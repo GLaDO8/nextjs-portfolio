@@ -53,14 +53,14 @@ export default function Index({ allPosts, allWork }) {
           <div className="flex mt-2">
             <div className="mr-4">
               <Link href="/about" passHref={true}>
-                <button className="p-4 bg-black dark:bg-white border-black border-2 text-white dark:text-black cursor-pointer rounded-xl mt-4 transform transition duration-300 hover:bg-gray-800 hover:border-gray-800 hover:bg-opacity-80">
+                <button className="p-4 bg-black dark:bg-white border-black dark:border-white border-2 text-white dark:text-black cursor-pointer rounded-xl mt-4 transform transition duration-300 hover:bg-opacity-70 hover:border-opacity-70">
                   Know More
                 </button>
               </Link>
             </div>
             <div>
               <Link href="https://twitter.com/shreyasjpg" passHref={true}>
-                <button className="p-4 border-black dark:border-white dark:text-white border-2 cursor-pointer rounded-xl mt-4 transform transition duration-300 flex items-center hover:border-opacity-80 hover:text-opacity-80">
+                <button className="p-4 border-black dark:border-white text-black dark:text-white border-2 cursor-pointer rounded-xl mt-4 transform transition duration-300 flex items-center hover:border-opacity-70 hover:text-opacity-70">
                   <div className="pr-2">
                     <img
                       src={twitterSvgTagLink}
@@ -95,7 +95,7 @@ export default function Index({ allPosts, allWork }) {
                 <h3 className="group-hover:underline text-lg lg:text-xl mb-2 font-semibold leading-snug text-black dark:text-white">
                   Zomato UX Teardown Challenge
                 </h3>
-                <p className="text-base lg:text-lg leading-relaxed text-black dark:text-white mb-2 cursor-pointer">
+                <p className="text-base lg:text-lg leading-relaxed text-black dark:text-white mb-2 cursor-pointer font-preview-desc">
                   A thorough UX review of Zomato's 2019 redesign, conducted as
                   part of their UX Teardown Challenge.
                 </p>
@@ -126,7 +126,7 @@ export default function Index({ allPosts, allWork }) {
                 />
               </div>
               <div className="mt-4">
-                <p className="text-base lg:text-lg leading-relaxed text-black dark:text-white mb-2 cursor-pointer">
+                <p className="text-base lg:text-lg leading-relaxed text-black dark:text-white mb-2 cursor-pointer font-preview-desc">
                   I tinker around and create visuals on various design tools.
                   From icons, illustrations, concept UI to donuts and unfinished
                   ideas, you will find everything here!
