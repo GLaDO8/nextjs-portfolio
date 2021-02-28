@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="max-w-3xl mx-auto text-lg lg:text-xl text-inactive-gray">
           Made from scratch using{' '}
           <a
-            className={`cursor-pointer ${
+            className={`cursor-pointer hover:opacity-70 transition duration-300 ${
               theme === 'dark' ? 'link-styling-dark' : 'link-styling'
             }`}
             href="https://nextjs.org"
@@ -22,7 +22,7 @@ export default function Footer() {
           </a>
           ,{' '}
           <a
-            className={`cursor-pointer ${
+            className={`cursor-pointer hover:opacity-70 transition duration-300 ${
               theme === 'dark' ? 'link-styling-dark' : 'link-styling'
             }`}
             href="https://vercel.com"
@@ -33,7 +33,7 @@ export default function Footer() {
           </a>{' '}
           and{' '}
           <a
-            className={`cursor-pointer ${
+            className={`cursor-pointer hover:opacity-70 transition duration-300 ${
               theme === 'dark' ? 'link-styling-dark' : 'link-styling'
             }`}
             href="https://tailwindcss.com"
@@ -44,7 +44,7 @@ export default function Footer() {
           </a>
           . The code is{' '}
           <a
-            className={`cursor-pointer ${
+            className={`cursor-pointer hover:opacity-70 transition duration-300 ${
               theme === 'dark' ? 'link-styling-dark' : 'link-styling'
             }`}
             href="https://github.com/GLaDO8/nextjs-portfolio"
