@@ -3,9 +3,9 @@ import ErrorPage from 'next/error'
 import PostBody from '@/components/post-body'
 import PostHeader from '@/components/post-header'
 import SectionSeparator from '@/components/section-separator'
+// import MoreStories from '@/components/more-stories'
 import PageLayout from '@/components/page-layout'
 import { getAllProjectsWithSlug, getProjectAndMoreProjects } from '@/lib/api'
-import PostTitle from '@/components/post-title'
 import Head from 'next/head'
 import markdownToHtml from '@/lib/markdownToHtml'
 
@@ -17,7 +17,9 @@ export default function Post({ post, morePosts, preview }) {
   return (
     <PageLayout preview={preview}>
       {router.isFallback ? (
-        <PostTitle>Loading…</PostTitle>
+        <h1 className="text-3xl font-title md:text-5xl lg:text-7xl ml-6 mr-24 font-bold tracking-tighter leading-tight md:leading-none mb-2 md:text-left">
+          Loading…
+        </h1>
       ) : (
         <>
           <article>

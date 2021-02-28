@@ -78,6 +78,7 @@ module.exports = {
       lineHeight: {
         tight: 1.2,
       },
+      fontWeight: { 'preview-desc': '350' },
       fontSize: {
         'base': '1.05rem',
         'lg': '1.2rem',
