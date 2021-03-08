@@ -126,7 +126,6 @@ h5 {
   border-bottom: 2px solid white;
   @apply text-black dark:text-white hover:bg-opacity-80;
 }
-
 .general-link {
   @apply text-link-blue transform transition duration-300 ease-in-out;
 }
@@ -136,17 +135,8 @@ h5 {
 .home-page-title {
   @apply text-black dark:text-white text-base font-normal mb-4 mx-auto w-auto pr-8;
 }
-.my-masonry-grid {
-  @apply mx-16 my-8;
-  display: -webkit-box; /* Not needed if autoprefixing */
-  display: -ms-flexbox; /* Not needed if autoprefixing */
-  /* margin-left: 0px; */
-  display: flex;
-  width: auto;
-}
-.my-masonry-grid_column {
-  padding: 20px; /* gutter size */
-  background-clip: padding-box;
+.lazy-renderer {
+  content-visibility: auto;
 }
 
 blockquote > p {

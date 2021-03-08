@@ -6,7 +6,7 @@ export default function Footer() {
   const { theme } = useTheme()
 
   return (
-    <div className="bottom-0 max-w-3xl mx-auto my-36">
+    <div className="bottom-0 max-w-3xl mx-auto my-36 lazy-renderer">
       <footer>
         <div className="max-w-3xl mx-auto text-lg lg:text-xl text-inactive-gray">
           Made from scratch using{' '}

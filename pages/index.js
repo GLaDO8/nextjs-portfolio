@@ -79,7 +79,7 @@ export default function Index({ allPosts, allWork }) {
           <div className="home-page-title">Selected Work</div>
           <ProjectList posts={allWork} />
         </div>
-        <div>
+        <div className="lazy-renderer">
           <Link href="https://www.behance.net/gallery/94684063/Zomato-A-UX-Review">
             <div className="group">
               <div className="transform group-hover:shadow-xl hover:scale-100 duration-500 rounded-xl overflow-hidden cursor-pointer">
@@ -103,7 +103,7 @@ export default function Index({ allPosts, allWork }) {
             </div>
           </Link>
         </div>
-        <div className="mt-12 lg:mt-24">
+        <div className="mt-12 lg:mt-24 lazy-renderer">
           <div className="home-page-title">Selected Writings</div>
           <WritingList posts={allPosts} />
           <Link href="/writings" passHref={true}>
@@ -112,7 +112,7 @@ export default function Index({ allPosts, allWork }) {
             </button>
           </Link>
         </div>
-        <div className="mt-12 lg:mt-24">
+        <div className="mt-12 lg:mt-24 lazy-renderer">
           <div className="home-page-title">Playground</div>
           <Link href="/playground" passHref={true}>
             <div>
