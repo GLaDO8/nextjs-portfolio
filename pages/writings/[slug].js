@@ -6,7 +6,6 @@ import SectionSeparator from '@/components/section-separator'
 // import MoreStories from '@/components/more-stories'
 import PageLayout from '@/components/page-layout'
 import { getAllPostsWithSlug, getPostAndMorePosts } from '@/lib/api'
-import PostTitle from '@/components/post-title'
 import Head from 'next/head'
 import markdownToHtml from '@/lib/markdownToHtml'
 
@@ -19,7 +18,7 @@ export default function Post({ post, morePosts, preview }) {
   return (
     <PageLayout preview={preview}>
       {router.isFallback ? (
-        <PostTitle>Loading…</PostTitle>
+        <h1 className="page-title-design">Loading…</h1>
       ) : (
         <>
           <article>

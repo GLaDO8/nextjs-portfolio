@@ -127,10 +127,10 @@ h5 {
   @apply text-black dark:text-white hover:bg-opacity-80;
 }
 .general-link {
-  @apply text-link-blue transform transition duration-300 ease-in-out;
+  @apply text-link-blue transform transition-opacity duration-300 ease-in-out;
 }
 .general-link:hover {
-  border-bottom: 2px solid #06c;
+  border-bottom: 1.5px solid #06c;
 }
 .home-page-title {
   @apply text-black dark:text-white text-base font-normal mb-4 mx-auto w-auto pr-8;

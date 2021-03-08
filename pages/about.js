@@ -16,7 +16,7 @@ export default function Index() {
           <meta name="description" content="About Me | Shreyas Gupta" />
         </Head>
         <h1 className="page-title-design">About</h1>
-        <div className="text-lg mt-6 lg:mt-16">
+        <div className="text-lg mt-6 lg:mt-16 font-preview-desc">
           <p>
             Hello! I’m Shreyas Gupta, a designer, researcher and writer with a
             knack for building things. I’m currently studying at{' '}
