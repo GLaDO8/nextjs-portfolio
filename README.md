@@ -1,6 +1,6 @@
 # Source Code for Personal Blog and Portfolio
 
-**[shreyas.design](https://shreyas.design)** is,
+This is my playground for testing new features and learning the best web dev practices out there. 
 
 * Built using [Next.js](https://nextjs.org) 🎉
 * Deployed on [Vercel](https://vercel.com) 🚀
