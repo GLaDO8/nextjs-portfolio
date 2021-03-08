@@ -2,10 +2,10 @@
 
 **[shreyas.design](https://shreyas.design)** is,
 
-* Built using Next.js 🎉
-* Deployed on Vercel 🚀
-* Styled using Tailwind CSS 🎨
-* Content managed using Cosmic.js CMS 📝
+* Built using [Next.js](https://nextjs.org) 🎉
+* Deployed on [Vercel](https://vercel.com) 🚀
+* Styled using [Tailwind CSS](https://tailwindcss.com) 🎨
+* Content managed using [Cosmic.js CMS](https://www.cosmicjs.com) 📝
 * Dark Mode Toggle ✨🌙
 
 ### Upcoming Changes 
