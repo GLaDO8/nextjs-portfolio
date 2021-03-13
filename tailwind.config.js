@@ -11,32 +11,6 @@ module.exports = {
   },
   theme: {
     fontFamily: {
-      // title: [
-      // '-apple-system',
-      // 'BlinkMacSystemFont',
-      // 'Segoe UI',
-      // 'Roboto',
-      // 'Oxygen',
-      // 'Ubuntu',
-      //   'Cantarell',
-      //   'Fira Sans',
-      //   'Droid Sans',
-      //   'Helvetica Neue',
-      //   'sans-serif',
-      // ],
-      // sans: [
-      //   '-apple-system',
-      //   'BlinkMacSystemFont',
-      //   'Segoe UI',
-      //   'Roboto',
-      //   'Oxygen',
-      //   'Ubuntu',
-      //   'Cantarell',
-      //   'Fira Sans',
-      //   'Droid Sans',
-      //   'Helvetica Neue',
-      //   'sans-serif',
-      // ],
       title: [
         'Rubik',
         '-apple-system',
