@@ -41,7 +41,7 @@ export default function Index({ allPosts, allWork }) {
             name="description"
             content="Selected Work and Writings by Shreyas Gupta"
           />
-          <title>Homepage</title>
+          <title>shreyas.design</title>
         </Head>
         <div className="mb-12 mt-6 lg:mt-16">
           <p className="text-xl md:text-xl lg:text-2xl font-normal text-left mt-8 text-black dark:text-white">
