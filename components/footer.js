@@ -6,9 +6,9 @@ export default function Footer() {
   const { theme } = useTheme()
 
   return (
-    <div className="bottom-0 max-w-3xl mx-auto my-36 lazy-renderer">
+    <div className="bottom-0 max-w-4xl mx-auto my-36 lazy-renderer">
       <footer>
-        <div className="max-w-3xl mx-auto text-lg lg:text-xl text-inactive-gray">
+        <div className="text-lg lg:text-xl text-inactive-gray">
           Made from scratch using{' '}
           <a
             className={`cursor-pointer hover:opacity-70 transition duration-300 ${
@@ -56,7 +56,7 @@ export default function Footer() {
           .
         </div>
         <SocialLinks />
-        <div className="text-sm text-inactive-gray flex justify-start font-light">
+        <div className="flex justify-start text-sm font-light text-inactive-gray">
           © 2020-2077 by Shreyas Gupta, All rights reserved.
         </div>
       </footer>

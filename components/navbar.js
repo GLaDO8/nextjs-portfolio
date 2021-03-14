@@ -16,8 +16,8 @@ function Navbar({ navButtons }) {
 
   return (
     <>
-      <div className="container mx-auto lg:max-w-3xl">
-        <nav className="flex justify-between mt-8 z-10 mb-2 md:mb-4 lg:mb-6">
+      <div className="container max-w-4xl mx-auto">
+        <nav className="z-10 flex justify-between mt-8 mb-2 md:mb-4 lg:mb-6">
           <div>
             <Link href="/">
               <a>
@@ -45,7 +45,7 @@ function Navbar({ navButtons }) {
             <button
               aria-label="Toggle Dark Mode"
               type="button"
-              className="bg-gray-300 dark:bg-gray-50 rounded-lg p-3 h-10 w-10 ml-4"
+              className="w-10 h-10 p-3 ml-4 bg-gray-300 rounded-lg dark:bg-gray-50"
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
             >
               {mounted && (
@@ -54,7 +54,7 @@ function Navbar({ navButtons }) {
                   viewBox="0 0 24 24"
                   fill="currentColor"
                   stroke="currentColor"
-                  className="h-4 w-4 text-black"
+                  className="w-4 h-4 text-black"
                 >
                   {theme === 'dark' ? (
                     <path

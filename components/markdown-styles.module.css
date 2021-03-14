@@ -1,12 +1,12 @@
 .markdown {
-  @apply text-lg sm:text-lg md:text-lg lg:text-lg leading-relaxed;
+  @apply text-lg leading-relaxed sm:text-lg md:text-lg lg:text-lg;
   font-weight: 340;
   line-height: 1.7;
 }
 
 /* Paragraph */
 .markdown p {
-  @apply mb-4 max-w-3xl mx-auto;
+  @apply max-w-4xl mx-auto mb-4;
 }
 .markdown strong {
   @apply font-medium;
@@ -15,7 +15,7 @@
 /* Lists */
 .markdown ul,
 .markdown ol {
-  @apply my-6 max-w-lg mx-auto pl-6 lg:pl-0;
+  @apply max-w-lg pl-6 mx-auto my-6 lg:pl-0;
 }
 .markdown li > p,
 .markdown li > ul,
@@ -23,34 +23,34 @@
   @apply mb-0 text-black dark:text-white;
 }
 .markdown ol {
-  @apply list-decimal max-w-3xl mt-2;
+  @apply max-w-4xl mt-2 list-decimal;
 }
 .markdown ul {
-  @apply list-disc max-w-3xl mt-2;
+  @apply max-w-4xl mt-2 list-disc;
 }
 .markdown li {
-  @apply max-w-3xl mb-3;
+  @apply max-w-4xl mb-3;
 }
 
 /* Blockquote */
 .markdown blockquote > p {
-  @apply my-6 p-6;
+  @apply p-6 my-6;
 }
 
 /* Headings */
 .markdown h2 {
-  @apply font-bold text-2xl tracking-tight mt-8 mb-4 max-w-3xl leading-snug mx-auto;
+  @apply max-w-4xl mx-auto mt-8 mb-4 text-2xl font-bold leading-snug tracking-tight;
 }
 .markdown h3 {
-  @apply font-bold text-xl tracking-tight mt-8 mb-4 max-w-3xl leading-snug mx-auto;
+  @apply max-w-4xl mx-auto mt-8 mb-4 text-xl font-bold leading-snug tracking-tight;
 }
 .markdown h4 {
-  @apply font-bold text-lg tracking-tight mt-8 max-w-3xl leading-snug mx-auto;
+  @apply max-w-4xl mx-auto mt-8 text-lg font-bold leading-snug tracking-tight;
 }
 
 /* Links */
 .markdown a {
-  @apply text-link-blue transition-opacity duration-300 ease-in-out;
+  @apply transition-opacity duration-300 ease-in-out text-link-blue;
 }
 .markdown a:hover {
   border-bottom: 1.5px solid #06c;
@@ -59,13 +59,13 @@
 /* Responsive Design */
 @screen lg {
   .markdown img {
-    @apply content-center w-full my-4 mx-auto;
+    @apply content-center w-full mx-auto my-4;
   }
   .markdown p > img {
-    @apply content-center max-w-3xl mx-auto;
+    @apply content-center max-w-4xl mx-auto;
   }
   .markdown p {
-    @apply max-w-3xl;
+    @apply max-w-4xl;
   }
   .markdown li {
     @apply ml-8;

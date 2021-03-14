@@ -22,11 +22,11 @@ export default function PostHeader({
         <CoverImage title={title} url={coverImage.imgix_url} />
       </div>
       <div className="mx-4 md:mx-8 lg:mx-12">
-        <div className="max-w-3xl mx-auto mt-6 lg:mt-12">
-          <div className="text-2xl font-title md:text-5xl lg:text-6xl font-bold tracking-tighter leading-tight md:leading-none mb-2 text-black dark:text-white">
+        <div className="max-w-4xl mx-auto mt-6 lg:mt-12">
+          <div className="mb-2 text-2xl font-bold leading-tight tracking-tighter text-black font-title md:text-5xl lg:text-6xl md:leading-none dark:text-white">
             <h1>{title}</h1>
           </div>
-          <p className="text-base md:text-xl lg:text-xl mb-2 leading-relaxed italic font-light text-black dark:text-white">
+          <p className="mb-2 text-base italic font-light leading-relaxed text-black md:text-xl lg:text-xl dark:text-white">
             {excerpt}
           </p>
           <div className="flex">
@@ -39,7 +39,7 @@ export default function PostHeader({
                   alt="date posted icon"
                 />
               </div>
-              <div className="mb-8 text-base md:text-lg lg:text-lg font-light mr-6 text-black dark:text-white">
+              <div className="mb-8 mr-6 text-base font-light text-black md:text-lg lg:text-lg dark:text-white">
                 <Date dateString={date} />
               </div>
             </div>
@@ -53,7 +53,7 @@ export default function PostHeader({
                   alt="time to read icon"
                 />
               </div>
-              <div className="mb-8 text-base md:text-lg lg:text-lg font-light text-black dark:text-white">
+              <div className="mb-8 text-base font-light text-black md:text-lg lg:text-lg dark:text-white">
                 <ReadingTime content={content} />
               </div>
             </div>
