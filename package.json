@@ -7,6 +7,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "array-flatten": "^3.0.0",
     "autoprefixer": "^10.2.1",
     "classnames": "2.2.6",
     "cosmicjs": "^3.2.43",
@@ -16,7 +17,6 @@
     "markdown-it": "^12.0.2",
     "markdown-it-anchor": "^6.0.1",
     "markdown-it-footnote": "^3.0.2",
-    "markdown-it-toc-done-right": "^4.2.0",
     "next": "^10.0.2",
     "next-images": "^1.6.2",
     "next-seo": "^4.15.1",
@@ -26,14 +26,14 @@
     "react-datocms": "1.2.4",
     "react-dom": "^17.0.1",
     "react-imgix": "^9.0.2",
-    "react-masonry-css": "^1.0.14",
     "reading-time": "^1.2.1"
   },
   "devDependencies": {
     "babel-plugin-inline-react-svg": "^1.1.2",
     "postcss-flexbugs-fixes": "^4.2.1",
     "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "^2.0.2"
+    "tailwindcss": "^2.0.2",
+    "tailwindcss-debug-screens": "^2.0.0"
   },
   "license": "MIT"
 }
