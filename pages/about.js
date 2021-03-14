@@ -16,12 +16,12 @@ export default function Index() {
           <meta name="description" content="About Me | Shreyas Gupta" />
         </Head>
         <h1 className="page-title-design">About</h1>
-        <div className="text-lg mt-6 lg:mt-16 font-preview-desc">
+        <div className="mt-6 text-lg lg:mt-16 font-preview-desc">
           <p>
             Hello! I’m Shreyas Gupta, a designer, researcher and writer with a
             knack for building things. I’m currently studying at{' '}
             <a
-              className="general-link cursor-pointer"
+              className="cursor-pointer general-link"
               href="https://www.iiitb.ac.in"
               rel="noopener"
               target="_blank"
@@ -30,7 +30,7 @@ export default function Index() {
             </a>{' '}
             , India and doing my master's thesis under the supervision of{' '}
             <a
-              className="general-link cursor-pointer"
+              className="cursor-pointer general-link"
               href="https://www.gu.se/en/about/find-staff/mattiasrost"
               rel="noopener"
               target="_blank"
@@ -39,7 +39,7 @@ export default function Index() {
             </a>{' '}
             from the{' '}
             <a
-              className="general-link cursor-pointer"
+              className="cursor-pointer general-link"
               href="https://www.gu.se/en/applied-information-technology/division-of-human-computer-interaction#Research"
               rel="noopener"
               target="_blank"
@@ -48,7 +48,7 @@ export default function Index() {
             </a>{' '}
             of Gothenburg University and{' '}
             <a
-              className="general-link cursor-pointer"
+              className="cursor-pointer general-link"
               href="https://www.iiitb.ac.in/faculty/bidisha-chaudhuri"
               rel="noopener"
               target="_blank"
@@ -59,7 +59,7 @@ export default function Index() {
             their services department to optimise the recovery and refurbishment
             of CT and MRI machines. I volunteer for{' '}
             <a
-              className="general-link cursor-pointer"
+              className="cursor-pointer general-link"
               href="https://www.earthhero.org/team"
               rel="noopener"
               target="_blank"
@@ -88,7 +88,7 @@ export default function Index() {
         </div>
         <div className="mt-6">
           <Link href="/Resume-compressed.pdf" passHref={true}>
-            <button className="flex p-4 bg-black dark:bg-white border-black border-2 text-white dark:text-black cursor-pointer rounded-xl mt-4 items-center hover:opacity-80 transition duration-300">
+            <button className="flex items-center p-4 mt-4 text-white transition duration-300 bg-black border-2 border-black cursor-pointer dark:bg-white dark:text-black rounded-xl hover:opacity-80">
               <div className="pr-2">My Resume</div>
               <div>
                 <img

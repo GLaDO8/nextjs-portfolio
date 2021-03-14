@@ -43,8 +43,8 @@ export default function Index({ allPosts, allWork }) {
           />
           <title>shreyas.design</title>
         </Head>
-        <div className="mb-12 mt-6 lg:mt-16">
-          <p className="text-xl md:text-xl lg:text-2xl font-normal text-left mt-8 text-black dark:text-white">
+        <div className="mt-6 mb-12 lg:mt-16">
+          <p className="mt-8 text-xl font-normal text-left text-black md:text-xl lg:text-2xl dark:text-white">
             Hello! I’m Shreyas Gupta, a designer, researcher and writer with a
             knack for building things. I’m currently studying at IIIT Bangalore
             and doing my master's thesis in collaboration with the HCI Division
@@ -53,14 +53,14 @@ export default function Index({ allPosts, allWork }) {
           <div className="flex mt-2">
             <div className="mr-4">
               <Link href="/about" passHref={true}>
-                <button className="p-4 bg-black dark:bg-white border-black dark:border-white border-2 text-white dark:text-black cursor-pointer rounded-xl mt-4 transform transition duration-300 hover:opacity-80">
+                <button className="p-4 mt-4 text-white transition duration-300 transform bg-black border-2 border-black cursor-pointer dark:bg-white dark:border-white dark:text-black rounded-xl hover:opacity-80">
                   Know More
                 </button>
               </Link>
             </div>
             <div>
               <Link href="https://twitter.com/shreyasjpg" passHref={true}>
-                <button className="p-4 border-black dark:border-white text-black dark:text-white border-2 cursor-pointer rounded-xl mt-4 transform transition duration-300 flex items-center hover:opacity-70">
+                <button className="flex items-center p-4 mt-4 text-black transition duration-300 transform border-2 border-black cursor-pointer dark:border-white dark:text-white rounded-xl hover:opacity-70">
                   <div className="pr-2">
                     <img
                       src={twitterSvgTagLink}
@@ -75,14 +75,14 @@ export default function Index({ allPosts, allWork }) {
             </div>
           </div>
         </div>
-        <div className="mt-12 lg:mt-48">
+        <div className="mt-24 md:mt-36 lg:mt-48">
           <div className="home-page-title">Selected Work</div>
           <ProjectList posts={allWork} />
         </div>
         <div className="lazy-renderer">
           <Link href="https://www.behance.net/gallery/94684063/Zomato-A-UX-Review">
             <div className="group">
-              <div className="transform group-hover:shadow-xl hover:scale-100 duration-500 rounded-xl overflow-hidden cursor-pointer">
+              <div className="overflow-hidden duration-500 transform cursor-pointer group-hover:shadow-xl hover:scale-100 rounded-xl">
                 <Image
                   src="/images/zomato.png"
                   alt="Cover image for playground section"
@@ -92,10 +92,10 @@ export default function Index({ allPosts, allWork }) {
                 />
               </div>
               <div className="mt-4">
-                <h3 className="group-hover:underline text-lg lg:text-xl mb-2 font-semibold leading-snug text-black dark:text-white">
+                <h3 className="mb-2 text-lg font-semibold leading-snug text-black group-hover:underline lg:text-xl dark:text-white">
                   Zomato UX Teardown Challenge
                 </h3>
-                <p className="text-base lg:text-lg leading-relaxed text-black dark:text-white mb-2 cursor-pointer font-preview-desc">
+                <p className="mb-2 text-base leading-relaxed text-black cursor-pointer lg:text-lg dark:text-white font-preview-desc">
                   A thorough UX review of Zomato's 2019 redesign, conducted as
                   part of their UX Teardown Challenge.
                 </p>
@@ -107,7 +107,7 @@ export default function Index({ allPosts, allWork }) {
           <div className="home-page-title">Selected Writings</div>
           <WritingList posts={allPosts} />
           <Link href="/writings" passHref={true}>
-            <button className="underline cursor-pointer -mt-4 text-black dark:text-white">
+            <button className="-mt-4 text-black underline cursor-pointer dark:text-white">
               Read More
             </button>
           </Link>
@@ -116,7 +116,7 @@ export default function Index({ allPosts, allWork }) {
           <div className="home-page-title">Playground</div>
           <Link href="/playground" passHref={true}>
             <div>
-              <div className="transform hover:shadow-xl hover:scale-100 duration-500 rounded-xl overflow-hidden cursor-pointer">
+              <div className="overflow-hidden duration-500 transform cursor-pointer hover:shadow-xl hover:scale-100 rounded-xl">
                 <Image
                   src="/images/playground.png"
                   alt="Cover image for playground section"
@@ -126,7 +126,7 @@ export default function Index({ allPosts, allWork }) {
                 />
               </div>
               <div className="mt-4">
-                <p className="text-base lg:text-lg leading-relaxed text-black dark:text-white mb-2 cursor-pointer font-preview-desc">
+                <p className="mb-2 text-base leading-relaxed text-black cursor-pointer lg:text-lg dark:text-white font-preview-desc">
                   I tinker around and create visuals on various design tools.
                   From icons, illustrations, concept UI to donuts and unfinished
                   ideas, you will find everything here!
