@@ -2,7 +2,6 @@ import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
 import PostBody from '@/components/post-body'
 import PostHeader from '@/components/post-header'
-import SectionSeparator from '@/components/section-separator'
 // import MoreStories from '@/components/more-stories'
 import PageLayout from '@/components/page-layout'
 import { getAllProjectsWithSlug, getProjectAndMoreProjects } from '@/lib/api'
@@ -17,7 +16,7 @@ export default function Post({ post, morePosts, preview }) {
   return (
     <PageLayout preview={preview}>
       {router.isFallback ? (
-        <h1 className="text-3xl font-title md:text-5xl lg:text-7xl ml-6 mr-24 font-bold tracking-tighter leading-tight md:leading-none mb-2 md:text-left">
+        <h1 className="mb-2 ml-6 mr-24 text-3xl font-bold leading-tight tracking-tighter font-title md:text-5xl lg:text-7xl md:leading-none md:text-left">
           Loading…
         </h1>
       ) : (
@@ -52,7 +51,7 @@ export default function Post({ post, morePosts, preview }) {
             />
             <PostBody content={post.content} />
           </article>
-          <SectionSeparator />
+          <hr className="mb-24 border-accent-2 mt-28" />
           {/* {morePosts.length > 0 && <MoreStories posts={morePosts} />} */}
         </>
       )}
