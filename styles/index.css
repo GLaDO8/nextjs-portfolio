@@ -61,70 +61,74 @@
     font-weight: 300;
     font-display: swap;
   }
+  /* Dark Mode Markdown Styling */
+  p {
+    @apply text-black dark:text-white;
+  }
+  p > i {
+    @apply max-w-3xl mx-auto mb-4;
+  }
+  p > a,
+  sup > a,
+  em > a {
+    @apply text-link-blue dark:text-dark-mode-link-blue;
+  }
+  p > a:hover,
+  sup > a:hover,
+  em > a:hover {
+    border-bottom: 1.5px solid #06c;
+  }
+  h5 {
+    @apply font-bold text-base tracking-tight mb-4 max-w-3xl leading-snug mx-auto text-gray-500 dark:text-gray-500;
+  }
+  blockquote > p {
+    @apply bg-gray-100 dark:bg-dark-mode-blockquote-gray text-gray-900 dark:text-white rounded-xl;
+  }
+  section > ol > li > p {
+    @apply text-black dark:text-white;
+  }
 }
-/* Dark Mode Markdown Styling */
-p {
-  @apply text-black dark:text-white;
-}
-p > i {
-  @apply max-w-3xl mx-auto mb-4;
-}
-p > a,
-sup > a,
-em > a {
-  @apply text-link-blue dark:text-dark-mode-link-blue;
-}
-p > a:hover,
-sup > a:hover,
-em > a:hover {
-  border-bottom: 1.5px solid #06c;
-}
-h5 {
-  @apply font-bold text-base tracking-tight mb-4 max-w-3xl leading-snug mx-auto text-gray-500 dark:text-gray-500;
-}
-blockquote > p {
-  @apply bg-gray-100 dark:bg-dark-mode-blockquote-gray text-gray-900 dark:text-white rounded-xl;
-}
-section > ol > li > p {
-  @apply text-black dark:text-white;
+@layer components {
+  /* CSS sitewide styling classes */
+  .page-title-design {
+    @apply text-2xl font-title md:text-5xl lg:text-6xl font-bold tracking-tighter leading-tight md:leading-none my-16 text-black dark:text-white;
+  }
+  .section-title-design {
+    @apply text-2xl tracking-tight mt-16 mb-4 max-w-3xl font-medium leading-snug text-black dark:text-white;
+  }
+  .page-para-design {
+    @apply text-base lg:text-lg leading-relaxed text-black dark:text-white my-4 cursor-pointer;
+  }
+  .menu-btn-lg {
+    @apply inline-block text-grey-secondary dark:text-dark-mode-gray transition font-normal duration-300 ease-in-out text-lg px-2 lg:px-4 py-4 leading-none hover:text-black dark:hover:text-white;
+  }
+  .menu-btn-lg-active {
+    @apply text-black dark:text-white;
+  }
+  .social-icons {
+    @apply h-5 lg:h-6 mr-4 lg:mr-5 transform transition duration-500 hover:scale-125;
+  }
+  .link-styling {
+    border-bottom: 2px solid black;
+    @apply text-black dark:text-white hover:bg-opacity-80;
+  }
+  .link-styling-dark {
+    border-bottom: 2px solid white;
+    @apply text-black dark:text-white hover:bg-opacity-80;
+  }
+  .general-link {
+    @apply text-link-blue transform transition-opacity duration-300 ease-in-out;
+  }
+  .general-link:hover {
+    border-bottom: 1.5px solid #06c;
+  }
+  .home-page-title {
+    @apply text-black dark:text-white text-base font-normal mb-4 mx-auto w-auto pr-8;
+  }
 }
 
-/* CSS sitewide styling classes */
-.page-title-design {
-  @apply text-2xl font-title md:text-5xl lg:text-6xl font-bold tracking-tighter leading-tight md:leading-none my-16 text-black dark:text-white;
-}
-.section-title-design {
-  @apply text-2xl tracking-tight mt-16 mb-4 max-w-3xl font-medium leading-snug text-black dark:text-white;
-}
-.page-para-design {
-  @apply text-base lg:text-lg leading-relaxed text-black dark:text-white my-4 cursor-pointer;
-}
-.menu-btn-lg {
-  @apply inline-block text-grey-secondary dark:text-dark-mode-gray transition font-normal duration-300 ease-in-out text-lg px-2 lg:px-4 py-4 leading-none hover:text-black dark:hover:text-white;
-}
-.menu-btn-lg-active {
-  @apply text-black dark:text-white;
-}
-.social-icons {
-  @apply h-5 lg:h-6 mr-4 lg:mr-5 transform transition duration-500 hover:scale-125;
-}
-.link-styling {
-  border-bottom: 2px solid black;
-  @apply text-black dark:text-white hover:bg-opacity-80;
-}
-.link-styling-dark {
-  border-bottom: 2px solid white;
-  @apply text-black dark:text-white hover:bg-opacity-80;
-}
-.general-link {
-  @apply text-link-blue transform transition-opacity duration-300 ease-in-out;
-}
-.general-link:hover {
-  border-bottom: 1.5px solid #06c;
-}
-.home-page-title {
-  @apply text-black dark:text-white text-base font-normal mb-4 mx-auto w-auto pr-8;
-}
-.lazy-renderer {
-  content-visibility: auto;
+@layer utilities {
+  .lazy-renderer {
+    content-visibility: auto;
+  }
 }
