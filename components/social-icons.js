@@ -24,8 +24,22 @@ export default function Index() {
   const behanceSvgTagLink = `https://s2.svgbox.net/social.svg?ic=behance&color=${
     theme === 'light' ? '000' : 'fff'
   }`
+  const linkedInSvgTagLink = `https://s2.svgbox.net/social.svg?ic=linkedin&color=${
+    theme === 'light' ? '000' : 'fff'
+  }`
   return (
     <div className="flex max-w-3xl my-8">
+      <a
+        href="https://www.linkedin.com/in/shreyas-gupta/"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        <img
+          src={linkedInSvgTagLink}
+          className="social-icons"
+          alt="link to LinkedIn profile"
+        />
+      </a>
       <a
         href="https://dribbble.com/shreyas_gupta"
         target="_blank"
