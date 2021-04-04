@@ -45,7 +45,7 @@ function Navbar({ navButtons }) {
             <button
               aria-label="Toggle Dark Mode"
               type="button"
-              className="w-10 h-10 p-3 ml-4 bg-gray-300 rounded-lg dark:bg-gray-50"
+              className="w-10 h-10 p-3 ml-4 bg-gray-100 rounded-lg dark:bg-gray-50"
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
             >
               {mounted && (
