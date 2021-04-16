@@ -41,7 +41,7 @@ export default function Index() {
         />
       </a>
       <a
-        href="https://dribbble.com/shreyas_gupta"
+        href="https://dribbble.com/shreyasgupta"
         target="_blank"
         rel="noreferrer noopener"
       >
