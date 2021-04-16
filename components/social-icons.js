@@ -27,7 +27,7 @@ export default function Index() {
   return (
     <div className="flex max-w-3xl my-8">
       <a
-        href="https://dribbble.com/shreyas_gupta"
+        href="https://dribbble.com/shreyasgupta"
         target="_blank"
         rel="noreferrer noopener"
       >

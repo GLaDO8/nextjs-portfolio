@@ -6,7 +6,7 @@ export default function OtherSection() {
       <div className="grid grid-cols-3 gap-6 md:grid-cols-3">
         <div className="overflow-hidden duration-500 transform cursor-pointer hover:shadow-xl hover:scale-100 rounded-xl">
           <Image
-            src="./../public/images/playground.png"
+            src="/images/playground.png"
             alt="Cover image for playground section"
             width={1600}
             height={900}
@@ -15,7 +15,7 @@ export default function OtherSection() {
         </div>
         <div className="overflow-hidden duration-500 transform cursor-pointer hover:shadow-xl hover:scale-100 rounded-xl">
           <Image
-            src="./../public/images/playground.png"
+            src="/images/playground.png"
             alt="Cover image for playground section"
             width={1600}
             height={900}
@@ -24,7 +24,7 @@ export default function OtherSection() {
         </div>
         <div className="overflow-hidden duration-500 transform cursor-pointer hover:shadow-xl hover:scale-100 rounded-xl">
           <Image
-            src="./../images/playground.png"
+            src="/images/playground.png"
             alt="Cover image for playground section"
             width={1600}
             height={900}
