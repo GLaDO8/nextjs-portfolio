@@ -13,15 +13,33 @@ export default function Podcasts() {
 
   if (!mounted) return null
 
-  const SpotifyLink = `https://s2.svgbox.net/social.svg?ic=spotify&color=${
-    theme === 'light' ? '000' : 'fff'
-  }`
-  const AppleLink = `https://s2.svgbox.net/social.svg?ic=apple-podcasts&color=${
-    theme === 'light' ? '000' : 'fff'
-  }`
-  const GoogleLink = `https://s2.svgbox.net/social.svg?ic=google-podcasts&color=${
-    theme === 'light' ? '000' : 'fff'
-  }`
+  var iconNames = ['spotify', 'google-podcasts', 'apple-podcasts']
+
+  var podcastOneLinks = [
+    'https://open.spotify.com/episode/6pRsEt0rn9hjpBnDJIm2dX?si=9d19b8903b3c4667&nd=1',
+    'https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy80YjlmYWIwMC9wb2RjYXN0L3Jzcw/episode/NmM5ZjI5YTgtYmI2NC00NjgzLTgyZmQtNWM3MTAxNDI3ZTFj?sa=X&ved=0CAUQkfYCahcKEwiIzeSMrIfwAhUAAAAAHQAAAAAQAg',
+    'https://podcasts.apple.com/in/podcast/5-empowering-digital-social-innovation/id1552823282?i=1000517570485',
+  ]
+
+  var podcastTwoLinks = [
+    'https://open.spotify.com/episode/2PgaGerfM6UGynjTYp8wpT?si=tRGI-SJHS_uf5L6qVw738g',
+    'https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy8yZDA4OWI3MC9wb2RjYXN0L3Jzcw/episode/Zjk5YzFlYWMtZDMxZC00YTc2LThjY2YtNTkzYzc4ZTc1MjJl?sa=X&ved=0CAUQkfYCahcKEwjg_53DiJ_wAhUAAAAAHQAAAAAQAQ',
+    'https://podcasts.apple.com/in/podcast/9-shreyas-gupta/id1534358177?i=1000502304469',
+  ]
+
+  function iconLinkGenerator(name, theme, link) {
+    return (
+      <a href={link} target="_blank" rel="noreferrer noopener">
+        <img
+          src={`https://s2.svgbox.net/social.svg?ic=${name}&color=${
+            theme === 'light' ? '000' : 'fff'
+          }`}
+          className="social-icons"
+        />
+      </a>
+    )
+  }
+
   return (
     <div>
       <Layout>
@@ -55,27 +73,9 @@ export default function Podcasts() {
               and career endeavors on the penultimate episode.
             </h2>
             <div className="flex flex-row items-center mt-2">
-              <a
-                href="https://github.com/GLaDO8"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <img src={AppleLink} className="social-icons" />
-              </a>
-              <a
-                href="https://github.com/GLaDO8"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <img src={SpotifyLink} className="social-icons" />
-              </a>
-              <a
-                href="https://github.com/GLaDO8"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <img src={GoogleLink} className="social-icons" />
-              </a>
+              {podcastTwoLinks.map((link, index) =>
+                iconLinkGenerator(iconNames[index], theme, link),
+              )}
             </div>
           </div>
           <div>
@@ -90,27 +90,9 @@ export default function Podcasts() {
             </div>
             <h2 className="mt-4 page-para-design">Technology, Together.</h2>
             <div className="flex flex-row items-center mt-2">
-              <a
-                href="https://github.com/GLaDO8"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <img src={AppleLink} className="social-icons" />
-              </a>
-              <a
-                href="https://github.com/GLaDO8"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <img src={SpotifyLink} className="social-icons" />
-              </a>
-              <a
-                href="https://github.com/GLaDO8"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <img src={GoogleLink} className="social-icons" />
-              </a>
+              {podcastOneLinks.map((link, index) =>
+                iconLinkGenerator(iconNames[index], theme, link),
+              )}
             </div>
           </div>
         </div>
