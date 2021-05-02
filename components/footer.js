@@ -27,9 +27,9 @@ export default function Footer() {
         <div className="text-lg lg:text-xl text-inactive-gray">
           Made from scratch using{' '}
           {darkModeLinkStyleTag('Next.js', 'https://nextjs.org')},{' '}
-          {darkModeLinkStyleTag('Vercel', 'https://vercel.com')}
-          and {darkModeLinkStyleTag('Tailwind CSS', 'https://tailwindcss.com')}.
-          The code is{' '}
+          {darkModeLinkStyleTag('Vercel', 'https://vercel.com')} and{' '}
+          {darkModeLinkStyleTag('Tailwind CSS', 'https://tailwindcss.com')}. The
+          code is{' '}
           {darkModeLinkStyleTag(
             'open-source',
             'https://github.com/GLaDO8/nextjs-portfolio',
