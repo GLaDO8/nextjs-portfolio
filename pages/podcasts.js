@@ -57,7 +57,7 @@ export default function Podcasts() {
         </div>
 
         <div className="grid grid-cols-2 gap-12">
-          <div>
+          <div className="p-3 bg-gray-100 rounded-xl">
             <div className="overflow-hidden rounded-xl">
               <Image
                 src="/images/includepeople.jpeg"
@@ -67,18 +67,15 @@ export default function Podcasts() {
                 layout="responsive"
               />
             </div>
-            <h2 className="mt-4 page-para-design">
-              #include people.h's Season 1 focused on giving a voice to students
-              of IIIT Bangalore. I was invited to talk about my research work
-              and career endeavors on the penultimate episode.
-            </h2>
-            <div className="flex flex-row items-center mt-2">
+
+            <div className="flex flex-row items-center my-4">
+              <div className="pr-3 text-lg">Listen on</div>
               {podcastTwoLinks.map((link, index) =>
                 iconLinkGenerator(iconNames[index], theme, link),
               )}
             </div>
           </div>
-          <div>
+          <div className="p-3 bg-gray-100 rounded-xl">
             <div className="overflow-hidden rounded-xl">
               <Image
                 src="/images/technology-together.png"
@@ -88,8 +85,8 @@ export default function Podcasts() {
                 layout="responsive"
               />
             </div>
-            <h2 className="mt-4 page-para-design">Technology, Together.</h2>
-            <div className="flex flex-row items-center mt-2">
+            <div className="flex flex-row items-center my-4">
+              <div className="pr-3 text-lg">Listen on</div>
               {podcastOneLinks.map((link, index) =>
                 iconLinkGenerator(iconNames[index], theme, link),
               )}
