@@ -5,6 +5,7 @@ import Meta from './meta'
 import Footer from '@/components/footer'
 
 export default function Layout({ children }) {
+  // create scroll-based progressbar for articles
   const [scroll, setScroll] = useState(0)
 
   useEffect(() => {
@@ -26,9 +27,9 @@ export default function Layout({ children }) {
     <>
       <div>
         <div className="App">
-          <div className="fixed top-0 left-0 w-full z-10">
+          <div className="fixed top-0 left-0 z-10 w-full">
             <div
-              className="bg-black dark:bg-white origin-top-left scale-0 h-2"
+              className="h-2 origin-top-left scale-0 bg-black dark:bg-white"
               style={{ transform: `scale(${scroll}, 1)` }}
             />
           </div>

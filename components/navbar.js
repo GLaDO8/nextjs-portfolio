@@ -18,22 +18,22 @@ function Navbar({ navButtons }) {
     <>
       <div className="container max-w-4xl mx-auto">
         <nav className="z-10 flex justify-between mt-8 mb-2 md:mb-4 lg:mb-6">
-          <div>
-            <Link href="/">
-              <a>
-                <Logo
-                  className={`h-14 w-14 md:h-16 md:w-16 lg:h-18 lg:w-18 hover:opacity-80 transition duration-300 ${
-                    theme === 'dark' ? 'hidden' : 'flex-1'
-                  }`}
-                />
-                <DarkLogo
-                  className={`h-14 w-14 md:h-16 md:w-16 lg:h-18 lg:w-18 hover:opacity-80 transition duration-300 ${
-                    theme === 'dark' ? 'flex-1' : 'hidden'
-                  }`}
-                />
-              </a>
-            </Link>
-          </div>
+          {/* Website Logo */}
+          <Link href="/">
+            <a>
+              <Logo
+                className={`h-14 w-14 md:h-16 md:w-16 lg:h-18 lg:w-18 hover:opacity-80 transition duration-300 ${
+                  theme === 'dark' ? 'hidden' : 'flex-1'
+                }`}
+              />
+              <DarkLogo
+                className={`h-14 w-14 md:h-16 md:w-16 lg:h-18 lg:w-18 hover:opacity-80 transition duration-300 ${
+                  theme === 'dark' ? 'flex-1' : 'hidden'
+                }`}
+              />
+            </a>
+          </Link>
+
           <div className="flex flex-row items-center" id="nav-content">
             {navButtons.map((button) => (
               <NavButton
@@ -42,6 +42,8 @@ function Navbar({ navButtons }) {
                 label={button.label}
               />
             ))}
+
+            {/* Dark Mode Toggle Button */}
             <button
               aria-label="Toggle Dark Mode"
               type="button"
