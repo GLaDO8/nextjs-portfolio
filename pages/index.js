@@ -113,42 +113,8 @@ export default function Index({ allPosts, allWork }) {
             </button>
           </Link>
         </div>
-
-        <div className="grid grid-cols-3 gap-8 mt-24 md:grid-cols-3">
-          <Link href="/podcasts" passHref={true}>
-            <div>
-              <div className="overflow-hidden duration-500 transform cursor-pointer hover:shadow-xl hover:scale-100 rounded-xl">
-                <Image
-                  src="/images/playground.png"
-                  alt="Cover image for playground section"
-                  width={1600}
-                  height={900}
-                  layout="responsive"
-                />
-              </div>
-              <div className="mt-2 text-base font-semibold leading-snug text-black lg:text-lg dark:text-white">
-                Freelancing
-              </div>
-            </div>
-          </Link>
-
-          <Link href="/podcasts" passHref={true}>
-            <div>
-              <div className="overflow-hidden duration-500 transform cursor-pointer hover:shadow-xl hover:scale-100 rounded-xl">
-                <Image
-                  src="/images/playground.png"
-                  alt="Cover image for playground section"
-                  width={1600}
-                  height={900}
-                  layout="responsive"
-                />
-              </div>
-              <div className="mt-2 text-base font-semibold leading-snug text-black lg:text-lg dark:text-white">
-                Podcasts
-              </div>
-            </div>
-          </Link>
-
+        <div className="mt-12 lg:mt-24 lazy-renderer">
+          <div className="home-page-title">Playground</div>
           <Link href="/playground" passHref={true}>
             <div>
               <div className="overflow-hidden duration-500 transform cursor-pointer hover:shadow-xl hover:scale-100 rounded-xl">
@@ -160,8 +126,12 @@ export default function Index({ allPosts, allWork }) {
                   layout="responsive"
                 />
               </div>
-              <div className="mt-2 text-base font-semibold leading-snug text-black lg:text-lg dark:text-white">
-                playground
+              <div className="mt-4">
+                <p className="mb-2 text-base leading-relaxed text-black cursor-pointer lg:text-lg dark:text-white font-preview-desc">
+                  I tinker around and create visuals on various design tools.
+                  From icons, illustrations, concept UI to donuts and unfinished
+                  ideas, you will find everything here!
+                </p>
               </div>
             </div>
           </Link>
