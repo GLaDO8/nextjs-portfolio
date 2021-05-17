@@ -24,18 +24,19 @@ export default function Index({ allPosts, allWork }) {
     <>
       <Layout>
         <Head>
-          <meta name="twitter:card" content="summary_large_image"></meta>
-          <meta name="twitter:site" content="@shreyasjpg"></meta>
-          <meta name="twitter:title" content="Shreyas.design"></meta>
+          <meta property="twitter:card" content="summary_large_image"></meta>
+          <meta property="twitter:site" content="@shreyasjpg"></meta>
+          <meta property="twitter:title" content="Shreyas.design"></meta>
+          <meta property="twitter:url" content="https://shreyas.design" />
           <meta
-            name="twitter:description"
+            property="twitter:description"
             content="Selected Work and Writings by Shreyas Gupta"
           ></meta>
-          <meta name="twitter:image" content={HOME_OG_IMAGE_URL}></meta>
+          <meta property="twitter:image" content={HOME_OG_IMAGE_URL}></meta>
 
           <meta property="og:image" content={HOME_OG_IMAGE_URL}></meta>
           <meta
-            rel="og:description"
+            property="og:description"
             content="Selected Work and Writings by Shreyas Gupta"
           ></meta>
           <meta
@@ -43,6 +44,7 @@ export default function Index({ allPosts, allWork }) {
             content="Selected Work and Writings by Shreyas Gupta"
           ></meta>
           <title>shreyas.design</title>
+          <meta property="og:title" content="shreyas.design"></meta>
         </Head>
         <div className="mt-6 mb-12 lg:mt-16">
           <p className="mt-8 text-xl font-normal text-left text-black md:text-xl lg:text-2xl dark:text-white">
