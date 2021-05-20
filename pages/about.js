@@ -11,7 +11,7 @@ export default function Index() {
     <>
       <Layout>
         <Head>
-          <title>Writings</title>
+          <title>About</title>
           <meta rel="og:description" content="About Me | Shreyas Gupta" />
           <meta name="description" content="About Me | Shreyas Gupta" />
         </Head>
@@ -87,7 +87,10 @@ export default function Index() {
           </p>
         </div>
         <div className="mt-6">
-          <Link href="/Resume-compressed.pdf" passHref={true}>
+          <Link
+            href="/Shreyas_Gupta_Design_Resume-compressed.pdf"
+            passHref={true}
+          >
             <button className="flex items-center p-4 mt-4 text-white transition duration-300 bg-black border-2 border-black cursor-pointer dark:bg-white dark:text-black rounded-xl hover:opacity-80">
               <div className="pr-2">My Resume</div>
               <div>
