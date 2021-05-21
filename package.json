@@ -7,6 +7,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@react-hook/hover": "^4.0.0",
     "array-flatten": "^3.0.0",
     "autoprefixer": "^10.2.1",
     "classnames": "2.2.6",
@@ -26,6 +27,7 @@
     "react-datocms": "1.2.4",
     "react-dom": "^17.0.1",
     "react-imgix": "^9.0.2",
+    "react-reveal": "^1.2.2",
     "reading-time": "^1.2.1"
   },
   "devDependencies": {
