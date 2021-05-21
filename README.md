@@ -8,6 +8,8 @@ This is my playground for testing new features and learning the best web dev pra
 * Content managed using [Cosmic.js CMS](https://www.cosmicjs.com) 📝
 * Dark Mode Toggle ✨🌙
 
+Explore the code, edit and preview it live [here](https://stackblitz.com/github/GLaDO8/nextjs-portfolio)!
+
 ### Upcoming Changes 
 * Tweet Thoughtboard using static server-side rendered tweets
 * Automatic sitemap creation through Cosmic CMS API
