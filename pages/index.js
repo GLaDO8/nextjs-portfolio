@@ -80,7 +80,7 @@ export default function Index({ allPosts, allWork }) {
               </div>
             </div>
           </div>
-          <div className="mt-36 md:mt-48 lg:mt-64">
+          <div className="mt-24 md:mt-36 lg:mt-48">
             <div className="home-page-title">Selected Work</div>
             <ProjectList posts={allWork} />
           </div>
@@ -109,7 +109,7 @@ export default function Index({ allPosts, allWork }) {
             </div>
           </Link>
         </div>
-        <div className="mt-12 lg:mt-24">
+        <div className="mt-24 lg:mt-36">
           <div className="home-page-title">Selected Writings</div>
           <WritingList posts={allPosts} />
           <Link href="/writings" passHref={true}>
