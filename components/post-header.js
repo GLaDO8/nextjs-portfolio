@@ -39,7 +39,7 @@ export default function PostHeader({
           </p>
         </div>
       </div>
-      <div className="w-auto my-8">
+      <div className="w-auto my-8 mb-24">
         <CoverImage title={title} url={coverImage.imgix_url} />
       </div>
     </>
