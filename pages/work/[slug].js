@@ -51,7 +51,7 @@ export default function Post({ post, morePosts, preview }) {
             />
             <PostBody content={post.content} />
           </article>
-          <hr className="mb-24 border-accent-2 mt-28" />
+          <hr className="mb-24 border-accent-2 mt-28" aria-hidden="true" />
           {/* {morePosts.length > 0 && <MoreStories posts={morePosts} />} */}
         </>
       )}
