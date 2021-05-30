@@ -20,12 +20,7 @@ export default function PostHeader({
           <div className="flex flex-row mr-4 text-base font-light text-black dark:text-white">
             <Date dateString={date} />
             <div className="mx-4 mt-2">
-              <img
-                src={timeLink}
-                width="6"
-                height="6"
-                alt="time to read icon"
-              />
+              <img src={timeLink} width="6" height="6" aria-hidden="true" />
             </div>
             <div className="mb-2 text-base font-light text-black dark:text-white">
               <ReadingTime content={content} />
