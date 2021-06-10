@@ -6,7 +6,7 @@ export default function Date({ dateString }) {
   const formatedDate = format(date, 'd LLL, yyyy')
   return (
     <div>
-      <time dateTime={dateString}>{`Published on ${formatedDate}`}</time>
+      <time dateTime={dateString}>{`${formatedDate}`}</time>
     </div>
   )
 }
