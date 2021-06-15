@@ -9,7 +9,7 @@ export default function Footer() {
   function darkModeLinkStyleTag(linkText, link) {
     return (
       <a
-        className={`cursor-pointer hover:opacity-70 transition duration-300 ${
+        className={`cursor-pointer hover:opacity-70 font-medium transition duration-300 ${
           theme === 'dark' ? 'link-styling-dark' : 'link-styling'
         }`}
         href={link}
@@ -37,8 +37,8 @@ export default function Footer() {
           .
         </div>
         <SocialLinks />
-        <div className="flex justify-start text-sm font-light text-inactive-gray">
-          © 2020-2077 by Shreyas Gupta, All rights reserved.
+        <div className="flex justify-start text-sm font-normal text-inactive-gray">
+          © Shreyas Gupta 2021-2077.
         </div>
       </footer>
     </div>
