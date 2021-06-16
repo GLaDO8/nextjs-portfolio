@@ -49,11 +49,13 @@ export default function Index({ allPosts, allWork }) {
         </Head>
         <Fade bottom>
           <div className="mt-6 mb-12 lg:mt-16">
-            <p className="mt-8 text-xl font-normal text-left text-black md:text-xl lg:text-2xl dark:text-white">
-              Hello! I’m Shreyas Gupta, a <b>Product Designer</b> and{' '}
-              <b>Researcher</b> with a knack for building things. I’m currently
-              finishing up my Master's Thesis with the HCI Division of
-              Gothenburg University and IIIT Bangalore.
+            <p className="mt-8 text-3xl font-medium text-left text-black md:text-4xl lg:text-6xl dark:text-white">
+              Howdy! I’m Shreyas Gupta.
+            </p>{' '}
+            <p className="mt-8 text-xl font-normal text-left text-black md:text-xl lg:text-xl dark:text-white">
+              I am a <b>Product Designer</b> and <b>Researcher</b> with a knack
+              for building things. Currently finishing up my Master's Thesis
+              with the HCI Division of Gothenburg University and IIIT Bangalore.
             </p>
             <div className="flex mt-2">
               <Link href="/about" passHref={true}>

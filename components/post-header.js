@@ -25,12 +25,12 @@ export default function PostHeader({
     <>
       <div className="mx-4 md:mx-8 lg:mx-12">
         <div className="max-w-4xl mx-auto mt-6 lg:mt-12">
-          <div className="flex flex-row mr-4 text-sm font-light text-black sm:text-base dark:text-white">
+          <div className="flex flex-row mr-4 text-sm font-normal text-black sm:text-base dark:text-white">
             <Date dateString={date} />
             <div className="mx-4 mt-2">
               <img src={timeLink} width="6" height="6" aria-hidden="true" />
             </div>
-            <div className="mb-2 text-sm font-light text-black sm:text-base dark:text-white">
+            <div className="mb-2 text-sm font-normal text-black sm:text-base dark:text-white">
               <ReadingTime content={content} />
             </div>
           </div>

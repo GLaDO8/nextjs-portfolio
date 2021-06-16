@@ -5,7 +5,7 @@ import { ThemeProvider } from 'next-themes'
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider forcedTheme={Component.theme || undefined} attribute="class">
-      <Head>
+      {/* <Head>
         <link
           rel="apple-touch-icon"
           sizes="57x57"
@@ -75,7 +75,7 @@ function MyApp({ Component, pageProps }) {
           sizes="16x16"
           href="/favicon/favicon-16x16.png"
         ></link>
-        <link rel="shortcut icon" href="/favicon/favicon.ico"></link>
+        <link rel="shortcut icon" href="favicon/favicon.ico"></link>
         <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg"></link>
         <meta name="msapplication-TileColor" content="#000000"></meta>
         <meta
@@ -89,7 +89,7 @@ function MyApp({ Component, pageProps }) {
           type="application/rss+xml"
           href="/feed.xml"
         ></link>
-      </Head>
+      </Head> */}
       <Component {...pageProps} />
     </ThemeProvider>
   )

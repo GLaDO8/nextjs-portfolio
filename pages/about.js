@@ -16,10 +16,12 @@ export default function Index() {
           <meta name="description" content="About Me | Shreyas Gupta" />
         </Head>
         <h1 className="page-title-design">About</h1>
-        <div className="mt-6 text-lg lg:mt-16 font-preview-desc">
+        <div className="mt-6 text-lg font-normal text-black lg:mt-16">
           <p>
-            Hello! I’m Shreyas Gupta, a designer, researcher and writer with a
-            knack for building things. I’m currently studying at{' '}
+            I am a <b>Product Designer</b> and <b>Researcher</b> with a knack
+            for building things. Currently finishing up my Master's Thesis with
+            the HCI Division of Gothenburg University and IIIT Bangalore. I’m
+            currently studying at{' '}
             <a
               className="cursor-pointer general-link"
               href="https://www.iiitb.ac.in"
@@ -57,17 +59,7 @@ export default function Index() {
             </a>
             . Previously I interned with GE Healthcare as a Data Scientist in
             their services department to optimise the recovery and refurbishment
-            of CT and MRI machines. I volunteer for{' '}
-            <a
-              className="cursor-pointer general-link"
-              href="https://www.earthhero.org/team"
-              rel="noopener"
-              target="_blank"
-            >
-              EarthHero
-            </a>{' '}
-            as an iOS developer, an organisation trying to help people track and
-            reduce their carbon emissions. I was also the organiser for
+            of CT and MRI machines. I was also the Organiser for
             TEDxIIITBangalore’s very first TEDx event, along with my colleague
             Tejas Kotha.
           </p>
@@ -91,7 +83,7 @@ export default function Index() {
             href="/Shreyas_Gupta_Design_Resume-compressed.pdf"
             passHref={true}
           >
-            <button className="flex items-center p-4 mt-4 text-white transition duration-300 bg-black border-2 border-black cursor-pointer dark:bg-white dark:text-black rounded-xl hover:opacity-80">
+            <button className="flex items-center p-4 mt-4 font-medium text-white transition duration-300 bg-black border-2 border-black cursor-pointer dark:bg-white dark:text-black rounded-xl hover:opacity-80">
               <div className="pr-2">My Resume</div>
               <div>
                 <img

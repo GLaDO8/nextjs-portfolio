@@ -70,27 +70,16 @@
   } */
   /* Dark Mode Markdown Styling */
   p {
-    @apply text-grey-text dark:text-white;
+    @apply text-black dark:text-white;
   }
   h5 {
     @apply max-w-3xl mx-auto mb-4 text-base font-bold leading-snug tracking-tight text-gray-500 dark:text-gray-500;
   }
-  p > i {
-    @apply max-w-3xl mx-auto mb-4;
-  }
+
   b {
     @apply font-semibold;
   }
-  p > a,
-  sup > a,
-  em > a {
-    @apply text-link-blue dark:text-dark-mode-link-blue;
-  }
-  p > a:hover,
-  sup > a:hover,
-  em > a:hover {
-    border-bottom: 1.5px solid #06c;
-  }
+
   blockquote > p {
     @apply text-gray-900 bg-gray-100 dark:bg-dark-mode-blockquote-gray dark:text-white rounded-xl;
   }
@@ -127,10 +116,12 @@
     @apply text-black dark:text-white hover:bg-opacity-80;
   }
   .general-link {
-    @apply transition-opacity duration-300 ease-in-out transform text-link-blue;
+    @apply text-black;
+    border-bottom: 1.5px dotted #000;
   }
-  .general-link:hover {
-    border-bottom: 1.5px solid #06c;
+  .general-link-dark {
+    @apply text-white;
+    border-bottom: 1.5px dotted #fff;
   }
   .home-page-title {
     @apply w-auto pr-8 mx-auto mb-4 text-base font-medium text-black dark:text-white;

@@ -36,6 +36,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        'grey-text': 'rgba(0, 0, 0, 0.76)',
         'link-blue': '#06c',
         'dark-mode-link-blue': '#5BADFF',
         'inactive-gray': '#9F9F9F',
@@ -56,12 +57,12 @@ module.exports = {
       fontWeight: { 'preview-desc': '350' },
       fontSize: {
         'base': '1.05rem',
-        'lg': '1.2rem',
-        'xl': '1.6rem',
+        'lg': '1.125rem',
+        'xl': '1.3rem',
         '2xl': '1.8rem',
         '5xl': '2.5rem',
         '6xl': '3.5rem',
-        '7xl': '4.5rem',
+        '7xl': '4rem',
         '8xl': '6.25rem',
       },
       maxWidth: {
