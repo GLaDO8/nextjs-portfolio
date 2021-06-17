@@ -47,43 +47,68 @@ export default function Index({ allPosts, allWork }) {
           <title>shreyas.design</title>
           <meta property="og:title" content="shreyas.design"></meta>
         </Head>
-        <Fade bottom>
-          <div className="mt-6 mb-12 lg:mt-16">
-            <p className="mt-8 text-3xl font-medium text-left text-black md:text-4xl lg:text-6xl dark:text-white">
-              Howdy! I’m Shreyas Gupta.
-            </p>{' '}
-            <p className="mt-8 text-xl font-normal text-left text-black md:text-xl lg:text-xl dark:text-white">
-              I am a <b>Product Designer</b> and <b>Researcher</b> with a knack
-              for building things. Currently finishing up my Master's Thesis
-              with the HCI Division of Gothenburg University and IIIT Bangalore.
-            </p>
-            <div className="flex mt-2">
-              <Link href="/about" passHref={true}>
-                <button className="p-4 mt-4 mr-4 font-medium text-white transition duration-300 transform bg-black border-2 border-black cursor-pointer dark:bg-white dark:border-white dark:text-black rounded-xl hover:opacity-80">
-                  Know More
-                </button>
-              </Link>
+        {/* <Fade bottom> */}
+        <div className="mt-6 mb-12 lg:mt-16">
+          <p className="mt-8 text-3xl font-medium text-left text-black md:text-4xl lg:text-6xl dark:text-white">
+            Howdy! I’m Shreyas Gupta.
+          </p>{' '}
+          <p className="mt-8 text-xl font-normal text-left text-black md:text-xl lg:text-xl dark:text-white">
+            I am a <b>Product Designer</b> and <b>Researcher</b> with a knack
+            for building things. Currently finishing up my Master's Thesis with
+            the HCI Division of Gothenburg University and IIIT Bangalore.
+          </p>
+          <div className="flex mt-2">
+            <Link href="/about" passHref={true}>
+              <button className="p-4 mt-4 mr-4 font-medium text-white transition duration-300 transform bg-black border-2 border-black cursor-pointer dark:bg-white dark:border-white dark:text-black rounded-xl hover:opacity-80">
+                Know More
+              </button>
+            </Link>
 
-              <Link href="https://twitter.com/shreyasjpg" passHref={true}>
-                <button className="flex items-center p-4 mt-4 text-black transition duration-300 transform border-2 border-black cursor-pointer dark:border-white dark:text-white rounded-xl hover:opacity-70">
-                  <div className="pr-2">
-                    <img
-                      src={twitterSvgTagLink}
-                      width="22"
-                      height="22"
-                      alt="twitter logo"
-                    />
-                  </div>
-                  <div className="font-medium"> Find me on Twitter</div>
-                </button>
-              </Link>
-            </div>
+            <Link href="https://twitter.com/shreyasjpg" passHref={true}>
+              <button className="flex items-center p-4 mt-4 text-black transition duration-300 transform border-2 border-black cursor-pointer dark:border-white dark:text-white rounded-xl hover:opacity-70">
+                <div className="pr-2">
+                  <img
+                    src={twitterSvgTagLink}
+                    width="22"
+                    height="22"
+                    alt="twitter logo"
+                  />
+                </div>
+                <div className="font-medium"> Find me on Twitter</div>
+              </button>
+            </Link>
           </div>
-          <div className="mt-24 md:mt-36 lg:mt-48">
-            <div className="home-page-title">Selected Work</div>
-            <ProjectList posts={allWork} />
+        </div>
+        <div className="mt-24 md:mt-36 lg:mt-48">
+          <div className="home-page-title">Selected Work</div>
+          <div className="mb-12">
+            <Link href="https://www.behance.net/gallery/94684063/Zomato-A-UX-Review">
+              <div className="group">
+                <div className="overflow-hidden duration-500 transform cursor-pointer group-hover:shadow-xl hover:scale-100 rounded-xl">
+                  <Image
+                    src="/images/zomato.png"
+                    alt="Cover image for playground section"
+                    width={1600}
+                    height={900}
+                    placeholder="blur"
+                    layout="responsive"
+                  />
+                </div>
+                <div className="mt-4">
+                  <h3 className="mb-2 text-lg font-semibold leading-snug text-black group-hover:underline lg:text-xl dark:text-white">
+                    Zomato UX Teardown Challenge
+                  </h3>
+                  <p className="mb-2 text-base font-normal leading-snug text-black cursor-pointer lg:text-lg dark:text-white">
+                    A thorough UX review of Zomato's 2019 redesign, conducted as
+                    part of their UX Teardown Challenge.
+                  </p>
+                </div>
+              </div>
+            </Link>
           </div>
-        </Fade>
+          <ProjectList posts={allWork} />
+        </div>
+        {/* </Fade> */}
         <div>
           <Link href="https://www.behance.net/gallery/94684063/Zomato-A-UX-Review">
             <div className="group">
@@ -93,6 +118,7 @@ export default function Index({ allPosts, allWork }) {
                   alt="Cover image for playground section"
                   width={1600}
                   height={900}
+                  placeholder="blur"
                   layout="responsive"
                 />
               </div>
@@ -100,7 +126,7 @@ export default function Index({ allPosts, allWork }) {
                 <h3 className="mb-2 text-lg font-semibold leading-snug text-black group-hover:underline lg:text-xl dark:text-white">
                   Zomato UX Teardown Challenge
                 </h3>
-                <p className="mb-2 text-base leading-relaxed text-black cursor-pointer lg:text-lg dark:text-white font-preview-desc">
+                <p className="mb-2 text-base font-normal leading-snug text-black cursor-pointer lg:text-lg dark:text-white">
                   A thorough UX review of Zomato's 2019 redesign, conducted as
                   part of their UX Teardown Challenge.
                 </p>
@@ -127,11 +153,12 @@ export default function Index({ allPosts, allWork }) {
                   alt="Cover image for playground section"
                   width={1600}
                   height={900}
+                  placeholder="blur"
                   layout="responsive"
                 />
               </div>
               <div className="mt-4">
-                <p className="mb-2 text-base leading-relaxed text-black cursor-pointer lg:text-lg dark:text-white font-preview-desc">
+                <p className="mb-2 text-base font-normal leading-snug text-black cursor-pointer lg:text-lg dark:text-white">
                   I tinker around and create visuals on various design tools.
                   From icons, illustrations, concept UI to donuts and unfinished
                   ideas, you will find everything here!

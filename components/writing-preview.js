@@ -10,8 +10,8 @@ export default function writingPreview({
   return (
     <>
       <Link as={`/writings/${slug}`} href="/writings/[slug]">
-        <div className="cursor-pointer mb-6 group">
-          <div className="transform group-hover:shadow-2xl duration-500 rounded-xl overflow-hidden cursor-pointer">
+        <div className="mb-6 cursor-pointer group">
+          <div className="overflow-hidden duration-500 transform cursor-pointer group-hover:shadow-2xl rounded-xl">
             <Image
               src={coverImage.imgix_url}
               alt={`Cover Image for ${title}`}
@@ -21,13 +21,13 @@ export default function writingPreview({
             />
           </div>
           <div className="mt-4">
-            <h3 className="group-hover:underline text-lg lg:text-xl mb-2 font-semibold leading-snug text-black dark:text-white duration-500 transition transform">
+            <h3 className="mb-2 text-lg font-semibold leading-snug text-black transition duration-500 transform group-hover:underline lg:text-xl dark:text-white">
               {title}
             </h3>
-            <p className="text-base lg:text-lg text-black dark:text-white font-preview-desc leading-tight mb-2">
+            <p className="mb-2 text-base font-normal leading-snug text-black lg:text-lg dark:text-white">
               {excerpt}
             </p>
-            <p className="text-sm lg:text-base text-inactive-gray font-preview-desc">
+            <p className="text-sm font-normal lg:text-base text-inactive-gray">
               {udate}
             </p>
           </div>
