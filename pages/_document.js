@@ -5,7 +5,6 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <script defer data-domain="shreyas.design" src="https://plausible.io/js/plausible.js"/>
           <link
             rel="apple-touch-icon"
             sizes="57x57"

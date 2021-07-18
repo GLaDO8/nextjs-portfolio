@@ -1,6 +1,8 @@
 // next.config.js
-module.exports = {
+const { withPlausibleProxy } = require('next-plausible')
+
+module.exports = withPlausibleProxy()({
   images: {
     domains: ['imgix.cosmicjs.com'],
   },
-}
+})
