@@ -105,7 +105,7 @@
     @apply text-black dark:text-white;
   }
   .social-icons {
-    @apply h-5 mr-4 transition duration-500 transform lg:h-6 lg:mr-5 hover:scale-125;
+    @apply h-5 mr-4 transition duration-500 lg:h-6 lg:mr-5 hover:scale-125;
   }
   .link-styling {
     border-bottom: 2px solid black;
