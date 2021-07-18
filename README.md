@@ -1,5 +1,7 @@
 # Source Code for Personal Blog and Portfolio
 
+### NOTE - v2.0 coming soon. 
+
 This is my playground for testing new features and learning the best web dev practices out there. 
 
 * Built using [Next.js](https://nextjs.org) 🎉
