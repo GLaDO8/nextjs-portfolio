@@ -54,8 +54,9 @@ export default function Index({ allPosts, allWork }) {
           </p>{' '}
           <p className="mt-8 text-xl font-normal text-left text-black md:text-xl lg:text-xl dark:text-white">
             I am a <b>Product Designer</b> and <b>Researcher</b> with a knack
-            for building things. Currently finishing up my Master's Thesis with
-            the HCI Division of Gothenburg University and IIIT Bangalore.
+            for building things. Currently building a Home for Data Teams at
+            Atlan and finishing up my Master's Thesis with the HCI Division of
+            Gothenburg University and IIIT Bangalore.
           </p>
           <div className="flex mt-2">
             <Link href="/about" passHref={true}>
@@ -81,12 +82,12 @@ export default function Index({ allPosts, allWork }) {
         </div>
         <div className="mt-24 md:mt-36 lg:mt-48">
           <div className="home-page-title">Selected Work</div>
-          {/* <div className="mb-12">
-            <Link href="https://www.behance.net/gallery/94684063/Zomato-A-UX-Review">
-              <div className="group">
+          <div>
+            <Link href="https://glado8.notion.site/Designing-a-Marketplace-for-Notion-8ba5abea314e4620800d282762fcb024">
+              <div className="mb-12 group">
                 <div className="overflow-hidden duration-500 transform cursor-pointer group-hover:shadow-xl hover:scale-100 rounded-xl">
                   <Image
-                    src="/images/zomato.png"
+                    src="/images/notion-marketplace.png"
                     alt="Cover image for playground section"
                     width={1600}
                     height={900}
@@ -96,19 +97,20 @@ export default function Index({ allPosts, allWork }) {
                 </div>
                 <div className="mt-4">
                   <h3 className="mb-2 text-lg font-semibold leading-snug text-black group-hover:underline lg:text-xl dark:text-white">
-                    Zomato UX Teardown Challenge
+                    Designing a Marketplace for Notion
                   </h3>
                   <p className="mb-2 text-base font-normal leading-snug text-black cursor-pointer lg:text-lg dark:text-white">
-                    A thorough UX review of Zomato's 2019 redesign, conducted as
-                    part of their UX Teardown Challenge.
+                    A case study on how would one go about building a
+                    marketplace for Notion, made in Notion! Created as part of
+                    Atlan's design assignment.
                   </p>
                 </div>
               </div>
             </Link>
-          </div> */}
+          </div>
           <ProjectList posts={allWork} />
         </div>
-        {/* </Fade> */}
+
         <div>
           <Link href="https://www.behance.net/gallery/94684063/Zomato-A-UX-Review">
             <div className="group">
