@@ -20,6 +20,7 @@ export default function writingPreview({
               layout="responsive"
             />
           </div>
+
           <div className="mt-4">
             <h3 className="mb-2 text-lg font-semibold leading-snug text-black transition duration-500 transform group-hover:underline lg:text-xl dark:text-white">
               {title}

@@ -38,7 +38,7 @@ module.exports = {
       colors: {
         'grey-text': 'rgba(0, 0, 0, 0.76)',
         'link-blue': '#06c',
-        'dark-mode-link-blue': '#5BADFF',
+        'dark-mode-link-blue': '#4CBFFF',
         'inactive-gray': '#9F9F9F',
         'grey-secondary': '#747474',
         'dark-mode-black': '#131313',

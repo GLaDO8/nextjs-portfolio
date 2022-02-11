@@ -10,7 +10,6 @@
   "dependencies": {
     "@react-hook/hover": "^4.0.0",
     "array-flatten": "^3.0.0",
-    "autoprefixer": "^10.2.1",
     "classnames": "2.2.6",
     "cosmicjs": "^3.2.43",
     "date-fns": "2.14.0",
@@ -19,11 +18,10 @@
     "markdown-it": "^12.0.2",
     "markdown-it-anchor": "^6.0.1",
     "markdown-it-footnote": "^3.0.2",
-    "next": "^10.2.0",
+    "next": "^12.0.10",
     "next-images": "^1.6.2",
     "next-seo": "^4.15.1",
     "next-themes": "^0.0.10",
-    "postcss": "^8.2.4",
     "react": "^17.0.2",
     "react-datocms": "1.2.4",
     "react-dom": "^17.0.2",
@@ -32,10 +30,12 @@
     "reading-time": "^1.2.1"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.2",
     "babel-plugin-inline-react-svg": "^1.1.2",
+    "postcss": "^8.4.6",
     "postcss-flexbugs-fixes": "^4.2.1",
     "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "^2.2.0",
+    "tailwindcss": "^3.0.21",
     "tailwindcss-debug-screens": "^2.0.0"
   },
   "license": "MIT"

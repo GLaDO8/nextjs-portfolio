@@ -11,7 +11,6 @@ export default function ProjectPreview({ title, coverImage, excerpt, slug }) {
             alt={`Cover Image for ${title}`}
             width={1600}
             height={900}
-            placeholder="blur"
             layout="responsive"
           />
         </div>
