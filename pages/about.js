@@ -7,7 +7,6 @@ export default function Index() {
   const rightArrowLink = `https://s.svgbox.net/hero-solid.svg?ic=arrow-right&fill=${
     theme === 'dark' ? '000' : 'fff'
   }`
-  // const generalLinkDynamic = `{theme === 'dark' ? "general-link-dark" : "general-link"}`
   return (
     <>
       <Layout>

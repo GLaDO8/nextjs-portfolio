@@ -116,12 +116,7 @@
     @apply text-black dark:text-white hover:bg-opacity-80;
   }
   .general-link {
-    @apply text-black;
-    border-bottom: 1.5px dotted #000;
-  }
-  .general-link-dark {
-    @apply text-white;
-    border-bottom: 1.5px dotted #fff;
+    @apply text-link-blue dark:text-dark-mode-link-blue;
   }
   .home-page-title {
     @apply w-auto pr-8 mx-auto mb-4 text-base font-medium text-black dark:text-white;
