@@ -115,7 +115,7 @@ export default function Index({ allPosts, allWork }) {
           <ProjectList posts={allWork} />
         </div>
 
-        <div>
+        {/* <div>
           <Link href="https://www.behance.net/gallery/94684063/Zomato-A-UX-Review">
             <div className="group">
               <div className="overflow-hidden duration-500 transform cursor-pointer group-hover:shadow-xl hover:scale-100 rounded-xl">
@@ -138,7 +138,7 @@ export default function Index({ allPosts, allWork }) {
               </div>
             </div>
           </Link>
-        </div>
+        </div> */}
         <div className="mt-24 lg:mt-36">
           <div className="home-page-title">Selected Writings</div>
           <WritingList posts={allPosts} />
