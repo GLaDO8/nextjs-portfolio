@@ -13,8 +13,8 @@ export default function Index() {
     'https://www.linkedin.com/in/shreyas-gupta/',
     'https://dribbble.com/shreyasgupta',
     'https://github.com/GLaDO8',
-    'https://www.instagram.com/shreyas.jpg/',
-    'https://twitter.com/shreyasjpg',
+    'https://www.instagram.com/wutamelonshrey/',
+    'https://twitter.com/wutamelonshrey',
     'https://www.behance.net/ShreyasGupta',
   ]
   var iconList = [

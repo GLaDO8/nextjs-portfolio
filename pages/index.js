@@ -26,7 +26,7 @@ export default function Index({ allPosts, allWork }) {
       <Layout>
         <Head>
           <meta property="twitter:card" content="summary_large_image"></meta>
-          <meta property="twitter:site" content="@shreyasjpg"></meta>
+          <meta property="twitter:site" content="@wutamelonshrey"></meta>
           <meta property="twitter:title" content="Shreyas.design"></meta>
           <meta property="twitter:url" content="https://shreyas.design" />
           <meta
@@ -54,9 +54,11 @@ export default function Index({ allPosts, allWork }) {
           </p>{' '}
           <p className="mt-8 text-xl font-normal text-left text-black md:text-xl lg:text-xl dark:text-white">
             I am a <b>Product Designer</b> and <b>Researcher</b> with a knack
-            for building things. Currently building a Home for Data Teams at
-            Atlan and finishing up my Master's Thesis with the HCI Division of
-            Gothenburg University and IIIT Bangalore.
+            for building things. Currently building a Home for Data Teams at{' '}
+            <span class="dotted-underline">Atlan</span> and finishing up my
+            Master's Thesis with the HCI Division of{' '}
+            <span class="dotted-underline">Gothenburg University</span> and{' '}
+            <span class="dotted-underline">IIIT Bangalore</span>.
           </p>
           <div className="flex mt-2">
             <Link href="/about" passHref={true}>
@@ -65,7 +67,7 @@ export default function Index({ allPosts, allWork }) {
               </button>
             </Link>
 
-            <Link href="https://twitter.com/shreyasjpg" passHref={true}>
+            <Link href="https://twitter.com/wutamelonshrey" passHref={true}>
               <button className="flex items-center p-4 mt-4 text-black transition duration-300 transform border-2 border-black cursor-pointer dark:border-white dark:text-white rounded-xl hover:opacity-70">
                 <div className="pr-2">
                   <img
@@ -83,7 +85,10 @@ export default function Index({ allPosts, allWork }) {
         <div className="mt-24 md:mt-36 lg:mt-48">
           <div className="home-page-title">Selected Work</div>
           <div>
-            <Link href="https://glado8.notion.site/Designing-a-Marketplace-for-Notion-8ba5abea314e4620800d282762fcb024">
+            <a
+              target="_blank"
+              href="https://glado8.notion.site/Designing-a-Marketplace-for-Notion-8ba5abea314e4620800d282762fcb024"
+            >
               <div className="mb-12 group">
                 <div className="overflow-hidden duration-500 transform cursor-pointer group-hover:shadow-xl hover:scale-100 rounded-xl">
                   <Image
@@ -91,7 +96,6 @@ export default function Index({ allPosts, allWork }) {
                     alt="Cover image for playground section"
                     width={1600}
                     height={900}
-                    placeholder="blur"
                     layout="responsive"
                   />
                 </div>
@@ -106,7 +110,7 @@ export default function Index({ allPosts, allWork }) {
                   </p>
                 </div>
               </div>
-            </Link>
+            </a>
           </div>
           <ProjectList posts={allWork} />
         </div>
@@ -120,7 +124,6 @@ export default function Index({ allPosts, allWork }) {
                   alt="Cover image for playground section"
                   width={1600}
                   height={900}
-                  placeholder="blur"
                   layout="responsive"
                 />
               </div>
@@ -155,7 +158,6 @@ export default function Index({ allPosts, allWork }) {
                   alt="Cover image for playground section"
                   width={1600}
                   height={900}
-                  placeholder="blur"
                   layout="responsive"
                 />
               </div>
