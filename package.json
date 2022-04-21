@@ -11,7 +11,7 @@
     "@react-hook/hover": "^4.0.0",
     "array-flatten": "^3.0.0",
     "classnames": "2.2.6",
-    "cosmicjs": "^3.2.43",
+    "cosmicjs": "^3.4.4",
     "date-fns": "2.14.0",
     "globby": "^11.0.1",
     "lazysizes": "^5.2.1-rc2",
