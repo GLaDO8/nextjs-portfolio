@@ -1,12 +1,10 @@
 .markdown {
-  @apply text-lg leading-relaxed sm:text-lg md:text-lg lg:text-lg;
+  @apply text-base leading-relaxed;
   font-weight: 400;
   line-height: 1.7;
 }
-
-/* Paragraph */
 .markdown p {
-  @apply max-w-3xl mx-auto mb-10;
+  @apply max-w-3xl mx-auto mb-4;
 }
 .markdown strong {
   @apply font-semibold dark:font-bold;
@@ -15,7 +13,7 @@
 /* Lists */
 .markdown ul,
 .markdown ol {
-  @apply max-w-lg pl-6 mx-auto my-6 lg:pl-0;
+  @apply max-w-lg pl-6 mx-auto my-2 lg:pl-0;
 }
 .markdown li > p,
 .markdown li > ul,
@@ -23,13 +21,13 @@
   @apply mb-0 text-black dark:text-white;
 }
 .markdown ol {
-  @apply max-w-3xl mt-2 list-decimal;
+  @apply max-w-3xl list-decimal;
 }
 .markdown ul {
-  @apply max-w-3xl mt-2 list-disc;
+  @apply max-w-3xl list-disc;
 }
 .markdown li {
-  @apply max-w-3xl mb-3;
+  @apply max-w-3xl mb-1;
 }
 
 /* Blockquote */
@@ -39,13 +37,17 @@
 
 /* Headings */
 .markdown h2 {
-  @apply max-w-3xl mx-auto mt-8 mb-4 text-2xl font-bold leading-snug tracking-tight;
+  @apply max-w-3xl mx-auto mt-12 mb-2 text-2xl font-bold leading-snug tracking-tight;
 }
 .markdown h3 {
-  @apply max-w-3xl mx-auto mt-8 mb-4 text-xl font-bold leading-snug tracking-tight;
+  @apply max-w-3xl mx-auto mt-12 mb-2 text-xl font-bold leading-snug tracking-tight;
 }
 .markdown h4 {
-  @apply max-w-3xl mx-auto mt-8 text-lg font-bold leading-snug tracking-tight;
+  @apply max-w-3xl mx-auto mt-12 text-lg font-bold leading-snug tracking-tight;
+}
+
+.markdown h5 {
+  @apply max-w-3xl mx-auto mb-2 text-base font-bold leading-snug tracking-tight text-gray-500 dark:text-gray-500;
 }
 
 /* Links */
@@ -59,7 +61,7 @@
 /* Responsive Design */
 @screen lg {
   .markdown img {
-    @apply content-center w-full mx-auto -mb-6;
+    @apply content-center w-full mx-auto my-6;
   }
   .markdown p > img {
     @apply content-center max-w-3xl mx-auto;

@@ -62,7 +62,7 @@ export default function Index({ allPosts, allWork }) {
           </p>
           <div className="flex mt-2">
             <Link href="/about" passHref={true}>
-              <button className="p-4 mt-4 mr-4 font-medium text-white transition duration-300 transform bg-black border-2 border-black cursor-pointer dark:bg-white dark:border-white dark:text-black rounded-xl hover:opacity-80">
+              <button className="p-4 mt-4 mr-4 font-normal text-white transition duration-300 transform bg-black border-2 border-black cursor-pointer dark:bg-white dark:border-white dark:text-black rounded-xl hover:opacity-80">
                 Know More
               </button>
             </Link>
@@ -77,7 +77,7 @@ export default function Index({ allPosts, allWork }) {
                     alt="twitter logo"
                   />
                 </div>
-                <div className="font-medium"> Find me on Twitter</div>
+                <div className="font-normal"> Find me on Twitter</div>
               </button>
             </Link>
           </div>
@@ -148,7 +148,7 @@ export default function Index({ allPosts, allWork }) {
             </button>
           </Link>
         </div>
-        <div className="mt-12 lg:mt-24">
+        {/* <div className="mt-12 lg:mt-24">
           <div className="home-page-title">Playground</div>
           <Link href="/playground" passHref={true}>
             <div>
@@ -170,7 +170,7 @@ export default function Index({ allPosts, allWork }) {
               </div>
             </div>
           </Link>
-        </div>
+        </div> */}
       </Layout>
     </>
   )

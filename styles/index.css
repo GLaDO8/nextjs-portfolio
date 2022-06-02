@@ -4,76 +4,48 @@
 
 @layer base {
   /* font family declaration */
+
   @font-face {
     font-family: 'Rubik';
-    src: url('/fonts/Lexend[LXND,wght].woff2') format('woff2-variations');
-    font-weight: 300 999;
+    src: url('/fonts/Rubik-Black.woff2') format('woff2');
+    font-weight: 900;
     font-display: swap;
   }
-  /* @font-face {
-    font-family: 'Rubik';
-    src: url('/fonts/Rubik-var-Italic.woff2') format('woff2-variations');
-    font-style: italic;
-    font-weight: 300 999;
-    font-display: swap;
-  } */
   @font-face {
     font-family: 'Rubik';
-    src: url('/fonts/Lexend[LXND,wght].woff2') format('woff2-variations'),
-      url('/fonts/Lexend-Bold.woff2') format('woff2');
+    src: url('/fonts/Rubik-Bold.woff2') format('woff2');
     font-weight: 700;
     font-display: swap;
   }
   @font-face {
     font-family: 'Rubik';
-    src: url('/fonts/Lexend[LXND,wght].woff2') format('woff2-variations'),
-      url('/fonts/Lexend-SemiBold.woff2') format('woff2');
+    src: url('/fonts/Rubik-SemiBold.woff2') format('woff2');
     font-weight: 600;
     font-display: swap;
   }
   @font-face {
     font-family: 'Rubik';
-    src: url('/fonts/Lexend[LXND,wght].woff2') format('woff2-variations'),
-      url('/fonts/Lexend-Medium.woff2') format('woff2');
+    src: url('/fonts/Rubik-Medium.woff2') format('woff2');
     font-weight: 500;
     font-display: swap;
   }
   @font-face {
     font-family: 'Rubik';
-    src: url('/fonts/Lexend[LXND,wght].woff2') format('woff2-variations'),
-      url('/fonts/LexendDeca-Regular.woff2') format('woff2');
+    src: url('/fonts/Rubik-Regular.woff2') format('woff2');
     font-weight: 400;
     font-display: swap;
   }
-  /* @font-face {
-    font-family: 'Rubik';
-    src: url('/fonts/Rubik-var-Italic.woff2') format('woff2-variations'),
-      url('/fonts/Rubik-Italic.woff2') format('woff2');
-    font-style: italic;
-    font-weight: 400;
-    font-display: swap;
-  } */
+
   @font-face {
     font-family: 'Rubik';
-    src: url('/fonts/Lexend[LXND,wght].woff2') format('woff2-variations'),
-      url('/fonts/Lexend-Light.woff2') format('woff2');
+    src: url('/fonts/Rubik-Light.woff2') format('woff2');
     font-weight: 300;
     font-display: swap;
   }
-  /* @font-face {
-    font-family: 'Rubik';
-    src: url('/fonts/Rubik-var-Italic.woff2') format('woff2-variations'),
-      url('/fonts/Rubik-LightItalic.woff2') format('woff2');
-    font-style: italic;
-    font-weight: 300;
-    font-display: swap;
-  } */
+
   /* Dark Mode Markdown Styling */
   p {
-    @apply text-black dark:text-white;
-  }
-  h5 {
-    @apply max-w-3xl mx-auto mb-4 text-base font-bold leading-snug tracking-tight text-gray-500 dark:text-gray-500;
+    @apply text-stone-800 dark:text-white;
   }
 
   b {
@@ -99,10 +71,10 @@
     @apply my-4 text-base leading-relaxed text-black cursor-pointer lg:text-lg dark:text-white;
   }
   .menu-btn-lg {
-    @apply inline-block px-2 py-4 text-lg font-medium leading-none transition duration-300 ease-in-out text-grey-secondary dark:text-dark-mode-gray lg:px-4 hover:text-black dark:hover:text-white;
+    @apply inline-block px-2 py-4 text-lg font-normal leading-none transition duration-300 ease-in-out text-grey-secondary dark:text-dark-mode-gray lg:px-4 hover:text-black dark:hover:text-white;
   }
   .menu-btn-lg-active {
-    @apply text-black dark:text-white;
+    @apply font-medium text-black dark:text-white;
   }
   .social-icons {
     @apply h-5 mr-4 transition duration-500 lg:h-6 lg:mr-5 hover:scale-125;

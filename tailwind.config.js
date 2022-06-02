@@ -56,9 +56,9 @@ module.exports = {
       },
       fontWeight: { 'preview-desc': '350' },
       fontSize: {
-        'base': '1.05rem',
-        'lg': '1.125rem',
-        'xl': '1.3rem',
+        'base': '1.2rem',
+        'lg': '1.3rem',
+        'xl': '1.4rem',
         '2xl': '1.8rem',
         '5xl': '2.5rem',
         '6xl': '3.5rem',
