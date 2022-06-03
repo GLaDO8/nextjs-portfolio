@@ -37,17 +37,17 @@
 
 /* Headings */
 .markdown h2 {
-  @apply max-w-3xl mx-auto mt-12 mb-2 text-2xl font-bold leading-snug tracking-tight;
+  @apply max-w-3xl mx-auto mt-12 mb-2 text-2xl font-semibold leading-snug tracking-tight;
 }
 .markdown h3 {
-  @apply max-w-3xl mx-auto mt-12 mb-2 text-xl font-bold leading-snug tracking-tight;
+  @apply max-w-3xl mx-auto mt-12 mb-2 text-xl font-semibold leading-snug tracking-tight;
 }
 .markdown h4 {
-  @apply max-w-3xl mx-auto mt-12 text-lg font-bold leading-snug tracking-tight;
+  @apply max-w-3xl mx-auto mt-12 text-lg font-semibold leading-snug tracking-tight;
 }
 
 .markdown h5 {
-  @apply max-w-3xl mx-auto mb-2 text-base font-bold leading-snug tracking-tight text-gray-500 dark:text-gray-500;
+  @apply max-w-3xl mx-auto mb-2 text-base font-semibold leading-snug tracking-tight text-gray-500 dark:text-gray-500;
 }
 
 /* Links */
