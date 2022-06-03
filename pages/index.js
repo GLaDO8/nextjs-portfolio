@@ -49,26 +49,24 @@ export default function Index({ allPosts, allWork }) {
         </Head>
         {/* <Fade bottom> */}
         <div className="mt-6 mb-12 lg:mt-16">
-          <p className="mt-8 text-3xl font-medium text-left text-black md:text-4xl lg:text-6xl dark:text-white">
-            Howdy! I’m Shreyas Gupta.
+          <p className="mt-8 mb-12 text-3xl font-medium text-left text-black md:text-4xl lg:text-6xl dark:text-white">
+            Hey, I'm Shrey.
           </p>{' '}
           <p className="mt-8 text-xl font-normal text-left text-black md:text-xl lg:text-xl dark:text-white">
-            I am a <b>Product Designer</b> and <b>Researcher</b> with a knack
-            for building things. Currently building a Home for Data Teams at{' '}
-            <span class="dotted-underline">Atlan</span> and finishing up my
-            Master's Thesis with the HCI Division of{' '}
-            <span class="dotted-underline">Gothenburg University</span> and{' '}
-            <span class="dotted-underline">IIIT Bangalore</span>.
+            I am a designer and engineer building tools for productivity.
+            Currently making systems and rectangles at Atlan. In the past, I've
+            built tools to study technology use in families. I have two cats, I
+            love watermelons, and a huge fan of the Mass Effect Franchise.
           </p>
           <div className="flex mt-2">
-            <Link href="/about" passHref={true}>
-              <button className="p-4 mt-4 mr-4 font-normal text-white transition duration-300 transform bg-black border-2 border-black cursor-pointer dark:bg-white dark:border-white dark:text-black rounded-xl hover:opacity-80">
+            {/* <Link href="/about" passHref={true}>
+              <button className="px-4 py-2 mt-4 mr-4 font-normal text-white transition duration-300 transform bg-black border-2 border-black cursor-pointer dark:bg-white dark:border-white dark:text-black rounded-xl hover:opacity-80">
                 Know More
               </button>
-            </Link>
+            </Link> */}
 
             <Link href="https://twitter.com/wutamelonshrey" passHref={true}>
-              <button className="flex items-center p-4 mt-4 text-black transition duration-300 transform border-2 border-black cursor-pointer dark:border-white dark:text-white rounded-xl hover:opacity-70">
+              <button className="flex items-center px-4 py-2 mt-4 text-black transition duration-300 transform border-2 border-black cursor-pointer dark:border-white dark:text-white rounded-xl hover:opacity-70">
                 <div className="pr-2">
                   <img
                     src={twitterSvgTagLink}
@@ -77,13 +75,13 @@ export default function Index({ allPosts, allWork }) {
                     alt="twitter logo"
                   />
                 </div>
-                <div className="font-normal"> Find me on Twitter</div>
+                <div className="font-normal"> Say hi on bird app.</div>
               </button>
             </Link>
           </div>
         </div>
         <div className="mt-24 md:mt-36 lg:mt-48">
-          <div className="home-page-title">Selected Work</div>
+          <div className="home-page-title">My Work</div>
           <div>
             <a
               target="_blank"
