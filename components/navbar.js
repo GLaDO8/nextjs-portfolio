@@ -34,6 +34,7 @@ function Navbar({ navButtons }) {
             </a>
           </Link>
 
+          {/* navigation elements */}
           <div className="flex flex-row items-center" id="nav-content">
             {navButtons.map((button) => (
               <NavButton
