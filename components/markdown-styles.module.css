@@ -10,6 +10,13 @@
   @apply font-semibold dark:font-bold;
 }
 
+.markdown code {
+  font-size: 0.85em;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  padding: 0.2em 0.4em;
+}
+
 /* Lists */
 .markdown ul,
 .markdown ol {
