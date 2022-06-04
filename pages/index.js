@@ -49,7 +49,7 @@ export default function Index({ allPosts, allWork }) {
         </Head>
         {/* <Fade bottom> */}
         <div className="mt-6 mb-12 lg:mt-16">
-          <p className="mt-8 mb-12 text-3xl font-medium text-left text-black md:text-4xl lg:text-6xl dark:text-white">
+          <p className="mt-8 mb-12 text-3xl font-semibold text-left text-black md:text-4xl lg:text-6xl dark:text-white">
             Hey, I'm Shrey.
           </p>{' '}
           <p className="mt-8 text-xl font-normal text-left text-black md:text-xl lg:text-xl dark:text-white">
