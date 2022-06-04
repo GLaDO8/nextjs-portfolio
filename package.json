@@ -18,7 +18,7 @@
     "markdown-it": "^12.3.2",
     "markdown-it-anchor": "^6.0.1",
     "markdown-it-footnote": "^3.0.2",
-    "next": "^12.0.10",
+    "next": "^12.1.0",
     "next-images": "^1.6.2",
     "next-seo": "^4.15.1",
     "next-themes": "^0.0.10",
