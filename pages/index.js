@@ -1,12 +1,10 @@
 import Head from 'next/head'
 import React, { useState, useEffect } from 'react'
-import Fade from 'react-reveal/Fade'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useTheme } from 'next-themes'
 import ProjectList from '@/components/projectlist'
 import WritingList from '@/components/writinglist'
-import OtherSection from '@/components/othersection'
 import { getAllPostsForHome, getAllProjectsForHome } from '@/lib/api'
 import { HOME_OG_IMAGE_URL } from '@/lib/constants'
 import Layout from '@/components/layout'
@@ -21,6 +19,22 @@ export default function Index({ allPosts, allWork }) {
   const twitterSvgTagLink = `https://s2.svgbox.net/social.svg?ic=twitter&color=${
     theme === 'light' ? '000' : 'fff'
   }`
+
+  //dark mode link styling for links
+  function darkModeLinkStyleTag(linkText, link) {
+    return (
+      <a
+        className={`cursor-pointer hover:opacity-70 font-medium transition duration-300 ${
+          theme === 'dark' ? 'link-styling-dark' : 'link-styling'
+        }`}
+        href={link}
+        rel="noopener"
+        target="_blank"
+      >
+        {linkText}
+      </a>
+    )
+  }
   return (
     <>
       <Layout>
@@ -48,15 +62,29 @@ export default function Index({ allPosts, allWork }) {
           <meta property="og:title" content="shreyas.design"></meta>
         </Head>
         {/* <Fade bottom> */}
-        <div className="mt-6 mb-12 lg:mt-16">
-          <p className="mt-8 mb-12 text-3xl font-semibold text-left text-black md:text-4xl lg:text-6xl dark:text-white">
+        <div className="mt-6 mb-12 lg:mt-24">
+          <p className="mb-12 text-3xl font-semibold text-left text-black md:text-4xl lg:text-6xl dark:text-white">
             Hey, I'm Shrey.
           </p>{' '}
           <p className="mt-8 text-xl font-normal text-left text-black md:text-xl lg:text-xl dark:text-white">
-            I am a designer and engineer building tools for productivity.
-            Currently making systems and rectangles at Atlan. In the past, I've
-            built tools to study technology use in families. I have two cats, I
-            love watermelons, and a huge fan of the Mass Effect Franchise.
+            I'm a design engineer who loved building tools for productivity.
+            Currently building design dystems, processes and a home for data
+            teams at {darkModeLinkStyleTag('Atlan', 'https://atlan.com/')}.
+            <br />
+            <br />
+            In the past, I've built tools to study technology use in families. I
+            have two cats, love talking about sustainable lifestyles, a huge fan
+            of{' '}
+            {darkModeLinkStyleTag(
+              'rogue-like',
+              'https://en.wikipedia.org/wiki/Roguelike',
+            )}{' '}
+            video games and a lifelong stan of the{' '}
+            {darkModeLinkStyleTag(
+              'Mass Effect universe',
+              'https://en.wikipedia.org/wiki/Mass_Effect',
+            )}{' '}
+            .
           </p>
           <div className="flex mt-2">
             {/* <Link href="/about" passHref={true}>
@@ -80,7 +108,29 @@ export default function Index({ allPosts, allWork }) {
             </Link>
           </div>
         </div>
-        <div className="mt-24 md:mt-36 lg:mt-48">
+        <div class="flex flex-row items-center p-4 border-gray-200 dark:border-white border-2 rounded-xl mt-24 md:mt-36 lg:mt-48">
+          <div>
+            <p class="font-semibold">New extension!</p>
+            <p>
+              Control your Pi-hole from Raycast. From viewing query logs, and
+              Pi-hole health to updating blocklists and remotely disabling it.{' '}
+            </p>
+          </div>
+          <div class="ml-12 cursor-pointer flex items-center">
+            <Link
+              title="Install Pie for Pi-hole Raycast Extension"
+              href="https://www.raycast.com/GLaDO8/pie-for-pi-hole#install"
+            >
+              <Image
+                width={256}
+                height={64}
+                src="/images/install_button@2x.png"
+                layout="fixed"
+              />
+            </Link>
+          </div>
+        </div>
+        <div className="mt-16">
           <div className="home-page-title">My Work</div>
           <div>
             <a
