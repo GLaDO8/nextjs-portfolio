@@ -76,10 +76,10 @@ export default function Index({ allPosts, allWork }) {
             have two cats, love talking about sustainable lifestyles, a huge fan
             of{' '}
             {darkModeLinkStyleTag(
-              'rogue-like',
-              'https://en.wikipedia.org/wiki/Roguelike',
+              'Khruangbin',
+              'https://www.youtube.com/watch?v=q4xKvHANqjk',
             )}{' '}
-            video games and a lifelong stan of the{' '}
+            and a lifelong stan of the{' '}
             {darkModeLinkStyleTag(
               'Mass Effect universe',
               'https://en.wikipedia.org/wiki/Mass_Effect',
@@ -108,7 +108,7 @@ export default function Index({ allPosts, allWork }) {
             </Link>
           </div>
         </div>
-        <div class="flex flex-row items-center p-4 border-gray-200 dark:border-white border-2 rounded-xl mt-24 md:mt-36 lg:mt-48">
+        <div class="flex flex-col md:flex-row items-center p-4 border-gray-200 dark:border-white border-2 rounded-xl mt-24 md:mt-36 lg:mt-48">
           <div>
             <p class="font-semibold">New extension!</p>
             <p>
@@ -116,7 +116,7 @@ export default function Index({ allPosts, allWork }) {
               Pi-hole health to updating blocklists and remotely disabling it.{' '}
             </p>
           </div>
-          <div class="ml-12 cursor-pointer flex items-center">
+          <div class="mt-4 md:mt-0 md:ml-12 cursor-pointer flex items-center">
             <Link
               title="Install Pie for Pi-hole Raycast Extension"
               href="https://www.raycast.com/GLaDO8/pie-for-pi-hole#install"
