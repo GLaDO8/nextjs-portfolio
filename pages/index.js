@@ -68,7 +68,7 @@ export default function Index({ allPosts, allWork }) {
           </p>{' '}
           <p className="mt-8 text-xl font-normal text-left text-black md:text-xl lg:text-xl dark:text-white">
             I'm a design engineer who loved building tools for productivity.
-            Currently building design dystems, processes and a home for data
+            Currently building design systems, processes and a home for data
             teams at {darkModeLinkStyleTag('Atlan', 'https://atlan.com/')}.
             <br />
             <br />
