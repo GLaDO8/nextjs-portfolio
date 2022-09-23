@@ -112,7 +112,7 @@ export default function Index({ allPosts, allWork }) {
           <div>
             <p class="font-semibold">New extension!</p>
             <p>
-              Control your Pi-hole from Raycast. From viewing query logs, and
+              Control your Pi-hole from Raycast. From viewing query logs and
               Pi-hole health to updating blocklists and remotely disabling it.{' '}
             </p>
           </div>
