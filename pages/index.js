@@ -154,7 +154,7 @@ export default function Index({ allPosts, allWork }) {
                   <p className="mb-2 text-base font-normal leading-snug text-black cursor-pointer lg:text-lg dark:text-white">
                     A case study on how would one go about building a
                     marketplace for Notion, made in Notion! Created as part of
-                    Atlan's design assignment.
+                    Atlan's design task.
                   </p>
                 </div>
               </div>
