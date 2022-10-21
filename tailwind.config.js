@@ -1,15 +1,11 @@
 module.exports = {
-  mode: 'jit',
   darkMode: 'class',
-  purge: {
-    enabled: true,
-    content: [
-      './components/**/*.js',
-      './components/*.js',
-      './pages/**/*.js',
-      './pages/*.js',
-    ],
-  },
+  content: [
+    './components/**/*.js',
+    './components/*.js',
+    './pages/**/*.js',
+    './pages/*.js',
+  ],
   theme: {
     fontFamily: {
       title: [
