@@ -168,7 +168,7 @@ export default function Index({ allPosts, allWork }) {
         </div>
 
         <div>
-          <Link
+          <a
             target="_blank"
             rel="noopener noreferrer"
             href="https://glado8.notion.site/An-Amateur-s-Guide-to-Leading-a-Sustainable-Life-in-India-b5b80a9e97c24ee0bf9c660f75ea9fba"
@@ -193,10 +193,10 @@ export default function Index({ allPosts, allWork }) {
                 </p>
               </div>
             </div>
-          </Link>
+          </a>
         </div>
         <div className="mt-16">
-          <Link
+          <a
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.behance.net/gallery/94684063/Zomato-A-UX-Review"
@@ -221,7 +221,7 @@ export default function Index({ allPosts, allWork }) {
                 </p>
               </div>
             </div>
-          </Link>
+          </a>
         </div>
         <div className="mt-24 lg:mt-36">
           <div className="home-page-title">Selected Writings</div>
