@@ -5,6 +5,18 @@
 @layer base {
   /* font family declaration */
 
+  /* html,
+  body {
+    color: #000;
+    background: #fff;
+  }
+
+  .dark,
+  .dark body {
+    color: #fff;
+    background: #232323;
+  } */
+
   @font-face {
     font-family: 'Rubik';
     src: url('/fonts/Rubik-Black.woff2') format('woff2');
