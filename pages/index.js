@@ -8,6 +8,7 @@ import WritingList from '@/components/writinglist'
 import { getAllPostsForHome, getAllProjectsForHome } from '@/lib/api'
 import { HOME_OG_IMAGE_URL } from '@/lib/constants'
 import Layout from '@/components/layout'
+
 export default function Index({ allPosts, allWork }) {
   const [mounted, setMounted] = useState(false)
   const { theme } = useTheme()
@@ -103,7 +104,7 @@ export default function Index({ allPosts, allWork }) {
                     alt="twitter logo"
                   />
                 </div>
-                <div className="font-normal"> Say hi on bird app.</div>
+                <div className="font-medium"> Say hi on bird app.</div>
               </button>
             </Link>
           </div>
@@ -118,6 +119,8 @@ export default function Index({ allPosts, allWork }) {
           </div>
           <div class="mt-4 md:mt-0 md:ml-12 cursor-pointer flex items-center">
             <Link
+              target="_blank"
+              rel="noopener noreferrer"
               title="Install Pie for Pi-hole Raycast Extension"
               href="https://www.raycast.com/GLaDO8/pie-for-pi-hole#install"
             >
@@ -135,6 +138,7 @@ export default function Index({ allPosts, allWork }) {
           <div>
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://glado8.notion.site/Designing-a-Marketplace-for-Notion-8ba5abea314e4620800d282762fcb024"
             >
               <div className="mb-12 group">
@@ -163,12 +167,16 @@ export default function Index({ allPosts, allWork }) {
           <ProjectList posts={allWork} />
         </div>
 
-        {/* <div>
-          <Link href="https://www.behance.net/gallery/94684063/Zomato-A-UX-Review">
+        <div>
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://glado8.notion.site/An-Amateur-s-Guide-to-Leading-a-Sustainable-Life-in-India-b5b80a9e97c24ee0bf9c660f75ea9fba"
+          >
             <div className="group">
               <div className="overflow-hidden duration-500 transform cursor-pointer group-hover:shadow-xl hover:scale-100 rounded-xl">
                 <Image
-                  src="/images/zomato.png"
+                  src="/images/sustainable.png"
                   alt="Cover image for playground section"
                   width={1600}
                   height={900}
@@ -177,16 +185,44 @@ export default function Index({ allPosts, allWork }) {
               </div>
               <div className="mt-4">
                 <h3 className="mb-2 text-lg font-semibold leading-snug text-black group-hover:underline lg:text-xl dark:text-white">
-                  Zomato UX Teardown Challenge
+                  Guide to leading a sustainable lifestyle
                 </h3>
                 <p className="mb-2 text-base font-normal leading-snug text-black cursor-pointer lg:text-lg dark:text-white">
-                  A thorough UX review of Zomato's 2019 redesign, conducted as
-                  part of their UX Teardown Challenge.
+                  A simple guide leading a sustainable lifestyle, tailored for
+                  Indians.
                 </p>
               </div>
             </div>
           </Link>
-        </div> */}
+        </div>
+        <div className="mt-16">
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.behance.net/gallery/94684063/Zomato-A-UX-Review"
+          >
+            <div className="group">
+              <div className="relative overflow-hidden duration-500 transform cursor-pointer group-hover:shadow-xl hover:scale-100 rounded-xl">
+                <Image
+                  src="/images/atlan-insights.png"
+                  alt="Cover image for playground section"
+                  width={1600}
+                  height={900}
+                  layout="responsive"
+                />
+              </div>
+              <div className="mt-4">
+                <h3 className="mb-2 text-lg font-semibold leading-snug text-black group-hover:underline lg:text-xl dark:text-white">
+                  Atlan Insights
+                </h3>
+                <p className="mb-2 text-base font-normal leading-snug text-black cursor-pointer lg:text-lg dark:text-white">
+                  How we build insights, our in-house SQL editor to power modern
+                  data teams.
+                </p>
+              </div>
+            </div>
+          </Link>
+        </div>
         <div className="mt-24 lg:mt-36">
           <div className="home-page-title">Selected Writings</div>
           <WritingList posts={allPosts} />
