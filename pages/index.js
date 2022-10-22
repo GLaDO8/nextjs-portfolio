@@ -74,18 +74,14 @@ export default function Index({ allPosts, allWork }) {
             <br />
             <br />
             In the past, I've built tools to study technology use in families. I
-            have two cats, love talking about sustainable lifestyles, a huge fan
-            of{' '}
+            have two cats, love talking about sustainable lifestyles and a huge
+            fan of{' '}
             {darkModeLinkStyleTag(
               'Khruangbin',
               'https://www.youtube.com/watch?v=q4xKvHANqjk',
-            )}{' '}
-            and a lifelong stan of the{' '}
-            {darkModeLinkStyleTag(
-              'Mass Effect universe',
-              'https://en.wikipedia.org/wiki/Mass_Effect',
-            )}{' '}
-            .
+            )}
+            . Interest areas - B2B SaaS, design systems, climate tech and
+            productivity tools.
           </p>
           <div className="flex mt-2">
             {/* <Link href="/about" passHref={true}>
