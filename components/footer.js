@@ -1,10 +1,7 @@
 import React from 'react'
 import SocialLinks from './social-icons'
-import { useTheme } from 'next-themes'
 
 export default function Footer() {
-  const { theme } = useTheme()
-
   //dark mode link styling for footer
   function LinkStyleTag(linkText, link) {
     return (

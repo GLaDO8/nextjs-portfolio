@@ -1,18 +1,9 @@
 import Image from 'next/image'
 import Layout from '@/components/layout'
 import Head from 'next/head'
-import { useTheme } from 'next-themes'
 import React, { useState, useEffect } from 'react'
 
 export default function Podcasts() {
-  const [mounted, setMounted] = useState(false)
-  const { theme } = useTheme()
-
-  // When mounted on client, now we can show the UI
-  useEffect(() => setMounted(true), [])
-
-  if (!mounted) return null
-
   var iconNames = ['spotify', 'google-podcasts', 'apple-podcasts']
 
   var podcastOneLinks = [

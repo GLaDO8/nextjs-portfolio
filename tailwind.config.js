@@ -1,5 +1,4 @@
 module.exports = {
-  // darkMode: 'class',
   content: [
     './components/**/*.js',
     './components/*.js',
@@ -48,7 +47,7 @@ module.exports = {
       lineHeight: {
         tight: 1.2,
       },
-      fontWeight: { 'preview-desc': '350' },
+      // fontWeight: { 'preview-desc': '350' },
       fontSize: {
         'base': '1.2rem',
         'lg': '1.3rem',

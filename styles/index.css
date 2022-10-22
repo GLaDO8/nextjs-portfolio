@@ -94,7 +94,7 @@
     @apply my-4 text-base leading-relaxed text-black cursor-pointer lg:text-lg dark:text-white;
   }
   .menu-btn-lg {
-    @apply inline-block px-2 py-4 text-lg font-normal leading-none transition duration-300 ease-in-out text-grey-secondary dark:text-dark-mode-gray lg:px-4 hover:text-black dark:hover:text-white;
+    @apply inline-block px-2 py-4 text-base font-normal leading-none transition duration-300 ease-in-out text-grey-secondary dark:text-dark-mode-gray lg:px-4 hover:text-black dark:hover:text-white;
   }
   .menu-btn-lg-active {
     @apply font-medium text-black dark:text-white;

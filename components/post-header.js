@@ -2,7 +2,6 @@ import Date from './date'
 import React, { useState, useEffect } from 'react'
 import CoverImage from './cover-image'
 import ReadingTime from './read-time'
-import { useTheme } from 'next-themes'
 export default function PostHeader({
   title,
   coverImage,
@@ -10,14 +9,6 @@ export default function PostHeader({
   excerpt,
   content,
 }) {
-  const [mounted, setMounted] = useState(false)
-  const { theme } = useTheme()
-
-  // When mounted on client, now we can show the UI
-  useEffect(() => setMounted(true), [])
-
-  if (!mounted) return null
-
   const timeLink = `https://s2.svgbox.net/materialui.svg?ic=circle&color=${
     theme === 'light' ? '000' : 'fff'
   }`

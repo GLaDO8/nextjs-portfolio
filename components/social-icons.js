@@ -1,14 +1,5 @@
-import { useTheme } from 'next-themes'
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 export default function Index() {
-  const [mounted, setMounted] = useState(false)
-  const { theme } = useTheme()
-
-  // When mounted on client, now we can show the UI
-  useEffect(() => setMounted(true), [])
-
-  if (!mounted) return null
-
   var linkList = [
     'https://www.linkedin.com/in/shreyas-gupta/',
     'https://dribbble.com/shreyasgupta',
@@ -26,7 +17,7 @@ export default function Index() {
     'behance',
   ]
 
-  function iconLinkGenerator(name, theme, link) {
+  function iconLinkGenerator(name, link) {
     return (
       <a href={link} target="_blank" rel="noreferrer noopener">
         <img
@@ -38,9 +29,7 @@ export default function Index() {
   }
   return (
     <div className="flex my-8">
-      {linkList.map((link, index) =>
-        iconLinkGenerator(iconList[index], theme, link),
-      )}
+      {linkList.map((link, index) => iconLinkGenerator(iconList[index], link))}
     </div>
   )
 }
