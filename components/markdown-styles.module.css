@@ -59,7 +59,7 @@
 
 /* Links */
 .markdown a {
-  @apply transition-opacity duration-300 ease-in-out text-link-blue dark:text-dark-mode-link-blue;
+  @apply transition-opacity duration-300 ease-in-out text-dark-mode-link-blue;
 }
 .markdown a:hover {
   border-bottom: 1.5px solid #06c;

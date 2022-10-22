@@ -28,7 +28,7 @@ export default function writingPreview({
             <p className="mb-2 text-base font-normal leading-snug text-black lg:text-lg dark:text-white">
               {excerpt}
             </p>
-            <p className="text-sm font-normal lg:text-base text-inactive-gray">
+            <p className="text-sm font-normal lg:text-base text-grey-secondary">
               {udate}
             </p>
           </div>

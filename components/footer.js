@@ -19,7 +19,7 @@ export default function Footer() {
   return (
     <div className="bottom-0 max-w-4xl mx-auto my-36 lazy-renderer">
       <footer>
-        <div className="text-lg lg:text-xl text-inactive-gray">
+        <div className="text-lg lg:text-xl text-grey-secondary">
           Made from scratch using{' '}
           {LinkStyleTag('Next.js', 'https://nextjs.org')},{' '}
           {LinkStyleTag('Vercel', 'https://vercel.com')} and{' '}
@@ -31,7 +31,7 @@ export default function Footer() {
           .
         </div>
         <SocialLinks />
-        <div className="flex justify-start text-sm font-normal text-inactive-gray">
+        <div className="flex justify-start text-sm font-normal text-grey-secondary">
           © Shreyas Gupta 2021-2077.
         </div>
       </footer>

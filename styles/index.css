@@ -85,19 +85,19 @@
 @layer components {
   /* CSS sitewide styling classes */
   .page-title-design {
-    @apply my-16 text-2xl font-bold leading-tight tracking-tighter text-black font-title md:text-5xl lg:text-6xl md:leading-none dark:text-white;
+    @apply my-16 text-2xl font-bold leading-tight tracking-tighter font-title md:text-5xl lg:text-6xl md:leading-none;
   }
   .section-title-design {
-    @apply max-w-3xl mt-16 mb-4 text-2xl font-medium leading-snug tracking-tight text-black dark:text-white;
+    @apply max-w-3xl mt-16 mb-4 text-2xl font-medium leading-snug tracking-tight text-black;
   }
   .page-para-design {
     @apply my-4 text-base leading-relaxed text-black cursor-pointer lg:text-lg dark:text-white;
   }
   .menu-btn-lg {
-    @apply inline-block px-2 py-4 text-base font-normal leading-none transition duration-300 ease-in-out text-grey-secondary dark:text-dark-mode-gray lg:px-4 hover:text-black dark:hover:text-white;
+    @apply inline-block px-2 py-4 text-base font-normal leading-none transition duration-300 ease-in-out text-grey-secondary lg:px-4 hover:text-white;
   }
   .menu-btn-lg-active {
-    @apply font-medium text-black dark:text-white;
+    @apply font-medium text-white;
   }
   .social-icons {
     @apply h-5 mr-4 transition duration-500 lg:h-6 lg:mr-5 hover:scale-125;
@@ -105,9 +105,6 @@
 
   .link-styling-dark {
     @apply text-white hover:bg-opacity-80;
-  }
-  .general-link {
-    @apply text-link-blue dark:text-dark-mode-link-blue;
   }
   .home-page-title {
     @apply w-auto pr-8 mx-auto mb-4 text-base font-medium text-black dark:text-white;
