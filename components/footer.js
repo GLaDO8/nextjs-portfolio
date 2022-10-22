@@ -6,12 +6,10 @@ export default function Footer() {
   const { theme } = useTheme()
 
   //dark mode link styling for footer
-  function darkModeLinkStyleTag(linkText, link) {
+  function LinkStyleTag(linkText, link) {
     return (
       <a
-        className={`cursor-pointer hover:opacity-70 font-medium transition duration-300 ${
-          theme === 'dark' ? 'link-styling-dark' : 'link-styling'
-        }`}
+        className="font-medium text-white transition duration-300 cursor-pointer hover:opacity-70"
         href={link}
         rel="noopener"
         target="_blank"
@@ -26,11 +24,10 @@ export default function Footer() {
       <footer>
         <div className="text-lg lg:text-xl text-inactive-gray">
           Made from scratch using{' '}
-          {darkModeLinkStyleTag('Next.js', 'https://nextjs.org')},{' '}
-          {darkModeLinkStyleTag('Vercel', 'https://vercel.com')} and{' '}
-          {darkModeLinkStyleTag('Tailwind CSS', 'https://tailwindcss.com')}. The
-          code is{' '}
-          {darkModeLinkStyleTag(
+          {LinkStyleTag('Next.js', 'https://nextjs.org')},{' '}
+          {LinkStyleTag('Vercel', 'https://vercel.com')} and{' '}
+          {LinkStyleTag('Tailwind CSS', 'https://tailwindcss.com')}. The code is{' '}
+          {LinkStyleTag(
             'open-source',
             'https://github.com/GLaDO8/nextjs-portfolio',
           )}
