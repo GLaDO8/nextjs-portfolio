@@ -30,16 +30,14 @@ export default function Index() {
     return (
       <a href={link} target="_blank" rel="noreferrer noopener">
         <img
-          src={`https://s2.svgbox.net/social.svg?ic=${name}&color=${
-            theme === 'light' ? '000' : 'fff'
-          }`}
+          src={`https://s2.svgbox.net/social.svg?ic=${name}&color=fff`}
           className="social-icons"
         />
       </a>
     )
   }
   return (
-    <div className="flex max-w-3xl my-8">
+    <div className="flex my-8">
       {linkList.map((link, index) =>
         iconLinkGenerator(iconList[index], theme, link),
       )}

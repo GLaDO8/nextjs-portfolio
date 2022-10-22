@@ -1,19 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import NavButton from '@/components/navbutton'
 import Link from 'next/link'
-import Logo from './../public/logo.svg'
 import DarkLogo from './../public/dark-logo.svg'
 import { useTheme } from 'next-themes'
 
 function Navbar({ navButtons }) {
-  const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme()
-
-  // When mounted on client, now we can show the UI
-  useEffect(() => setMounted(true), [])
-
-  if (!mounted) return null
-
   return (
     <>
       <div className="container max-w-4xl mx-auto">
@@ -21,7 +12,7 @@ function Navbar({ navButtons }) {
           {/* Website Logo */}
           <Link href="/">
             <a>
-              <DarkLogo className="transition duration-300 h-14 w-14 md:h-16 md:w-16 lg:h-24 lg:w-24 hover:opacity-80" />
+              <DarkLogo className="transition duration-300 h-14 w-14 md:h-16 md:w-16 lg:h-28 lg:w-28 hover:opacity-80" />
             </a>
           </Link>
 
