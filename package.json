@@ -22,12 +22,10 @@
     "next": "^12.1.0",
     "next-images": "^1.6.2",
     "next-seo": "^4.15.1",
-    "next-themes": "^0.0.10",
     "react": "^17.0.2",
     "react-datocms": "1.2.4",
     "react-dom": "^17.0.2",
     "react-imgix": "^9.0.2",
-    "react-reveal": "^1.2.2",
     "reading-time": "^1.2.1"
   },
   "devDependencies": {
@@ -36,8 +34,7 @@
     "postcss": "^8.4.6",
     "postcss-flexbugs-fixes": "^4.2.1",
     "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "^3.0.21",
-    "tailwindcss-debug-screens": "^2.0.0"
+    "tailwindcss": "^3.2.1"
   },
   "license": "MIT"
 }
