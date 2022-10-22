@@ -25,9 +25,7 @@ export default function Index({ allPosts, allWork }) {
   function darkModeLinkStyleTag(linkText, link) {
     return (
       <a
-        className={`cursor-pointer hover:opacity-70 font-medium transition duration-300 ${
-          theme === 'dark' ? 'link-styling-dark' : 'link-styling'
-        }`}
+        className="font-medium transition duration-300 cursor-pointer hover:opacity-70 link-styling-dark"
         href={link}
         rel="noopener"
         target="_blank"
@@ -63,11 +61,8 @@ export default function Index({ allPosts, allWork }) {
           <meta property="og:title" content="shreyas.design"></meta>
         </Head>
         {/* <Fade bottom> */}
-        <div className="mt-6 mb-12 lg:mt-24">
-          <p className="mb-12 text-3xl font-semibold text-left text-black md:text-4xl lg:text-6xl dark:text-white">
-            Hey, I'm Shrey.
-          </p>{' '}
-          <p className="mt-8 text-xl font-normal text-left text-black md:text-xl lg:text-xl dark:text-white">
+        <div className="max-w-lg mx-auto mt-6 mb-12 lg:mt-24">
+          <p className="mt-8 text-left">
             I'm a design engineer who loves building tools for productivity.
             Currently building design systems, processes and a home for data
             teams at {darkModeLinkStyleTag('Atlan', 'https://atlan.com/')}.
@@ -84,7 +79,7 @@ export default function Index({ allPosts, allWork }) {
             {darkModeLinkStyleTag(
               'Mass Effect universe',
               'https://en.wikipedia.org/wiki/Mass_Effect',
-            )}{' '}
+            )}
             .
           </p>
           <div className="flex mt-2">
@@ -95,8 +90,8 @@ export default function Index({ allPosts, allWork }) {
             </Link> */}
 
             <Link href="https://twitter.com/wutamelonshrey" passHref={true}>
-              <button className="flex items-center px-4 py-2 mt-4 text-black transition duration-300 transform border-2 border-black cursor-pointer dark:border-white dark:text-white rounded-xl hover:opacity-70">
-                <div className="pr-2">
+              <button className="flex items-center px-4 py-2 mt-4 text-white transition duration-300 transform border-2 border-white cursor-pointer rounded-xl hover:opacity-70">
+                <div>
                   <img
                     src={twitterSvgTagLink}
                     width="22"
@@ -104,7 +99,7 @@ export default function Index({ allPosts, allWork }) {
                     alt="twitter logo"
                   />
                 </div>
-                <div className="font-medium"> Say hi on bird app.</div>
+                <div className="ml-2 font-normal"> Say hi on bird app.</div>
               </button>
             </Link>
           </div>

@@ -5,13 +5,13 @@
 @layer base {
   /* font family declaration */
 
-  /* html,
+  html,
   body {
-    color: #000;
-    background: #fff;
+    color: #cfcfcf;
+    background: #232323;
   }
 
-  .dark,
+  /* .dark,
   .dark body {
     color: #fff;
     background: #232323;
@@ -19,46 +19,57 @@
 
   @font-face {
     font-family: 'Rubik';
-    src: url('/fonts/Rubik-Black.woff2') format('woff2');
+    /* src: url('/fonts/Rubik-Black.woff2') format('woff2'); */
+    src: url('/fonts/Inter-Black.woff2') format('woff2');
     font-weight: 900;
     font-display: swap;
   }
   @font-face {
     font-family: 'Rubik';
-    src: url('/fonts/Rubik-Bold.woff2') format('woff2');
+    /* src: url('/fonts/Rubik-Bold.woff2') format('woff2'); */
+    src: url('/fonts/Inter-Bold.woff2') format('woff2');
+
     font-weight: 700;
     font-display: swap;
   }
   @font-face {
     font-family: 'Rubik';
-    src: url('/fonts/Rubik-SemiBold.woff2') format('woff2');
+    /* src: url('/fonts/Rubik-SemiBold.woff2') format('woff2'); */
+    src: url('/fonts/Inter-SemiBold.woff2') format('woff2');
+
     font-weight: 600;
     font-display: swap;
   }
   @font-face {
     font-family: 'Rubik';
-    src: url('/fonts/Rubik-Medium.woff2') format('woff2');
+    /* src: url('/fonts/Rubik-Medium.woff2') format('woff2'); */
+    src: url('/fonts/Inter-Medium.woff2') format('woff2');
+
     font-weight: 500;
     font-display: swap;
   }
   @font-face {
     font-family: 'Rubik';
-    src: url('/fonts/Rubik-Regular.woff2') format('woff2');
+    /* src: url('/fonts/Rubik-Regular.woff2') format('woff2'); */
+    src: url('/fonts/Inter-Regular.woff2') format('woff2');
+
     font-weight: 400;
     font-display: swap;
   }
 
   @font-face {
     font-family: 'Rubik';
-    src: url('/fonts/Rubik-Light.woff2') format('woff2');
+    /* src: url('/fonts/Rubik-Light.woff2') format('woff2'); */
+    src: url('/fonts/Inter-Light.woff2') format('woff2');
+
     font-weight: 300;
     font-display: swap;
   }
 
   /* Dark Mode Markdown Styling */
-  p {
+  /* p {
     @apply text-stone-800 dark:text-white;
-  }
+  } */
 
   b {
     @apply font-semibold;
@@ -91,13 +102,9 @@
   .social-icons {
     @apply h-5 mr-4 transition duration-500 lg:h-6 lg:mr-5 hover:scale-125;
   }
-  .link-styling {
-    border-bottom: 2px solid black;
-    @apply text-black dark:text-white hover:bg-opacity-80;
-  }
+
   .link-styling-dark {
-    border-bottom: 2px solid white;
-    @apply text-black dark:text-white hover:bg-opacity-80;
+    @apply text-white hover:bg-opacity-80;
   }
   .general-link {
     @apply text-link-blue dark:text-dark-mode-link-blue;
