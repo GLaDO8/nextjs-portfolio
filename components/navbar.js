@@ -17,20 +17,11 @@ function Navbar({ navButtons }) {
   return (
     <>
       <div className="container max-w-4xl mx-auto">
-        <nav className="z-10 flex items-center justify-between mt-8 mb-2 md:mb-4 lg:mb-6">
+        <nav className="z-10 flex flex-col items-center justify-between mt-8 mb-2 md:mb-4 lg:mb-6">
           {/* Website Logo */}
           <Link href="/">
             <a>
-              <Logo
-                className={`h-14 w-14 md:h-16 md:w-16 lg:h-18 lg:w-18 hover:opacity-80 transition duration-300 ${
-                  theme === 'dark' ? 'hidden' : 'flex-1'
-                }`}
-              />
-              <DarkLogo
-                className={`h-14 w-14 md:h-16 md:w-16 lg:h-18 lg:w-18 hover:opacity-80 transition duration-300 ${
-                  theme === 'dark' ? 'flex-1' : 'hidden'
-                }`}
-              />
+              <DarkLogo className="transition duration-300 h-14 w-14 md:h-16 md:w-16 lg:h-24 lg:w-24 hover:opacity-80" />
             </a>
           </Link>
 
@@ -43,10 +34,8 @@ function Navbar({ navButtons }) {
                 label={button.label}
               />
             ))}
-
-            {/* Dark Mode Toggle Button */}
           </div>
-          <button
+          {/* <button
             aria-label="Toggle Dark Mode"
             type="button"
             className="w-10 h-10 p-3 ml-4 bg-gray-100 rounded-lg dark:bg-gray-50"
@@ -77,7 +66,7 @@ function Navbar({ navButtons }) {
                 )}
               </svg>
             )}
-          </button>
+          </button> */}
         </nav>
       </div>
     </>
