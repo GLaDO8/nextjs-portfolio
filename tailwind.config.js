@@ -1,5 +1,5 @@
 module.exports = {
-  darkMode: 'class',
+  // darkMode: 'class',
   content: [
     './components/**/*.js',
     './components/*.js',
@@ -44,9 +44,7 @@ module.exports = {
       spacing: {
         28: '7rem',
       },
-      letterSpacing: {
-        tighter: '-.04em',
-      },
+
       lineHeight: {
         tight: 1.2,
       },

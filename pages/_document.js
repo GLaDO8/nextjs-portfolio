@@ -82,7 +82,7 @@ export default class MyDocument extends Document {
           <meta name="robots" content="index, follow" />
           <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
         </Head>
-        <body className="bg-white dark:bg-dark-mode-black">
+        <body>
           <Main />
           <NextScript />
         </body>
