@@ -17,9 +17,7 @@ export default function Index({ allPosts, allWork }) {
   useEffect(() => setMounted(true), [])
 
   if (!mounted) return null
-  const twitterSvgTagLink = `https://s2.svgbox.net/social.svg?ic=twitter&color=${
-    theme === 'light' ? '000' : 'fff'
-  }`
+  const twitterSvgTagLink = `https://s2.svgbox.net/social.svg?ic=twitter&color=000`
 
   //dark mode link styling for links
   function darkModeLinkStyleTag(linkText, link) {
@@ -63,9 +61,10 @@ export default function Index({ allPosts, allWork }) {
         {/* <Fade bottom> */}
         <div className="max-w-lg mx-auto mt-6 mb-12 lg:mt-24">
           <p className="mt-8 text-left">
-            I'm a design engineer who loves building tools for productivity.
-            Currently building design systems, processes and a home for data
-            teams at {darkModeLinkStyleTag('Atlan', 'https://atlan.com/')}.
+            I'm Shreyas Gupta, a design engineer who loves building tools for
+            productivity. Currently building design systems, processes and a
+            home for data teams at{' '}
+            {darkModeLinkStyleTag('Atlan', 'https://atlan.com/')}.
             <br />
             <br />
             In the past, I've built tools to study technology use in families. I
@@ -90,16 +89,16 @@ export default function Index({ allPosts, allWork }) {
             </Link> */}
 
             <Link href="https://twitter.com/wutamelonshrey" passHref={true}>
-              <button className="flex items-center px-4 py-2 mt-4 text-white transition duration-300 transform border-2 border-white cursor-pointer rounded-xl hover:opacity-70">
+              <button className="flex items-center px-3 py-1 mt-4 text-black transition duration-300 transform bg-white border-2 cursor-pointer rounded-xl hover:opacity-70">
                 <div>
                   <img
                     src={twitterSvgTagLink}
-                    width="22"
-                    height="22"
+                    width="20"
+                    height="20"
                     alt="twitter logo"
                   />
                 </div>
-                <div className="ml-2 font-normal"> Say hi on bird app.</div>
+                <div className="ml-2 font-medium"> Say hi on bird app.</div>
               </button>
             </Link>
           </div>
