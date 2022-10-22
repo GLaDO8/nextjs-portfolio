@@ -9,9 +9,8 @@ export default function PostHeader({
   excerpt,
   content,
 }) {
-  const timeLink = `https://s2.svgbox.net/materialui.svg?ic=circle&color=${
-    theme === 'light' ? '000' : 'fff'
-  }`
+  const timeLink = `https://s2.svgbox.net/materialui.svg?ic=circle&color=fff`
+
   return (
     <>
       <div className="mx-4 md:mx-8 lg:mx-12">

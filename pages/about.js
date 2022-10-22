@@ -2,7 +2,6 @@ import Link from 'next/link'
 import Layout from '@/components/layout'
 import Head from 'next/head'
 export default function Index() {
-  const { theme } = useTheme()
   const rightArrowLink = `https://s.svgbox.net/hero-solid.svg?ic=arrow-right&fill=fff`
 
   return (
