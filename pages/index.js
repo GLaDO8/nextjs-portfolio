@@ -80,8 +80,7 @@ export default function Index({ allPosts, allWork }) {
               'Khruangbin',
               'https://www.youtube.com/watch?v=q4xKvHANqjk',
             )}
-            . Interest areas - B2B SaaS, design systems, climate tech and
-            productivity tools.
+            .
           </p>
           <div className="flex mt-2">
             {/* <Link href="/about" passHref={true}>
