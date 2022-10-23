@@ -81,7 +81,7 @@ export default function Index({ allPosts, allWork }) {
             </Link> */}
 
             <Link href="https://twitter.com/wutamelonshrey" passHref={true}>
-              <button className="flex items-center px-3 py-1 mt-4 text-black transition duration-300 transform bg-white border-2 cursor-pointer rounded-xl hover:opacity-70">
+              <button className="flex items-center px-3 py-1 mt-4 text-black transition duration-300 transform bg-white rounded-lg cursor-pointer hover:opacity-70">
                 <div>
                   <img
                     src={twitterSvgTagLink}
