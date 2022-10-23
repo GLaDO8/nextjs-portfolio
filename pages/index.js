@@ -195,7 +195,7 @@ export default function Index({ allPosts, allWork }) {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://jstrieb.github.io/link-lock/#eyJ2IjoiMC4wLjEiLCJlIjoiU3B3c2s5TUVsQzluWTJCRk9oOFpXZzB0TkM3VWJrZGZSSnhMeTdncllqYm1RMHVYZzIrMFEwN0pJd3BsYXdYeWJ1blczWTFoMnFzb2RUaDN1TGIzRklRV0FDWjZ6c2xvRDlHVWM3Qkw2MTFXNjdMMzdyU3dUUT09IiwiaSI6IlE3LzZiRHpyUENRanAwREQifQ=="
+            href="https://jstrieb.github.io/link-lock/#eyJ2IjoiMC4wLjEiLCJlIjoiY29ZMlh1ZHczejNTeDNXNVcyMHpHVllGZThaMnV2bnQ1T2M3MitnMDZzdEtVUWtSbkNRT01MTWtncmVRMUtmbXZLeEcrbk1WYXl5YVBUbDZTVlJhRVB6ZHhoSVlTWldhSmhmdWNTZml1UkpvZzc0dlBjTkx5cHh1TFptSDdPcU55dz09IiwiaSI6InNsVXZQblJPUjljL3dSYkUifQ=="
           >
             <div className="group">
               <div className="relative overflow-hidden duration-500 transform cursor-pointer group-hover:shadow-xl hover:scale-100 rounded-xl">
