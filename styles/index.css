@@ -70,7 +70,15 @@
   /* p {
     @apply text-stone-800 dark:text-white;
   } */
-
+  p,
+  li > p,
+  li > ul,
+  li > ol,
+  ol,
+  ul,
+  li {
+    @apply text-type-grey;
+  }
   b {
     @apply font-semibold;
   }
@@ -78,9 +86,9 @@
   blockquote > p {
     @apply text-gray-900 bg-gray-100 dark:bg-dark-mode-blockquote-gray dark:text-white rounded-xl;
   }
-  section > ol > li > p {
+  /* section > ol > li > p {
     @apply text-black dark:text-white;
-  }
+  } */
 }
 @layer components {
   /* CSS sitewide styling classes */

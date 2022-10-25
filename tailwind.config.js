@@ -31,6 +31,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        'type-grey': '#cfcfcf',
         'dark-mode-link-blue': '#4CBFFF',
         'grey-secondary': '#8f8f8f',
         'dark-mode-blockquote-gray': '#363636',
@@ -54,7 +55,7 @@ module.exports = {
         '8xl': '6.25rem',
       },
       maxWidth: {
-        '2xl': '36rem',
+        '2xl': '44rem',
         '3xl': '50rem',
       },
       boxShadow: {
