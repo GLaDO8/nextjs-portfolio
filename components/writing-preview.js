@@ -10,27 +10,13 @@ export default function writingPreview({
   return (
     <>
       <Link as={`/writings/${slug}`} href="/writings/[slug]">
-        <div className="mb-6 cursor-pointer group">
-          <div className="overflow-hidden duration-500 transform cursor-pointer group-hover:shadow-2xl rounded-xl">
-            <Image
-              src={coverImage.imgix_url}
-              alt={`Cover Image for ${title}`}
-              width={960}
-              height={540}
-              layout="responsive"
-            />
-          </div>
-
+        <div className="mb-4 cursor-pointer group">
           <div className="mt-4">
-            <h3 className="mb-2 text-lg font-semibold leading-snug text-black transition duration-500 transform group-hover:underline lg:text-xl dark:text-white">
+            <h4 className="mb-2 font-semibold leading-snug text-white transition duration-500 transform group-hover:underline">
               {title}
-            </h3>
-            <p className="mb-2 text-base font-normal leading-snug text-black lg:text-lg dark:text-white">
-              {excerpt}
-            </p>
-            <p className="text-sm font-normal lg:text-base text-grey-secondary">
-              {udate}
-            </p>
+            </h4>
+            <p className="mb-2 leading-snug">{excerpt}</p>
+            <p className=" text-grey-secondary">{udate}</p>
           </div>
         </div>
       </Link>
