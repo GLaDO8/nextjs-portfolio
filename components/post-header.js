@@ -14,7 +14,7 @@ export default function PostHeader({
   return (
     <>
       <div className="mx-4 md:mx-8 lg:mx-12">
-        <div className="max-w-4xl mx-auto mt-6 lg:mt-12">
+        <div className="max-w-3xl mx-auto mt-6 lg:mt-12">
           <div className="flex flex-row mr-4 text-sm font-normal text-black sm:text-base dark:text-white">
             <Date dateString={date} />
             <div className="mx-4 mt-2">
