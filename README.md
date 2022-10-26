@@ -10,3 +10,11 @@ This is my playground for testing new features and learning the best web dev pra
 * Dark Mode Toggle
 
 As I am using a CMS, without setting up a mock cosmicJS account, you won't be able to deploy and run the code. I will create a mock cosmic account when I get time. 
+
+
+## Future updates
+I will be releasing a major update to the portfolio in the coming weeks. This would bring the following changes,
+1. Move away from CMS in favor for Markdown
+2. Upgrade Next.js to v13
+3. Remove dark mode toggle for opiniated dark mode by default
+4. New layout for work and writings
