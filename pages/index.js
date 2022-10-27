@@ -132,7 +132,7 @@ export default function Index({ allPosts, allWork }) {
           <meta property="og:title" content="shreyas.design"></meta>
         </Head>
         {/* <Fade bottom> */}
-        
+
         <div className="max-w-lg mx-auto mt-6 mb-12 lg:mt-24">
           <p className="mt-8 text-left">
             {aboutType === 'short' ? shortAboutText : longAboutText}
@@ -193,7 +193,7 @@ export default function Index({ allPosts, allWork }) {
                 <div className="overflow-hidden rounded-xl bg-slate-800">
                   <Image
                     className="relative object-cover"
-                    src="/images/pie-long.svg"
+                    src="/images/pie-long.png"
                     alt="Pie for Pi-hole, a raycast extension"
                     width={620}
                     height={350}
@@ -262,7 +262,7 @@ export default function Index({ allPosts, allWork }) {
                 <div className="overflow-hidden rounded-xl bg-slate-800">
                   <Image
                     className="relative object-cover"
-                    src="/images/pie.svg"
+                    src="/images/pie.png"
                     alt="Pie for Pi-hole, a raycast extension"
                     width={360}
                     height={493}
