@@ -187,7 +187,7 @@ export default function Index({ allPosts, allWork }) {
 
               <a
                 href="https://www.raycast.com/GLaDO8/pie-for-pi-hole#install"
-                className="flex lg:hidden"
+                className="block lg:hidden"
               >
                 <div className="overflow-hidden rounded-xl bg-slate-800">
                   <Image
@@ -225,7 +225,7 @@ export default function Index({ allPosts, allWork }) {
 
               <a
                 href="https://glado8.notion.site/glado8/An-Amateur-s-Guide-to-Leading-a-Sustainable-Lifestyle-in-India-b5b80a9e97c24ee0bf9c660f75ea9fba"
-                className="flex lg:hidden"
+                className="block lg:hidden"
               >
                 <div className="overflow-hidden rounded-xl bg-slate-800">
                   <Image
@@ -241,7 +241,7 @@ export default function Index({ allPosts, allWork }) {
 
               <a
                 href="https://shreyas.design/writings/dissecting-my-workflow"
-                className="flex lg:hidden"
+                className="block lg:hidden"
               >
                 <div className="overflow-hidden rounded-xl bg-slate-800">
                   <Image
@@ -255,6 +255,8 @@ export default function Index({ allPosts, allWork }) {
                 </div>
               </a>
             </div>
+
+            {/* second column */}
             <div className="hidden col-span-3 gap-4 lg:flex lg:flex-col">
               <a href="https://www.raycast.com/GLaDO8/pie-for-pi-hole#install">
                 <div className="overflow-hidden rounded-xl bg-slate-800">
