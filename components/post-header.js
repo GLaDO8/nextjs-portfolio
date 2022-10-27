@@ -1,5 +1,5 @@
 import Date from './date'
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import CoverImage from './cover-image'
 import ReadingTime from './read-time'
 export default function PostHeader({
