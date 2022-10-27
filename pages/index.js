@@ -132,6 +132,7 @@ export default function Index({ allPosts, allWork }) {
           <meta property="og:title" content="shreyas.design"></meta>
         </Head>
         {/* <Fade bottom> */}
+        
         <div className="max-w-lg mx-auto mt-6 mb-12 lg:mt-24">
           <p className="mt-8 text-left">
             {aboutType === 'short' ? shortAboutText : longAboutText}
@@ -255,7 +256,6 @@ export default function Index({ allPosts, allWork }) {
                 </div>
               </a>
             </div>
-
             {/* second column */}
             <div className="hidden col-span-3 gap-4 lg:flex lg:flex-col">
               <a href="https://www.raycast.com/GLaDO8/pie-for-pi-hole#install">
