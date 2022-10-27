@@ -85,6 +85,9 @@
     ol {
       @apply max-w-xl mx-auto;
     }
+    li {
+      @apply ml-8;
+    }
   }
 }
 @screen lg {

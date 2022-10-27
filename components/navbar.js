@@ -11,7 +11,7 @@ function Navbar({ navButtons }) {
           {/* Website Logo */}
           <Link href="/">
             <a>
-              <DarkLogo className="transition duration-300 h-14 w-14 md:h-16 md:w-16 lg:h-28 lg:w-28 hover:opacity-80" />
+              <DarkLogo className="w-20 h-20 transition duration-300 lg:h-28 lg:w-28 hover:opacity-80" />
             </a>
           </Link>
 
