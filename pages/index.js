@@ -47,13 +47,13 @@ export default function Index({ allPosts, allWork }) {
         's data team in the services department. The work was great, we were
         building a process for the services team to optimise the sales of
         refurbished equipment, which has high demand in third world countries.
-        But I wanted to study human behaviour,
+        But I wanted to study human behaviour and learn design.
         <br />
         <br />
-        During this time I was also taking various courses like Human-computer
-        interaction, qualitative research methods and Web and the Mind. These
-        courses made me gravitate towards HCI and product design, and I started
-        working with the HCI department at the{' '}
+        During this time, I also took courses like Human-computer interaction,
+        qualitative research methods and the Web and the Mind. These courses
+        made me gravitate towards HCI and product design, and I started working
+        with the HCI department at the{' '}
         {darkModeLinkStyleTag(
           'University of Gothenburg',
           'https://www.gu.se/en',
@@ -66,9 +66,9 @@ export default function Index({ allPosts, allWork }) {
         )}
         .
         <br />
-        <br />I have two cats, Ginger and Loki. I will do anything for them,
-        they're my lifelines. I also advocate leading a sustainable lifestyle,
-        and a huge fan of{' '}
+        <br />I have two cats, Ginger and Loki. I also advocate leading a
+        sustainable lifestyle, love composting and mushroom cultivation. I'm a
+        huge fan of{' '}
         {darkModeLinkStyleTag(
           'Khruangbin',
           'https://www.youtube.com/watch?v=q4xKvHANqjk',
