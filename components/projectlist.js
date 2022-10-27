@@ -1,7 +1,7 @@
 import ProjectPreview from './project-preview'
 export default function MoreStories({ posts }) {
   return (
-    <section className="mb-8">
+    <section className="">
       <div>
         {posts.map((post) => (
           <ProjectPreview
