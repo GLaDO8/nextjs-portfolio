@@ -288,7 +288,7 @@ export default function Index({ allPosts, allWork }) {
                 <div className="overflow-hidden rounded-xl bg-slate-800">
                   <Image
                     className="relative object-cover"
-                    src="/images/tools.svg"
+                    src="/images/tools.png"
                     alt="Article about tools I use"
                     width={360}
                     height={302}
