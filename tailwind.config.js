@@ -1,5 +1,4 @@
 module.exports = {
-  darkMode: 'class',
   content: [
     './components/**/*.js',
     './components/*.js',
@@ -32,25 +31,19 @@ module.exports = {
     },
     extend: {
       colors: {
-        'grey-text': 'rgba(0, 0, 0, 0.76)',
-        'link-blue': '#06c',
+        'type-grey': '#cfcfcf',
         'dark-mode-link-blue': '#4CBFFF',
-        'inactive-gray': '#9F9F9F',
-        'grey-secondary': '#747474',
-        'dark-mode-black': '#131313',
-        'dark-mode-gray': '#8A8A8A',
+        'grey-secondary': '#8f8f8f',
         'dark-mode-blockquote-gray': '#363636',
       },
       spacing: {
         28: '7rem',
       },
-      letterSpacing: {
-        tighter: '-.04em',
-      },
+
       lineHeight: {
         tight: 1.2,
       },
-      fontWeight: { 'preview-desc': '350' },
+      // fontWeight: { 'preview-desc': '350' },
       fontSize: {
         'base': '1.2rem',
         'lg': '1.3rem',
@@ -62,7 +55,7 @@ module.exports = {
         '8xl': '6.25rem',
       },
       maxWidth: {
-        '2xl': '36rem',
+        '2xl': '44rem',
         '3xl': '50rem',
       },
       boxShadow: {

@@ -5,13 +5,13 @@
 @layer base {
   /* font family declaration */
 
-  /* html,
+  html,
   body {
-    color: #000;
-    background: #fff;
+    color: #cfcfcf;
+    background: #232323;
   }
 
-  .dark,
+  /* .dark,
   .dark body {
     color: #fff;
     background: #232323;
@@ -19,47 +19,66 @@
 
   @font-face {
     font-family: 'Rubik';
-    src: url('/fonts/Rubik-Black.woff2') format('woff2');
+    /* src: url('/fonts/Rubik-Black.woff2') format('woff2'); */
+    src: url('/fonts/Inter-Black.woff2') format('woff2');
     font-weight: 900;
     font-display: swap;
   }
   @font-face {
     font-family: 'Rubik';
-    src: url('/fonts/Rubik-Bold.woff2') format('woff2');
+    /* src: url('/fonts/Rubik-Bold.woff2') format('woff2'); */
+    src: url('/fonts/Inter-Bold.woff2') format('woff2');
+
     font-weight: 700;
     font-display: swap;
   }
   @font-face {
     font-family: 'Rubik';
-    src: url('/fonts/Rubik-SemiBold.woff2') format('woff2');
+    /* src: url('/fonts/Rubik-SemiBold.woff2') format('woff2'); */
+    src: url('/fonts/Inter-SemiBold.woff2') format('woff2');
+
     font-weight: 600;
     font-display: swap;
   }
   @font-face {
     font-family: 'Rubik';
-    src: url('/fonts/Rubik-Medium.woff2') format('woff2');
+    /* src: url('/fonts/Rubik-Medium.woff2') format('woff2'); */
+    src: url('/fonts/Inter-Medium.woff2') format('woff2');
+
     font-weight: 500;
     font-display: swap;
   }
   @font-face {
     font-family: 'Rubik';
-    src: url('/fonts/Rubik-Regular.woff2') format('woff2');
+    /* src: url('/fonts/Rubik-Regular.woff2') format('woff2'); */
+    src: url('/fonts/Inter-Regular.woff2') format('woff2');
+
     font-weight: 400;
     font-display: swap;
   }
 
   @font-face {
     font-family: 'Rubik';
-    src: url('/fonts/Rubik-Light.woff2') format('woff2');
+    /* src: url('/fonts/Rubik-Light.woff2') format('woff2'); */
+    src: url('/fonts/Inter-Light.woff2') format('woff2');
+
     font-weight: 300;
     font-display: swap;
   }
 
   /* Dark Mode Markdown Styling */
-  p {
+  /* p {
     @apply text-stone-800 dark:text-white;
+  } */
+  p,
+  li > p,
+  li > ul,
+  li > ol,
+  ol,
+  ul,
+  li {
+    @apply text-type-grey;
   }
-
   b {
     @apply font-semibold;
   }
@@ -67,40 +86,33 @@
   blockquote > p {
     @apply text-gray-900 bg-gray-100 dark:bg-dark-mode-blockquote-gray dark:text-white rounded-xl;
   }
-  section > ol > li > p {
+  /* section > ol > li > p {
     @apply text-black dark:text-white;
-  }
+  } */
 }
 @layer components {
   /* CSS sitewide styling classes */
   .page-title-design {
-    @apply my-16 text-2xl font-bold leading-tight tracking-tighter text-black font-title md:text-5xl lg:text-6xl md:leading-none dark:text-white;
+    @apply my-16 text-2xl font-bold leading-tight tracking-tighter font-title md:text-5xl lg:text-6xl md:leading-none;
   }
   .section-title-design {
-    @apply max-w-3xl mt-16 mb-4 text-2xl font-medium leading-snug tracking-tight text-black dark:text-white;
+    @apply max-w-3xl mt-16 mb-4 text-2xl font-medium leading-snug tracking-tight text-black;
   }
   .page-para-design {
     @apply my-4 text-base leading-relaxed text-black cursor-pointer lg:text-lg dark:text-white;
   }
   .menu-btn-lg {
-    @apply inline-block px-2 py-4 text-lg font-normal leading-none transition duration-300 ease-in-out text-grey-secondary dark:text-dark-mode-gray lg:px-4 hover:text-black dark:hover:text-white;
+    @apply inline-block px-2 py-4 text-base font-normal leading-none transition duration-300 ease-in-out text-grey-secondary lg:px-4 hover:text-white;
   }
   .menu-btn-lg-active {
-    @apply font-medium text-black dark:text-white;
+    @apply font-medium text-white;
   }
   .social-icons {
     @apply h-5 mr-4 transition duration-500 lg:h-6 lg:mr-5 hover:scale-125;
   }
-  .link-styling {
-    border-bottom: 2px solid black;
-    @apply text-black dark:text-white hover:bg-opacity-80;
-  }
+
   .link-styling-dark {
-    border-bottom: 2px solid white;
-    @apply text-black dark:text-white hover:bg-opacity-80;
-  }
-  .general-link {
-    @apply text-link-blue dark:text-dark-mode-link-blue;
+    @apply text-white hover:bg-opacity-80;
   }
   .home-page-title {
     @apply w-auto pr-8 mx-auto mb-4 text-base font-medium text-black dark:text-white;

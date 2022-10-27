@@ -1,36 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import NavButton from '@/components/navbutton'
 import Link from 'next/link'
-import Logo from './../public/logo.svg'
 import DarkLogo from './../public/dark-logo.svg'
-import { useTheme } from 'next-themes'
 
 function Navbar({ navButtons }) {
-  const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme()
-
-  // When mounted on client, now we can show the UI
-  useEffect(() => setMounted(true), [])
-
-  if (!mounted) return null
-
   return (
     <>
       <div className="container max-w-4xl mx-auto">
-        <nav className="z-10 flex items-center justify-between mt-8 mb-2 md:mb-4 lg:mb-6">
+        <nav className="z-10 flex flex-col items-center justify-between mt-8 mb-2 md:mb-4 lg:mb-6">
           {/* Website Logo */}
           <Link href="/">
             <a>
-              <Logo
-                className={`h-14 w-14 md:h-16 md:w-16 lg:h-18 lg:w-18 hover:opacity-80 transition duration-300 ${
-                  theme === 'dark' ? 'hidden' : 'flex-1'
-                }`}
-              />
-              <DarkLogo
-                className={`h-14 w-14 md:h-16 md:w-16 lg:h-18 lg:w-18 hover:opacity-80 transition duration-300 ${
-                  theme === 'dark' ? 'flex-1' : 'hidden'
-                }`}
-              />
+              <DarkLogo className="w-20 h-20 transition duration-300 lg:h-28 lg:w-28 hover:opacity-80" />
             </a>
           </Link>
 
@@ -43,10 +24,8 @@ function Navbar({ navButtons }) {
                 label={button.label}
               />
             ))}
-
-            {/* Dark Mode Toggle Button */}
           </div>
-          <button
+          {/* <button
             aria-label="Toggle Dark Mode"
             type="button"
             className="w-10 h-10 p-3 ml-4 bg-gray-100 rounded-lg dark:bg-gray-50"
@@ -77,7 +56,7 @@ function Navbar({ navButtons }) {
                 )}
               </svg>
             )}
-          </button>
+          </button> */}
         </nav>
       </div>
     </>
