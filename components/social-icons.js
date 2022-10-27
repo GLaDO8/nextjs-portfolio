@@ -23,6 +23,7 @@ export default function Index() {
         <img
           src={`https://s2.svgbox.net/social.svg?ic=${name}&color=fff`}
           className="social-icons"
+          alt={name}
         />
       </a>
     )
