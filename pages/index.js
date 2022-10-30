@@ -166,13 +166,12 @@ export default function Index({ allPosts, allWork }) {
             <div className="flex flex-col col-span-8 lg:col-span-5 gap-y-4">
               <div>
                 <a
-                  className="hover:border-4"
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://glado8.notion.site/Designing-a-Marketplace-for-Notion-8ba5abea314e4620800d282762fcb024"
                 >
                   <div className="group">
-                    <div className="overflow-hidden duration-500 transform cursor-pointer group-hover:shadow-xl rounded-xl">
+                    <div className="overflow-hidden duration-500 transform cursor-pointer rounded-xl">
                       <Image
                         className="relative object-cover w-full"
                         src="/images/notion.png"
@@ -204,13 +203,12 @@ export default function Index({ allPosts, allWork }) {
               <ProjectList posts={allWork} />
               <div>
                 <a
-                  className="hover:border-4"
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://jstrieb.github.io/link-lock/#eyJ2IjoiMC4wLjEiLCJlIjoiU3B3c2s5TUVsQzluWTJCRk9oOFpXZzB0TkM3VWJrZGZSSnhMeTdncllqYm1RMHVYZzIrMFEwN0pJd3BsYXdYeWJ1blczWTFoMnFzb2RUaDN1TGIzRklRV0FDWjZ6c2xvRDlHVWM3Qkw2MTFXNjdMMzdyU3dUUT09IiwiaSI6IlE3LzZiRHpyUENRanAwREQifQ=="
                 >
                   <div className="group">
-                    <div className="overflow-hidden duration-500 transform cursor-pointer group-hover:shadow-xl rounded-xl">
+                    <div className="overflow-hidden duration-500 transform cursor-pointer rounded-xl">
                       <Image
                         className="relative object-cover w-full"
                         src="/images/atlan.png"
