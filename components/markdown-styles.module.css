@@ -83,7 +83,7 @@
     li,
     ul,
     ol {
-      @apply max-w-xl mx-auto;
+      @apply max-w-2xl mx-auto;
     }
     li {
       @apply ml-8;
