@@ -96,7 +96,7 @@ export default function Index({ allPosts, allWork }) {
   function darkModeLinkStyleTag(linkText, link) {
     return (
       <a
-        className="font-medium transition duration-300 cursor-pointer hover:opacity-70 link-styling-dark"
+        className="font-medium transition duration-300 cursor-pointer border-b-[1px] hover:opacity-70 link-styling-dark"
         href={link}
         rel="noopener"
         target="_blank"
@@ -205,7 +205,7 @@ export default function Index({ allPosts, allWork }) {
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://jstrieb.github.io/link-lock/#eyJ2IjoiMC4wLjEiLCJlIjoiU3B3c2s5TUVsQzluWTJCRk9oOFpXZzB0TkM3VWJrZGZSSnhMeTdncllqYm1RMHVYZzIrMFEwN0pJd3BsYXdYeWJ1blczWTFoMnFzb2RUaDN1TGIzRklRV0FDWjZ6c2xvRDlHVWM3Qkw2MTFXNjdMMzdyU3dUUT09IiwiaSI6IlE3LzZiRHpyUENRanAwREQifQ=="
+                  href="https://jstrieb.github.io/link-lock/#eyJ2IjoiMC4wLjEiLCJlIjoiUURTYkVxMmpmS3Q5SWlnTzF2RjgrQUQzNE80SVFRK1pPSXJrbHgyampPVm1TZnYxNmlEd2Fvd21GUDh4eTZ2V0tKd1lHblIvQ3JkQ012MEtyMklqVnNwOVUrZStYLzFjMDRMcjBEZEFSVllpdEZnRWlKTEhpckwzOGhXaVQza2luUT09IiwiaSI6IklNWmE4cGJiQ3JvY1JsRzMifQ=="
                 >
                   <div className="group">
                     <div className="overflow-hidden duration-500 transform cursor-pointer rounded-xl">
