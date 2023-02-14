@@ -17,10 +17,10 @@ export default function Index({ allPosts, allWork }) {
       {darkModeLinkStyleTag('Clari', 'https://clari.com/')}.
       <br />
       <br />
-      In the past, I helped build processes and the SQL Editor at{' '}
-      {darkModeLinkStyleTag('Atlan', 'https://atlan.com/')} and built tools to
-      study technology use in families. I have two cats, love talking about
-      sustainable lifestyles, a huge fan of{' '}
+      In the past, I helped build the SQL Editor and establish design processes
+      at {darkModeLinkStyleTag('Atlan', 'https://atlan.com/')}. I've also built
+      tools to study technology use in families. I have two cats, love talking
+      about sustainable lifestyles, a huge fan of{' '}
       {darkModeLinkStyleTag(
         'Khruangbin',
         'https://www.youtube.com/watch?v=q4xKvHANqjk',
