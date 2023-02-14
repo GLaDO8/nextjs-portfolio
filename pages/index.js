@@ -12,12 +12,15 @@ export default function Index({ allPosts, allWork }) {
   const shortAboutText = (
     <p>
       Hi, I'm Shrey, a design engineer who loves building tools for
-      productivity. Currently building design systems, processes and a home for
-      data teams at {darkModeLinkStyleTag('Atlan', 'https://atlan.com/')}.
+      productivity. Currently building design systems and helping sales teams
+      with conversational intelligence at{' '}
+      {darkModeLinkStyleTag('Clari', 'https://clari.com/')}.
       <br />
       <br />
-      In the past, I've built tools to study technology use in families. I have
-      two cats, love talking about sustainable lifestyles, a huge fan of{' '}
+      In the past, I helped build processes and the SQL Editor at{' '}
+      {darkModeLinkStyleTag('Atlan', 'https://atlan.com/')} and built tools to
+      study technology use in families. I have two cats, love talking about
+      sustainable lifestyles, a huge fan of{' '}
       {darkModeLinkStyleTag(
         'Khruangbin',
         'https://www.youtube.com/watch?v=q4xKvHANqjk',
@@ -35,8 +38,9 @@ export default function Index({ allPosts, allWork }) {
     <div>
       <p>
         Hi, I'm Shrey, a design engineer who loves building tools for
-        productivity. Currently building design systems, processes and a home
-        for data teams at {darkModeLinkStyleTag('Atlan', 'https://atlan.com/')}.
+        productivity. Currently building design systems and helping sales teams
+        with conversational intelligence at{' '}
+        {darkModeLinkStyleTag('Clari', 'https://clari.com/')}.
         <br />
         <br />
         At my alma mater{' '}
@@ -66,9 +70,11 @@ export default function Index({ allPosts, allWork }) {
         )}
         .
         <br />
-        <br />I have two cats, Ginger and Loki. I also advocate leading a
-        sustainable lifestyle, love composting and mushroom cultivation. I'm a
-        huge fan of{' '}
+        <br />
+        Before Clari, I helped build processes and the SQL Editor at{' '}
+        {darkModeLinkStyleTag('Atlan', 'https://atlan.com/')}. I have two cats,
+        Ginger and Loki. I also advocate leading a sustainable lifestyle, love
+        composting and mushroom cultivation. I'm a huge fan of{' '}
         {darkModeLinkStyleTag(
           'Khruangbin',
           'https://www.youtube.com/watch?v=q4xKvHANqjk',
