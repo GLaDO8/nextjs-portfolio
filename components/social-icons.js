@@ -6,16 +6,8 @@ export default function Index() {
     'https://github.com/GLaDO8',
     'https://www.instagram.com/wutamelonshrey/',
     'https://twitter.com/wutamelonshrey',
-    'https://www.behance.net/ShreyasGupta',
   ]
-  var iconList = [
-    'linkedin',
-    'dribbble',
-    'github',
-    'instagram',
-    'twitter',
-    'behance',
-  ]
+  var iconList = ['linkedin', 'dribbble', 'github', 'instagram', 'twitter']
 
   function iconLinkGenerator(name, link) {
     return (

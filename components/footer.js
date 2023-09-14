@@ -17,7 +17,7 @@ export default function Footer() {
   }
 
   return (
-    <div className="bottom-0 max-w-4xl mx-auto my-36 lazy-renderer">
+    <div className="bottom-0 max-w-3xl mx-auto my-36 lazy-renderer">
       <footer>
         <div className="text-lg lg:text-xl text-grey-secondary">
           Made from scratch using{' '}

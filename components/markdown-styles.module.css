@@ -5,7 +5,7 @@
     @apply mb-4;
   }
   strong {
-    @apply font-medium text-white;
+    @apply font-semibold text-white;
   }
 
   code {
@@ -100,10 +100,10 @@
     li,
     ul,
     ol {
-      @apply max-w-2xl mx-auto;
+      @apply max-w-3xl mx-auto;
     }
     p > img {
-      @apply content-center max-w-2xl mx-auto rounded-lg;
+      @apply content-center max-w-3xl mx-auto rounded-lg;
     }
     li {
       @apply ml-8;

@@ -139,11 +139,11 @@ export default function Index({ allPosts, allWork }) {
         </Head>
         {/* <Fade bottom> */}
 
-        <div className="max-w-lg mx-auto mt-6 mb-12 lg:mt-24">
+        <div className="max-w-xl mx-auto mt-6 mb-12 lg:mt-24">
           <p className="mt-8 text-left">
             {aboutType === 'short' ? shortAboutText : longAboutText}
           </p>
-          <div className="flex content-center justify-between mt-6 md:pr-12">
+          <div className="flex content-center justify-between pr-8 mt-6 md:pr-4">
             <Link href="https://twitter.com/wutamelonshrey" passHref={true}>
               <button className="flex items-center px-3 py-1 text-black transition duration-300 transform bg-white rounded-lg cursor-pointer hover:opacity-70">
                 <div>
@@ -154,7 +154,7 @@ export default function Index({ allPosts, allWork }) {
                     alt="twitter logo"
                   />
                 </div>
-                <div className="ml-2 font-medium"> Say hi on bird app.</div>
+                <div className="ml-2 font-medium"> Say hi on bird app</div>
               </button>
             </Link>
             <button
