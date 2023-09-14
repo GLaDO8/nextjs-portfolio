@@ -51,10 +51,13 @@ export default function Post({ post, morePosts, preview }) {
             />
             <PostBody content={post.content} />
           </article>
-          <hr
-            class="mb-8 mt-16 md:mb-24 md:mt-28 border-1 border-neutral-800"
-            aria-hidden="true"
-          />
+          <div className="mx-4 lg:mx-8">
+            <hr
+              class="mb-8 mt-16 md:mb-24 md:mt-28 border-1 border-neutral-800"
+              aria-hidden="true"
+            />
+          </div>
+
           {/* {morePosts.length > 0 && <MoreStories posts={morePosts} />} */}
         </>
       )}

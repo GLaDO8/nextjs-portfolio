@@ -11,7 +11,11 @@ export default function Layout({ preview, children }) {
       <div className="max-w-4xl mx-auto">
         <main>{children}</main>
       </div>
-      <Footer />
+      <hr
+        class="mb-8 mt-16 md:mb-24 md:mt-28 border-1 border-neutral-800"
+        aria-hidden="true"
+      />
+      <Footer contentArea="home" />
     </div>
   )
 }

@@ -42,7 +42,7 @@ export default function Layout({ children }) {
           <main>{children}</main>
         </div>
         <div className="mx-4 md:mx-8 lg:mx-12">
-          <Footer />
+          <Footer contentArea="post" />
         </div>
       </div>
     </>

@@ -1,7 +1,7 @@
 import React from 'react'
 import SocialLinks from './social-icons'
 
-export default function Footer() {
+export default function Footer({ contentArea }) {
   //dark mode link styling for footer
   function LinkStyleTag(linkText, link) {
     return (
@@ -17,7 +17,11 @@ export default function Footer() {
   }
 
   return (
-    <div className="bottom-0 max-w-3xl mx-auto my-36 lazy-renderer">
+    <div
+      className={`bottom-0 mx-auto my-36 lazy-renderer ${
+        contentArea === 'home' ? 'max-w-4xl' : 'md:max-w-2xl lg:max-w-3xl'
+      }`}
+    >
       <footer>
         <div className="text-lg lg:text-xl text-grey-secondary">
           Made from scratch using{' '}
