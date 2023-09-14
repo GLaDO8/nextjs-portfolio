@@ -51,7 +51,7 @@ export default function Post({ post, morePosts, preview }) {
             <PostBody content={post.content} />
           </article>
           <hr
-            class="mb-24 mt-28 border-1 border-neutral-800"
+            class="mb-8 mt-16 md:mb-24 md:mt-28 border-1 border-neutral-800"
             aria-hidden="true"
           />
 
