@@ -14,7 +14,7 @@ export default function PostHeader({
   return (
     <>
       <div className="mx-4 md:mx-12">
-        <div className="max-w-3xl mx-auto mt-8 lg:mt-12">
+        <div className="mx-auto mt-8 md:max-w-2xl lg:max-w-3xl lg:mt-12">
           <div className="flex flex-row mr-4 text-sm font-normal sm:text-base ">
             <Date dateString={date} />
             <div className="mx-2 mt-2">
@@ -24,7 +24,7 @@ export default function PostHeader({
               <ReadingTime content={content} />
             </div>
           </div>
-          <div className="mb-2 text-2xl font-bold leading-tight tracking-tighter font-title md:text-5xl lg:text-7xl md:leading-none ">
+          <div className="mb-2 text-2xl font-bold leading-tight tracking-tighter text-white font-title md:text-5xl lg:text-7xl md:leading-none">
             <h1>{title}</h1>
           </div>
           <p className="mb-2 leading-relaxed md:text-lg font-regular ">
