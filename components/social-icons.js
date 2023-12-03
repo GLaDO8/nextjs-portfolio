@@ -24,6 +24,18 @@ export default function Index() {
   return (
     <div className="flex my-8">
       {linkList.map((link, index) => iconLinkGenerator(iconList[index], link))}
+      <a
+        href={'https://letterboxd.com/GLaDO8/'}
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        <img
+          src={`/letterboxd.svg`}
+          className="social-icons"
+          alt={'letterboxd'}
+          key={'letterboxd'}
+        />
+      </a>
     </div>
   )
 }

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>letterboxd-decal-dots-neg-mono</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="129.847328" height="141.443299"></rect>
+        <rect id="path-3" x="0" y="0" width="129.847328" height="141.443299"></rect>
+    </defs>
+    <g id="letterboxd-decal-dots-neg-mono" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Circle" fill="#FFFFFF" cx="250" cy="250" r="250"></circle>
+        <g id="Dots" transform="translate(61.000000, 180.000000)">
+            <ellipse id="Green" fill="#202830" cx="189" cy="70" rx="70.0786517" ry="70"></ellipse>
+            <g id="Blue" transform="translate(248.152672, 0.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <ellipse fill="#202830" mask="url(#mask-2)" cx="59.7686766" cy="70" rx="70.0786517" ry="70"></ellipse>
+            </g>
+            <g id="Orange">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Mask"></g>
+                <ellipse fill="#202830" mask="url(#mask-4)" cx="70.0786517" cy="70" rx="70.0786517" ry="70"></ellipse>
+            </g>
+            <path d="M129.539326,107.063108 C122.810493,96.3149291 118.921348,83.611134 118.921348,70 C118.921348,56.388866 122.810493,43.6850709 129.539326,32.9368922 C136.268159,43.6850709 140.157303,56.388866 140.157303,70 C140.157303,83.611134 136.268159,96.3149291 129.539326,107.063108 L129.539326,107.063108 Z" id="Overlap" fill="#FFFFFF"></path>
+            <path d="M248.460674,32.9368922 C255.189507,43.6850709 259.078652,56.388866 259.078652,70 C259.078652,83.611134 255.189507,96.3149291 248.460674,107.063108 C241.731841,96.3149291 237.842697,83.611134 237.842697,70 C237.842697,56.388866 241.731841,43.6850709 248.460674,32.9368922 L248.460674,32.9368922 Z" id="Overlap" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>
