@@ -12,9 +12,9 @@ export default function Index({ allPosts, allWork }) {
   const shortAboutText = (
     <p>
       Hi, I'm Shrey, a design engineer who loves building tools for
-      productivity. Currently building design systems and helping sales teams
-      with conversational intelligence at{' '}
-      {darkModeLinkStyleTag('Clari', 'https://clari.com/')}.
+      productivity. Currently helping sales teams with conversational
+      intelligence at {darkModeLinkStyleTag('Clari', 'https://clari.com/')},
+      also experimenting with LLMs on the side.
       <br />
       <br />
       In the past, I helped build the SQL Editor and establish design processes
