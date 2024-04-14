@@ -2,13 +2,8 @@ import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
 import PostBody from '@/components/post-body'
 import PostHeader from '@/components/post-header'
-// import MoreStories from '@/components/more-stories'
 import PageLayout from '@/components/page-layout'
-import {
-  getAllPostsWithSlug,
-  getPostAndMorePosts,
-  getSinglePost,
-} from '@/lib/api'
+import { getAllPostsWithSlug, getSinglePost } from '@/lib/api'
 
 import Head from 'next/head'
 import markdownToHtml from '@/lib/markdownToHtml'
@@ -71,7 +66,6 @@ export default function Post({ post, preview }) {
 
 export async function getStaticProps({ params, preview = null }) {
   const data = await getSinglePost(params.slug)
-  console.log(data)
   const content = await markdownToHtml(data.metadata?.content || '')
   const markdown = data.metadata?.content || ''
   return {
