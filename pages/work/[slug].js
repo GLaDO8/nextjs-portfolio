@@ -2,7 +2,6 @@ import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
 import PostBody from '@/components/post-body'
 import PostHeader from '@/components/post-header'
-// import MoreStories from '@/components/more-stories'
 import PageLayout from '@/components/page-layout'
 import { getAllProjectsWithSlug, getProjectAndMoreProjects } from '@/lib/api'
 import Head from 'next/head'
@@ -64,27 +63,27 @@ export default function Post({ post, morePosts, preview }) {
     </PageLayout>
   )
 }
-export async function getStaticProps({ params, preview = null }) {
-  const data = await getProjectAndMoreProjects(params.slug, preview)
-  const content = await markdownToHtml(data.post?.metadata?.content || '')
-  const markdown = data.post?.metadata?.content || ''
-  return {
-    props: {
-      preview,
-      post: {
-        ...data.post,
-        content,
-        markdown,
-      },
-      morePosts: data.morePosts || [],
-    },
-  }
-}
+// export async function getStaticProps({ params, preview = null }) {
+//   const data = await getProjectAndMoreProjects(params.slug, preview)
+//   const content = await markdownToHtml(data.post?.metadata?.content || '')
+//   const markdown = data.post?.metadata?.content || ''
+//   return {
+//     props: {
+//       preview,
+//       post: {
+//         ...data.post,
+//         content,
+//         markdown,
+//       },
+//       morePosts: data.morePosts || [],
+//     },
+//   }
+// }
 
-export async function getStaticPaths() {
-  const allPosts = (await getAllProjectsWithSlug()) || []
-  return {
-    paths: allPosts.map((post) => `/work/${post.slug}`),
-    fallback: true,
-  }
-}
+// export async function getStaticPaths() {
+//   const allPosts = (await getAllProjectsWithSlug()) || []
+//   return {
+//     paths: allPosts.map((post) => `/work/${post.slug}`),
+//     fallback: true,
+//   }
+// }

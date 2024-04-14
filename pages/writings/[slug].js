@@ -8,7 +8,7 @@ import { getAllPostsWithSlug, getPostAndMorePosts } from '@/lib/api'
 import Head from 'next/head'
 import markdownToHtml from '@/lib/markdownToHtml'
 
-export default function Post({ post, morePosts, preview }) {
+export default function Post({ post, preview }) {
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
@@ -64,27 +64,27 @@ export default function Post({ post, morePosts, preview }) {
   )
 }
 
-export async function getStaticProps({ params, preview = null }) {
-  const data = await getPostAndMorePosts(params.slug, preview)
-  const content = await markdownToHtml(data.post?.metadata?.content || '')
-  const markdown = data.post?.metadata?.content || ''
-  return {
-    props: {
-      preview,
-      post: {
-        ...data.post,
-        content,
-        markdown,
-      },
-      morePosts: data.morePosts || [],
-    },
-  }
-}
+// export async function getStaticProps({ params, preview = null }) {
+//   const data = await getPostAndMorePosts(params.slug, preview)
+//   const content = await markdownToHtml(data.post?.metadata?.content || '')
+//   const markdown = data.post?.metadata?.content || ''
+//   return {
+//     props: {
+//       preview,
+//       post: {
+//         ...data.post,
+//         content,
+//         markdown,
+//       },
+//       morePosts: data.morePosts || [],
+//     },
+//   }
+// }
 
-export async function getStaticPaths() {
-  const allPosts = (await getAllPostsWithSlug()) || []
-  return {
-    paths: allPosts.map((post) => `/writings/${post.slug}`),
-    fallback: true,
-  }
-}
+// export async function getStaticPaths() {
+//   const allPosts = (await getAllPostsWithSlug()) || []
+//   return {
+//     paths: allPosts.map((post) => `/writings/${post.slug}`),
+//     fallback: true,
+//   }
+// }
