@@ -4,7 +4,12 @@ import PostBody from '@/components/post-body'
 import PostHeader from '@/components/post-header'
 // import MoreStories from '@/components/more-stories'
 import PageLayout from '@/components/page-layout'
-import { getAllPostsWithSlug, getPostAndMorePosts } from '@/lib/api'
+import {
+  getAllPostsWithSlug,
+  getPostAndMorePosts,
+  getSinglePost,
+} from '@/lib/api'
+
 import Head from 'next/head'
 import markdownToHtml from '@/lib/markdownToHtml'
 
@@ -64,27 +69,28 @@ export default function Post({ post, preview }) {
   )
 }
 
-// export async function getStaticProps({ params, preview = null }) {
-//   const data = await getPostAndMorePosts(params.slug, preview)
-//   const content = await markdownToHtml(data.post?.metadata?.content || '')
-//   const markdown = data.post?.metadata?.content || ''
-//   return {
-//     props: {
-//       preview,
-//       post: {
-//         ...data.post,
-//         content,
-//         markdown,
-//       },
-//       morePosts: data.morePosts || [],
-//     },
-//   }
-// }
+export async function getStaticProps({ params, preview = null }) {
+  const data = await getSinglePost(params.slug)
+  console.log(data)
+  const content = await markdownToHtml(data.metadata?.content || '')
+  const markdown = data.metadata?.content || ''
+  return {
+    props: {
+      preview,
+      post: {
+        ...data,
+        content,
+        markdown,
+      },
+      morePosts: data.morePosts || [],
+    },
+  }
+}
 
-// export async function getStaticPaths() {
-//   const allPosts = (await getAllPostsWithSlug()) || []
-//   return {
-//     paths: allPosts.map((post) => `/writings/${post.slug}`),
-//     fallback: true,
-//   }
-// }
+export async function getStaticPaths() {
+  const allPosts = (await getAllPostsWithSlug()) || []
+  return {
+    paths: allPosts.map((post) => `/writings/${post.slug}`),
+    fallback: true,
+  }
+}
