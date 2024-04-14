@@ -1,6 +1,6 @@
 import WritingList from '@/components/writinglist'
 import Layout from '@/components/layout'
-import { getOnlyBlogPosts } from '@/lib/api'
+import { getAllPosts } from '@/lib/api'
 import { WRITING_OG_IMAGE_URL } from '@/lib/constants'
 import Head from 'next/head'
 
@@ -30,8 +30,8 @@ export default function Index({ allPosts }) {
   )
 }
 
-export async function getStaticProps({ preview }) {
-  const allPosts = (await getOnlyBlogPosts(preview)) || []
+export async function getStaticProps() {
+  const allPosts = (await getAllPosts) || []
   return {
     props: { allPosts },
   }

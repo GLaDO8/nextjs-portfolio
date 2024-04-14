@@ -170,27 +170,6 @@ export default function Index({ allPosts, allWork }) {
           <div className="home-page-title">My Work</div>
           <div className="grid grid-cols-8 gap-4">
             <div className="flex flex-col col-span-8 lg:col-span-5 gap-y-4">
-              <div>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://glado8.notion.site/Designing-a-Marketplace-for-Notion-8ba5abea314e4620800d282762fcb024"
-                >
-                  <div className="group">
-                    <div className="overflow-hidden duration-500 transform cursor-pointer rounded-xl">
-                      <Image
-                        className="relative object-cover w-full"
-                        src="/images/notion.png"
-                        alt="Cover image for playground section"
-                        width={1600}
-                        height={900}
-                        layout="responsive"
-                      />
-                    </div>
-                  </div>
-                </a>
-              </div>
-
               <a
                 href="https://www.raycast.com/GLaDO8/pie-for-pi-hole#install"
                 className="block lg:hidden"
@@ -206,7 +185,7 @@ export default function Index({ allPosts, allWork }) {
                   />
                 </div>
               </a>
-              <ProjectList posts={allWork} />
+              {/* Atlan Casestudy */}
               <div>
                 <a
                   target="_blank"
@@ -218,6 +197,30 @@ export default function Index({ allPosts, allWork }) {
                       <Image
                         className="relative object-cover w-full"
                         src="/images/atlan.png"
+                        alt="Cover image for playground section"
+                        width={1600}
+                        height={900}
+                        layout="responsive"
+                      />
+                    </div>
+                  </div>
+                </a>
+              </div>
+              {/* whistle case study */}
+              <ProjectList posts={allWork} />
+
+              {/* Notion Marketplace */}
+              <div>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://glado8.notion.site/Designing-a-Marketplace-for-Notion-8ba5abea314e4620800d282762fcb024"
+                >
+                  <div className="group">
+                    <div className="overflow-hidden duration-500 transform cursor-pointer rounded-xl">
+                      <Image
+                        className="relative object-cover w-full"
+                        src="/images/notion.png"
                         alt="Cover image for playground section"
                         width={1600}
                         height={900}
