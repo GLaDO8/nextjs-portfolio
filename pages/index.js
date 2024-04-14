@@ -206,6 +206,26 @@ export default function Index({ allPosts, allWork }) {
                   </div>
                 </a>
               </div>
+              <div>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.raycast.com/michaelschultz/figma-files-raycast-extension"
+                >
+                  <div className="group">
+                    <div className="overflow-hidden duration-500 transform cursor-pointer rounded-xl">
+                      <Image
+                        className="relative object-cover w-full"
+                        src="/images/figma-file-search.png"
+                        alt="Cover image for playground section"
+                        width={1600}
+                        height={1100}
+                        layout="responsive"
+                      />
+                    </div>
+                  </div>
+                </a>
+              </div>
               {/* whistle case study */}
               <ProjectList posts={allWork} />
 
