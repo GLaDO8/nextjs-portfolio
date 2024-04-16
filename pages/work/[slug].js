@@ -52,7 +52,7 @@ export default function Post({ post, morePosts, preview }) {
           </article>
           <div className="mx-4 lg:mx-8">
             <hr
-              class="mb-8 mt-16 md:mb-24 md:mt-28 border-1 border-neutral-800"
+              className="mt-16 mb-8 md:mb-24 md:mt-28 border-1 border-neutral-800"
               aria-hidden="true"
             />
           </div>

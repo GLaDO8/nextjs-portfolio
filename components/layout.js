@@ -12,7 +12,7 @@ export default function Layout({ preview, children }) {
         <main>{children}</main>
       </div>
       <hr
-        class="mb-8 mt-16 md:mb-24 md:mt-28 border-1 border-neutral-800"
+        className="mt-16 mb-8 md:mb-24 md:mt-28 border-1 border-neutral-800"
         aria-hidden="true"
       />
       <Footer contentArea="home" />
