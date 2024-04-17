@@ -137,7 +137,6 @@ export default function Index({ allPosts, allWork }) {
           <title>shreyas.design</title>
           <meta property="og:title" content="shreyas.design"></meta>
         </Head>
-        {/* <Fade bottom> */}
 
         <div className="max-w-xl mx-auto mt-6 mb-12 lg:mt-24">
           <div>{aboutType === 'short' ? shortAboutText : longAboutText}</div>
@@ -168,21 +167,6 @@ export default function Index({ allPosts, allWork }) {
           <div className="home-page-title">My Work</div>
           <div className="grid grid-cols-8 gap-4">
             <div className="flex flex-col col-span-8 lg:col-span-5 gap-y-4">
-              <a
-                href="https://www.raycast.com/GLaDO8/pie-for-pi-hole#install"
-                className="block lg:hidden"
-              >
-                <div className="overflow-hidden rounded-xl bg-slate-800">
-                  <Image
-                    className="relative object-cover"
-                    src="/images/pie-long.png"
-                    alt="Pie for Pi-hole, a raycast extension"
-                    width={620}
-                    height={350}
-                    layout="responsive"
-                  />
-                </div>
-              </a>
               {/* Atlan Casestudy */}
               <div>
                 <a
@@ -199,11 +183,28 @@ export default function Index({ allPosts, allWork }) {
                         width={1600}
                         height={900}
                         layout="responsive"
+                        priority={true}
                       />
                     </div>
                   </div>
                 </a>
               </div>
+              <a
+                href="https://www.raycast.com/GLaDO8/pie-for-pi-hole#install"
+                className="block lg:hidden"
+              >
+                <div className="overflow-hidden rounded-xl bg-slate-800">
+                  <Image
+                    className="relative object-cover"
+                    src="/images/pie-long.png"
+                    alt="Pie for Pi-hole, a raycast extension"
+                    width={620}
+                    height={350}
+                    layout="responsive"
+                    priority={true}
+                  />
+                </div>
+              </a>
               <div>
                 <a
                   target="_blank"
@@ -219,6 +220,7 @@ export default function Index({ allPosts, allWork }) {
                         width={1600}
                         height={1100}
                         layout="responsive"
+                        priority={true}
                       />
                     </div>
                   </div>
@@ -261,6 +263,7 @@ export default function Index({ allPosts, allWork }) {
                     width={620}
                     height={350}
                     layout="responsive"
+                    priority={true}
                   />
                 </div>
               </a>
