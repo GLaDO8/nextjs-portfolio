@@ -10,7 +10,7 @@ import Layout from '@/components/layout'
 
 export default function Index({ allPosts, allWork }) {
   const shortAboutText = (
-    <p>
+    <p className="mt-8 text-left">
       Hi, I'm Shrey, a design engineer who loves building tools for
       productivity. Currently helping sales teams with conversational
       intelligence at {darkModeLinkStyleTag('Clari', 'https://clari.com/')},
@@ -36,7 +36,7 @@ export default function Index({ allPosts, allWork }) {
 
   const longAboutText = (
     <div>
-      <p>
+      <p className="mt-8 text-left">
         Hi, I'm Shrey, a design engineer who loves building tools for
         productivity. Currently building design systems and helping sales teams
         with conversational intelligence at{' '}
@@ -140,9 +140,7 @@ export default function Index({ allPosts, allWork }) {
         {/* <Fade bottom> */}
 
         <div className="max-w-xl mx-auto mt-6 mb-12 lg:mt-24">
-          <p className="mt-8 text-left">
-            {aboutType === 'short' ? shortAboutText : longAboutText}
-          </p>
+          <div>{aboutType === 'short' ? shortAboutText : longAboutText}</div>
           <div className="flex content-center justify-between pr-8 mt-6 md:pr-4">
             <Link href="https://twitter.com/wutamelonshrey" passHref={true}>
               <button className="flex items-center px-3 py-1 text-black transition duration-300 transform bg-white rounded-lg cursor-pointer hover:opacity-70">
@@ -331,29 +329,6 @@ export default function Index({ allPosts, allWork }) {
           <div className="home-page-title">Writings</div>
           <WritingList posts={allPosts} />
         </div>
-        {/* <div className="mt-12 lg:mt-24">
-          <div className="home-page-title">Playground</div>
-          <Link href="/playground" passHref={true}>
-            <div>
-              <div className="overflow-hidden duration-500 transform cursor-pointer hover:shadow-xl hover:scale-100 rounded-xl">
-                <Image
-                  src="/images/playground.png"
-                  alt="Cover image for playground section"
-                  width={1600}
-                  height={900}
-                  layout="responsive"
-                />
-              </div>
-              <div className="mt-4">
-                <p className="mb-2 text-base font-normal leading-snug text-black cursor-pointer lg:text-lg dark:text-white">
-                  I tinker around and create visuals on various design tools.
-                  From icons, illustrations, concept UI to donuts and unfinished
-                  ideas, you will find everything here!
-                </p>
-              </div>
-            </div>
-          </Link>
-        </div> */}
       </Layout>
     </>
   )

@@ -77,7 +77,7 @@ export default function Index() {
               </div>
             </div>
 
-            <p className="page-para-design"></p>
+            {/* <p className="page-para-design"></p> */}
           </div>
         </div>
       </Layout>
