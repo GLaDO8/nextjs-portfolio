@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import NavButton from '@/components/navbutton'
 import Link from 'next/link'
-import DarkLogo from './../public/dark-logo.svg'
+import Image from 'next/image'
 
 function Navbar({ navButtons }) {
   return (
@@ -10,7 +10,13 @@ function Navbar({ navButtons }) {
         <nav className="z-10 flex flex-col items-center justify-between mt-8 mb-2 md:mb-4 lg:mb-6">
           {/* Website Logo */}
           <Link href="/">
-            <DarkLogo className="w-20 h-20 transition duration-300 lg:h-28 lg:w-28 hover:opacity-80" />
+            <Image
+              src="./dark-logo.svg"
+              alt="Logo"
+              width={80}
+              height={80}
+              className="w-20 h-20 transition duration-300 lg:h-28 lg:w-28 hover:opacity-80"
+            />
           </Link>
 
           {/* navigation elements */}
