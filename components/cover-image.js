@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Image from "next/legacy/image"
+import Image from "next/image"
 
 export default function CoverImage({ title, url, slug }) {
   const image = (
@@ -8,8 +8,11 @@ export default function CoverImage({ title, url, slug }) {
       alt={`Cover Image for ${title}`}
       width={1920}
       height={1080}
-      layout="responsive"
-    />
+      sizes="100vw"
+      style={{
+        width: "100%",
+        height: "auto"
+      }} />
   )
   return (
     <div className="sm:mx-0">

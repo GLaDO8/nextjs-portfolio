@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import React, { useState } from 'react'
 import Link from 'next/link'
-import Image from "next/legacy/image"
+import Image from "next/image"
 import ProjectList from '@/components/projectlist'
 import WritingList from '@/components/writinglist'
 import { getAllPosts, getAllProjectsForHome } from '@/lib/api'
@@ -111,230 +111,255 @@ export default function Index({ allPosts, allWork }) {
       </a>
     )
   }
-  return (
-    <>
-      <Layout>
-        <Head>
-          <meta property="twitter:card" content="summary_large_image"></meta>
-          <meta property="twitter:site" content="@wutamelonshrey"></meta>
-          <meta property="twitter:title" content="Shreyas.design"></meta>
-          <meta property="twitter:url" content="https://shreyas.design" />
-          <meta
-            property="twitter:description"
-            content="Selected Work and Writings by Shreyas Gupta"
-          ></meta>
-          <meta property="twitter:image" content={HOME_OG_IMAGE_URL}></meta>
+  return <>
+    <Layout>
+      <Head>
+        <meta property="twitter:card" content="summary_large_image"></meta>
+        <meta property="twitter:site" content="@wutamelonshrey"></meta>
+        <meta property="twitter:title" content="Shreyas.design"></meta>
+        <meta property="twitter:url" content="https://shreyas.design" />
+        <meta
+          property="twitter:description"
+          content="Selected Work and Writings by Shreyas Gupta"
+        ></meta>
+        <meta property="twitter:image" content={HOME_OG_IMAGE_URL}></meta>
 
-          <meta property="og:image" content={HOME_OG_IMAGE_URL}></meta>
-          <meta
-            property="og:description"
-            content="Selected Work and Writings by Shreyas Gupta"
-          ></meta>
-          <meta
-            name="description"
-            content="Selected Work and Writings by Shreyas Gupta"
-          ></meta>
-          <title>shreyas.design</title>
-          <meta property="og:title" content="shreyas.design"></meta>
-        </Head>
+        <meta property="og:image" content={HOME_OG_IMAGE_URL}></meta>
+        <meta
+          property="og:description"
+          content="Selected Work and Writings by Shreyas Gupta"
+        ></meta>
+        <meta
+          name="description"
+          content="Selected Work and Writings by Shreyas Gupta"
+        ></meta>
+        <title>shreyas.design</title>
+        <meta property="og:title" content="shreyas.design"></meta>
+      </Head>
 
-        <div className="max-w-xl mx-auto mt-6 mb-12 lg:mt-24">
-          <div>{aboutType === 'short' ? shortAboutText : longAboutText}</div>
-          <div className="flex content-center justify-between pr-8 mt-6 md:pr-4">
-            <Link href="https://twitter.com/wutamelonshrey" passHref={true}>
-              <button className="flex items-center px-3 py-1 text-black transition duration-300 transform bg-white rounded-lg cursor-pointer hover:opacity-70">
-                <div>
-                  <img
-                    src={twitterSvgTagLink}
-                    width="20"
-                    height="20"
-                    alt="twitter logo"
-                  />
-                </div>
-                <div className="ml-2 font-medium"> Say hi on bird app</div>
-              </button>
-            </Link>
-            <button
-              className="underline"
-              onClick={() => aboutToggle(aboutType)}
-            >
-              {aboutType === 'short' ? 'Read long intro' : 'Read short intro'}
+      <div className="max-w-xl mx-auto mt-6 mb-12 lg:mt-24">
+        <div>{aboutType === 'short' ? shortAboutText : longAboutText}</div>
+        <div className="flex content-center justify-between pr-8 mt-6 md:pr-4">
+          <Link href="https://twitter.com/wutamelonshrey" passHref={true}>
+            <button className="flex items-center px-3 py-1 text-black transition duration-300 transform bg-white rounded-lg cursor-pointer hover:opacity-70">
+              <div>
+                <img
+                  src={twitterSvgTagLink}
+                  width="20"
+                  height="20"
+                  alt="twitter logo"
+                />
+              </div>
+              <div className="ml-2 font-medium"> Say hi on bird app</div>
             </button>
-          </div>
+          </Link>
+          <button
+            className="underline"
+            onClick={() => aboutToggle(aboutType)}
+          >
+            {aboutType === 'short' ? 'Read long intro' : 'Read short intro'}
+          </button>
         </div>
+      </div>
 
-        <div className="mt-16">
-          <div className="home-page-title">My Work</div>
-          <div className="grid grid-cols-8 gap-4">
-            <div className="flex flex-col col-span-8 lg:col-span-5 gap-y-4">
-              {/* Atlan Casestudy */}
-              <div>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://jstrieb.github.io/link-lock/#eyJ2IjoiMC4wLjEiLCJlIjoiM040bzdCQm1LZVFUY2IrVVF1ZmFMYzQ0MWFobEhVYU5lU0g4YWhucDlGbVR0Qm9YT3NyM1JyeUljL3hPMHNnQlI2QmdyMXZqQ3RQdW01aHVVMkY3eTcrUmpRVjI0SnlPYzQ2NEp3V0FTSzdHZWdoZ0dkbUpsOFZ0dnkxSExIZjNmcTY4b3V2SHFRPT0iLCJzIjoidk55VytBMFdkMTNmdEJxcWtoanVrUT09IiwiaSI6Imp3TitGWXJ2ZTBsUENObEgifQ=="
-                >
-                  <div className="group">
-                    <div className="overflow-hidden duration-500 transform cursor-pointer rounded-xl">
-                      <Image
-                        className="relative object-cover w-full"
-                        src="/images/atlan.png"
-                        alt="Cover image for playground section"
-                        width={1600}
-                        height={900}
-                        layout="responsive"
-                        priority={true}
-                      />
-                    </div>
-                  </div>
-                </a>
-              </div>
+      <div className="mt-16">
+        <div className="home-page-title">My Work</div>
+        <div className="grid grid-cols-8 gap-4">
+          <div className="flex flex-col col-span-8 lg:col-span-5 gap-y-4">
+            {/* Atlan Casestudy */}
+            <div>
               <a
-                href="https://www.raycast.com/GLaDO8/pie-for-pi-hole#install"
-                className="block lg:hidden"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://jstrieb.github.io/link-lock/#eyJ2IjoiMC4wLjEiLCJlIjoiM040bzdCQm1LZVFUY2IrVVF1ZmFMYzQ0MWFobEhVYU5lU0g4YWhucDlGbVR0Qm9YT3NyM1JyeUljL3hPMHNnQlI2QmdyMXZqQ3RQdW01aHVVMkY3eTcrUmpRVjI0SnlPYzQ2NEp3V0FTSzdHZWdoZ0dkbUpsOFZ0dnkxSExIZjNmcTY4b3V2SHFRPT0iLCJzIjoidk55VytBMFdkMTNmdEJxcWtoanVrUT09IiwiaSI6Imp3TitGWXJ2ZTBsUENObEgifQ=="
               >
-                <div className="overflow-hidden rounded-xl bg-slate-800">
-                  <Image
-                    className="relative object-cover"
-                    src="/images/pie-long.png"
-                    alt="Pie for Pi-hole, a raycast extension"
-                    width={620}
-                    height={350}
-                    layout="responsive"
-                    priority={true}
-                  />
-                </div>
-              </a>
-              <div>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://www.raycast.com/michaelschultz/figma-files-raycast-extension"
-                >
-                  <div className="group">
-                    <div className="overflow-hidden duration-500 transform cursor-pointer rounded-xl">
-                      <Image
-                        className="relative object-cover w-full"
-                        src="/images/figma-file-search.png"
-                        alt="Cover image for playground section"
-                        width={1600}
-                        height={1100}
-                        layout="responsive"
-                        priority={true}
-                      />
-                    </div>
+                <div className="group">
+                  <div className="overflow-hidden duration-500 transform cursor-pointer rounded-xl">
+                    <Image
+                      className="relative object-cover w-full"
+                      src="/images/atlan.png"
+                      alt="Cover image for playground section"
+                      width={1600}
+                      height={900}
+                      priority={true}
+                      sizes="100vw"
+                      style={{
+                        width: "100%",
+                        height: "auto"
+                      }} />
                   </div>
-                </a>
-              </div>
-              {/* whistle case study */}
-              <ProjectList posts={allWork} />
-
-              {/* Notion Marketplace */}
-              <div>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://glado8.notion.site/Designing-a-Marketplace-for-Notion-8ba5abea314e4620800d282762fcb024"
-                >
-                  <div className="group">
-                    <div className="overflow-hidden duration-500 transform cursor-pointer rounded-xl">
-                      <Image
-                        className="relative object-cover w-full"
-                        src="/images/notion.png"
-                        alt="Cover image for playground section"
-                        width={1600}
-                        height={900}
-                        layout="responsive"
-                      />
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <a
-                href="https://glado8.notion.site/glado8/An-Amateur-s-Guide-to-Leading-a-Sustainable-Lifestyle-in-India-b5b80a9e97c24ee0bf9c660f75ea9fba"
-                className="block lg:hidden"
-              >
-                <div className="overflow-hidden rounded-xl bg-slate-800">
-                  <Image
-                    className="relative object-cover"
-                    src="/images/sustain.svg"
-                    alt="Guide to leading a sustainable lifestyle in india"
-                    width={620}
-                    height={350}
-                    layout="responsive"
-                    priority={true}
-                  />
-                </div>
-              </a>
-
-              <a
-                href="https://shreyas.design/writings/dissecting-my-workflow"
-                className="block lg:hidden"
-              >
-                <div className="overflow-hidden rounded-xl bg-slate-800">
-                  <Image
-                    className="relative object-cover"
-                    src="/images/tools-long.png"
-                    alt="Article about tools I use"
-                    width={620}
-                    height={302}
-                    layout="responsive"
-                  />
                 </div>
               </a>
             </div>
-            {/* second column */}
-            <div className="hidden col-span-3 gap-4 lg:flex lg:flex-col">
-              <a href="https://www.raycast.com/GLaDO8/pie-for-pi-hole#install">
-                <div className="overflow-hidden rounded-xl bg-slate-800">
-                  <Image
-                    className="relative object-cover"
-                    src="/images/pie.png"
-                    alt="Pie for Pi-hole, a raycast extension"
-                    width={360}
-                    height={493}
-                    layout="responsive"
-                  />
-                </div>
-              </a>
-
-              <a href="https://glado8.notion.site/glado8/An-Amateur-s-Guide-to-Leading-a-Sustainable-Lifestyle-in-India-b5b80a9e97c24ee0bf9c660f75ea9fba">
-                <div className="overflow-hidden rounded-xl bg-slate-800">
-                  <Image
-                    className="relative object-cover"
-                    src="/images/sustain-long.svg"
-                    alt="Guide to leading a sustainable lifestyle in india"
-                    width={360}
-                    height={493}
-                    layout="responsive"
-                  />
-                </div>
-              </a>
-
-              <a href="https://shreyas.design/writings/dissecting-my-workflow">
-                <div className="overflow-hidden rounded-xl bg-slate-800">
-                  <Image
-                    className="relative object-cover"
-                    src="/images/tools.png"
-                    alt="Article about tools I use"
-                    width={360}
-                    height={302}
-                    layout="responsive"
-                  />
+            <a
+              href="https://www.raycast.com/GLaDO8/pie-for-pi-hole#install"
+              className="block lg:hidden"
+            >
+              <div className="overflow-hidden rounded-xl bg-slate-800">
+                <Image
+                  className="relative object-cover"
+                  src="/images/pie-long.png"
+                  alt="Pie for Pi-hole, a raycast extension"
+                  width={620}
+                  height={350}
+                  priority={true}
+                  sizes="100vw"
+                  style={{
+                    width: "100%",
+                    height: "auto"
+                  }} />
+              </div>
+            </a>
+            <div>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.raycast.com/michaelschultz/figma-files-raycast-extension"
+              >
+                <div className="group">
+                  <div className="overflow-hidden duration-500 transform cursor-pointer rounded-xl">
+                    <Image
+                      className="relative object-cover w-full"
+                      src="/images/figma-file-search.png"
+                      alt="Cover image for playground section"
+                      width={1600}
+                      height={1100}
+                      priority={true}
+                      sizes="100vw"
+                      style={{
+                        width: "100%",
+                        height: "auto"
+                      }} />
+                  </div>
                 </div>
               </a>
             </div>
+            {/* whistle case study */}
+            <ProjectList posts={allWork} />
+
+            {/* Notion Marketplace */}
+            <div>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://glado8.notion.site/Designing-a-Marketplace-for-Notion-8ba5abea314e4620800d282762fcb024"
+              >
+                <div className="group">
+                  <div className="overflow-hidden duration-500 transform cursor-pointer rounded-xl">
+                    <Image
+                      className="relative object-cover w-full"
+                      src="/images/notion.png"
+                      alt="Cover image for playground section"
+                      width={1600}
+                      height={900}
+                      sizes="100vw"
+                      style={{
+                        width: "100%",
+                        height: "auto"
+                      }} />
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <a
+              href="https://glado8.notion.site/glado8/An-Amateur-s-Guide-to-Leading-a-Sustainable-Lifestyle-in-India-b5b80a9e97c24ee0bf9c660f75ea9fba"
+              className="block lg:hidden"
+            >
+              <div className="overflow-hidden rounded-xl bg-slate-800">
+                <Image
+                  className="relative object-cover"
+                  src="/images/sustain.svg"
+                  alt="Guide to leading a sustainable lifestyle in india"
+                  width={620}
+                  height={350}
+                  priority={true}
+                  sizes="100vw"
+                  style={{
+                    width: "100%",
+                    height: "auto"
+                  }} />
+              </div>
+            </a>
+
+            <a
+              href="https://shreyas.design/writings/dissecting-my-workflow"
+              className="block lg:hidden"
+            >
+              <div className="overflow-hidden rounded-xl bg-slate-800">
+                <Image
+                  className="relative object-cover"
+                  src="/images/tools-long.png"
+                  alt="Article about tools I use"
+                  width={620}
+                  height={302}
+                  sizes="100vw"
+                  style={{
+                    width: "100%",
+                    height: "auto"
+                  }} />
+              </div>
+            </a>
+          </div>
+          {/* second column */}
+          <div className="hidden col-span-3 gap-4 lg:flex lg:flex-col">
+            <a href="https://www.raycast.com/GLaDO8/pie-for-pi-hole#install">
+              <div className="overflow-hidden rounded-xl bg-slate-800">
+                <Image
+                  className="relative object-cover"
+                  src="/images/pie.png"
+                  alt="Pie for Pi-hole, a raycast extension"
+                  width={360}
+                  height={493}
+                  sizes="100vw"
+                  style={{
+                    width: "100%",
+                    height: "auto"
+                  }} />
+              </div>
+            </a>
+
+            <a href="https://glado8.notion.site/glado8/An-Amateur-s-Guide-to-Leading-a-Sustainable-Lifestyle-in-India-b5b80a9e97c24ee0bf9c660f75ea9fba">
+              <div className="overflow-hidden rounded-xl bg-slate-800">
+                <Image
+                  className="relative object-cover"
+                  src="/images/sustain-long.svg"
+                  alt="Guide to leading a sustainable lifestyle in india"
+                  width={360}
+                  height={493}
+                  sizes="100vw"
+                  style={{
+                    width: "100%",
+                    height: "auto"
+                  }} />
+              </div>
+            </a>
+
+            <a href="https://shreyas.design/writings/dissecting-my-workflow">
+              <div className="overflow-hidden rounded-xl bg-slate-800">
+                <Image
+                  className="relative object-cover"
+                  src="/images/tools.png"
+                  alt="Article about tools I use"
+                  width={360}
+                  height={302}
+                  sizes="100vw"
+                  style={{
+                    width: "100%",
+                    height: "auto"
+                  }} />
+              </div>
+            </a>
           </div>
         </div>
+      </div>
 
-        <div className="mt-16 lg:mt-36">
-          <div className="home-page-title">Writings</div>
-          <WritingList posts={allPosts} />
-        </div>
-      </Layout>
-    </>
-  )
+      <div className="mt-16 lg:mt-36">
+        <div className="home-page-title">Writings</div>
+        <WritingList posts={allPosts} />
+      </div>
+    </Layout>
+  </>;
 }
 
 export async function getStaticProps() {

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Image from "next/legacy/image"
+import Image from "next/image"
 
 export default function ProjectPreview({ title, coverImage, excerpt, slug }) {
   return (
@@ -11,8 +11,11 @@ export default function ProjectPreview({ title, coverImage, excerpt, slug }) {
             alt={`Cover Image for ${title}`}
             width={1600}
             height={900}
-            layout="responsive"
-          />
+            sizes="100vw"
+            style={{
+              width: "100%",
+              height: "auto"
+            }} />
         </div>
         {/* <div className="mt-4">
           <h3 className="mb-1 text-lg font-semibold leading-snug text-black transition duration-500 cursor-pointer group-hover:underline lg:text-xl dark:text-white">
@@ -24,5 +27,5 @@ export default function ProjectPreview({ title, coverImage, excerpt, slug }) {
         </div> */}
       </div>
     </Link>
-  )
+  );
 }
