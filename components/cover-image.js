@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 
 export default function CoverImage({ title, url, slug }) {
   const image = (

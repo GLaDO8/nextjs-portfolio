@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import Layout from '@/components/layout'
 import Head from 'next/head'
 export default function Index() {

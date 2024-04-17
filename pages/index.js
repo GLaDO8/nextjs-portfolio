@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import React, { useState } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import ProjectList from '@/components/projectlist'
 import WritingList from '@/components/writinglist'
 import { getAllPosts, getAllProjectsForHome } from '@/lib/api'
