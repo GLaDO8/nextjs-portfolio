@@ -11,7 +11,7 @@ export default function Index() {
 
   function iconLinkGenerator(name, link) {
     return (
-      <a href={link} target="_blank" rel="noreferrer noopener">
+      <a href={link} target="_blank" rel="noreferrer noopener" key={name}>
         <img
           src={`https://s2.svgbox.net/social.svg?ic=${name}&color=fff`}
           className="social-icons"
