@@ -54,8 +54,7 @@ export default function Index({ allPosts, allWork }) {
         {darkModeLinkStyleTag('GE Healthcare', 'https://www.gehealthcare.in/')}
         's data team in the services department. The work was great, we were
         building a process for the services team to optimise the sales of
-        refurbished equipment, which has high demand in third world countries.
-        But I wanted to study human behaviour and learn design.
+        refurbished equipment, which has high demand in third world countries. .
         <br />
         <br />
         During this time, I also took courses like Human-computer interaction,
@@ -144,7 +143,7 @@ export default function Index({ allPosts, allWork }) {
 
         <div className="max-w-xl mx-auto mt-6 mb-12 lg:mt-24">
           <div>{aboutType === 'short' ? shortAboutText : longAboutText}</div>
-          <div className="flex content-center justify-between pr-8 mt-6 md:pr-4">
+          <div className="flex content-center justify-between pr-8 mt-10 md:pr-4">
             <Link href="https://twitter.com/wutamelonshrey" passHref={true}>
               <button className="flex items-center px-3 py-1 text-black transition duration-300 transform bg-white rounded-lg cursor-pointer hover:opacity-70">
                 <div>
@@ -158,12 +157,12 @@ export default function Index({ allPosts, allWork }) {
                 <div className="ml-2 font-medium"> Say hi on bird app</div>
               </button>
             </Link>
-            <button
+            {/* <button
               className="underline"
               onClick={() => aboutToggle(aboutType)}
             >
               {aboutType === 'short' ? 'Read long intro' : 'Read short intro'}
-            </button>
+            </button>*/}
           </div>
         </div>
 
