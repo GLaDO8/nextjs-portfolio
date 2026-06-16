@@ -15,7 +15,7 @@
     "date-fns": "2.14.0",
     "dotenv": "^16.0.3",
     "eslint-config-next": "^14.2.1",
-    "markdown-it": "^12.3.2",
+    "markdown-it": "^14.2.0",
     "markdown-it-anchor": "^6.0.1",
     "markdown-it-footnote": "^3.0.2",
     "next": "^16.2.1",
